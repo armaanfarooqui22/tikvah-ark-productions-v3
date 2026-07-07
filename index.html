@@ -1,0 +1,3522 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tikvah Ark Productions | Film & Content Production Company | Mumbai</title>
+  
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="Award-recognised Mumbai film production company. Documentaries, corporate films, ad films, industrial, CSR, tourism, motion graphics and post-production. Hollywood VFX credited team.">
+  <meta name="keywords" content="film production company mumbai, corporate video mumbai, documentary filmmaking india, ad film makers mumbai, industrial videos india, social media content production, post production girgaon">
+  <meta name="author" content="Tikvah Ark Productions">
+  <link rel="canonical" href="https://tikvahark.com">
+
+  <!-- Open Graph / Facebook Meta Tags -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://tikvahark.com">
+  <meta property="og:title" content="Tikvah Ark Productions | Cinematic Stories. Strategic Impact.">
+  <meta property="og:description" content="Mumbai-based film & content production specializing in documentaries, commercials, corporate videos, and motion graphics. End-to-end cinematic storytelling.">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1485846234645-a62644f84728?q=80&w=1200">
+
+  <!-- Twitter Meta Tags -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="https://tikvahark.com">
+  <meta property="twitter:title" content="Tikvah Ark Productions | Cinematic Stories. Strategic Impact.">
+  <meta property="twitter:description" content="Mumbai-based film & content production company. Concept to screen delivery.">
+  <meta property="twitter:image" content="https://images.unsplash.com/photo-1485846234645-a62644f84728?q=80&w=1200">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🎬</text></svg>">
+
+  <!-- Tailwind CSS via CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            cinematicNavy: '#0C1220',
+            cinematicNavyLight: '#111827',
+            cinematicNavyDark: '#070b14',
+            accentBlue: '#1E5BAD',
+            accentGreen: '#2EAD4A',
+            accentLightBlue: '#4FA3E0',
+            gold: {
+              DEFAULT: '#1E5BAD',
+              light: '#4FA3E0',
+              dark: '#2EAD4A',
+            }
+          },
+          fontFamily: {
+            cinzel: ['Cinzel', 'serif'],
+            montserrat: ['Montserrat', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- AOS (Animate on Scroll) CSS -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <!-- Custom Stylesheet -->
+  <style>
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700;900&family=Montserrat:wght@300;400;500;600;700;800&display=swap');
+
+:root {
+  --color-bg-primary: #0C1220;
+  --color-bg-secondary: #111827;
+  --color-bg-card: #162035;
+  --color-accent-blue: #1E5BAD;
+  --color-accent-green: #2EAD4A;
+  --color-accent-light-blue: #4FA3E0;
+  --color-text-primary: #FFFFFF;
+  --color-text-muted: #9BA8BE;
+  --color-border: rgba(30, 91, 173, 0.3);
+
+  /* Compatibility Mapping */
+  --color-gold: var(--color-accent-blue);
+  --color-gold-light: var(--color-accent-light-blue);
+  --color-gold-dark: var(--color-accent-green);
+  --color-gold-glow: rgba(30, 91, 173, 0.35);
+  --color-bg-tertiary: var(--color-bg-card);
+  --color-text-secondary: var(--color-text-muted);
+}
+
+/* Base styles */
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 80px; /* Offset for sticky navbar */
+  background-color: var(--color-bg-primary);
+  color: var(--color-text-primary);
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  overflow-x: hidden;
+}
+
+/* Headings font */
+h1, h2, h3, h4, h5, h6, .font-cinzel {
+  font-family: 'Cinzel', serif;
+  letter-spacing: 0.05em;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-bg-primary);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-bg-tertiary);
+  border-radius: 4px;
+  border: 1px solid rgba(30, 91, 173, 0.1);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-gold-dark);
+}
+
+/* Preloader */
+#preloader {
+  background-color: #000000;
+  z-index: 100;
+}
+
+/* Custom Gradients */
+.gold-text-gradient {
+  background: linear-gradient(135deg, var(--color-gold-light) 0%, var(--color-gold) 50%, var(--color-gold-dark) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.gold-bg-gradient {
+  background: linear-gradient(135deg, var(--color-gold-light) 0%, var(--color-gold) 50%, var(--color-gold-dark) 100%);
+}
+
+.gold-border-gradient {
+  border-image: linear-gradient(to right, var(--color-gold-dark), var(--color-gold-light), var(--color-gold-dark)) 1;
+}
+
+/* Glassmorphism Classes */
+.glass-panel {
+  background: rgba(7, 17, 36, 0.65);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.glass-nav {
+  background: rgba(3, 8, 18, 0.8);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border-bottom: 1px solid rgba(30, 91, 173, 0.1);
+  transition: all 0.3s ease-in-out;
+}
+
+.glass-nav.nav-scrolled {
+  background: rgba(2, 5, 11, 0.95);
+  box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.7);
+  border-bottom: 1px solid rgba(30, 91, 173, 0.2);
+}
+
+/* Service Row Hover Effects */
+.service-info-card {
+  background: linear-gradient(145deg, rgba(7, 17, 36, 0.8) 0%, rgba(3, 8, 18, 0.9) 100%);
+  border: 1px solid rgba(30, 91, 173, 0.1);
+  transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.service-info-card:hover {
+  border-color: rgba(30, 91, 173, 0.5);
+  box-shadow: 0 15px 30px -10px rgba(0, 0, 0, 0.8), 0 0 20px 0 var(--color-gold-glow);
+}
+
+.service-video-container {
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  transition: all 0.4s ease;
+  box-shadow: 0 10px 35px -10px rgba(0, 0, 0, 0.9);
+}
+
+.service-video-container:hover {
+  border-color: rgba(30, 91, 173, 0.4);
+  box-shadow: 0 15px 40px -10px rgba(0, 0, 0, 0.95), 0 0 25px 0 rgba(30, 91, 173, 0.15);
+}
+
+/* Button Animations & Effects */
+.btn-gold {
+  position: relative;
+  overflow: hidden;
+  transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
+  z-index: 1;
+  border-radius: 9999px;
+  background: linear-gradient(135deg, var(--color-gold-light) 0%, var(--color-gold) 50%, var(--color-gold-dark) 100%);
+  color: #ffffff !important;
+  font-weight: 600;
+  box-shadow: 0 4px 14px 0 rgba(30, 91, 173, 0.3);
+}
+
+.btn-gold::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, #ffffff 0%, rgba(255, 255, 255, 0) 100%);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  z-index: -1;
+}
+
+.btn-gold:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px 0 rgba(30, 91, 173, 0.5), 0 0 12px 2px rgba(255, 255, 255, 0.1);
+}
+
+.btn-gold:hover::after {
+  opacity: 0.2;
+}
+
+.btn-gold:active {
+  transform: translateY(0);
+}
+
+.btn-gold-outline {
+  position: relative;
+  overflow: hidden;
+  transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
+  z-index: 1;
+  border-radius: 9999px;
+  border: 1px solid var(--color-gold);
+  color: var(--color-gold);
+  font-weight: 600;
+  background: transparent;
+}
+
+.btn-gold-outline::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, var(--color-gold-light) 0%, var(--color-gold) 50%, var(--color-gold-dark) 100%);
+  z-index: -1;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.3s ease-in-out;
+}
+
+.btn-gold-outline:hover {
+  transform: translateY(-2px);
+  color: #ffffff !important;
+  border-color: transparent;
+  box-shadow: 0 6px 20px 0 rgba(30, 91, 173, 0.4);
+}
+
+.btn-gold-outline:hover::before {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
+.btn-gold-outline:active {
+  transform: translateY(0);
+}
+
+/* Floating WhatsApp pulse animation */
+.whatsapp-pulse {
+  box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.7);
+  animation: pulse-green 2s infinite;
+}
+
+@keyframes pulse-green {
+  0% {
+    transform: scale(1);
+    box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.7);
+  }
+  70% {
+    transform: scale(1.05);
+    box-shadow: 0 0 0 15px rgba(37, 211, 102, 0);
+  }
+  100% {
+    transform: scale(1);
+    box-shadow: 0 0 0 0 rgba(37, 211, 102, 0);
+  }
+}
+
+.portfolio-card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  aspect-ratio: 16 / 10;
+  transition: all 0.4s ease;
+}
+
+.portfolio-card:hover {
+  border-color: var(--color-gold);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.7), 0 0 20px 0 var(--color-gold-glow);
+}
+
+.portfolio-card img {
+  transition: transform 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.portfolio-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to top, rgba(3, 8, 18, 0.95) 0%, rgba(3, 8, 18, 0.4) 60%, rgba(3, 8, 18, 0.1) 100%);
+  opacity: 0.8;
+  transition: all 0.4s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 1.5rem;
+}
+
+.portfolio-card:hover img {
+  transform: scale(1.08);
+}
+
+.portfolio-card:hover .portfolio-overlay {
+  opacity: 1;
+  background: linear-gradient(to top, rgba(3, 8, 18, 0.98) 0%, rgba(3, 8, 18, 0.6) 60%, rgba(3, 8, 18, 0.2) 100%);
+  border-top: 2px solid var(--color-gold);
+}
+
+/* Video Section Overlay */
+.hero-overlay {
+  background: radial-gradient(circle, transparent 15%, var(--color-bg-primary) 95%),
+              linear-gradient(to bottom, rgba(3, 8, 18, 0.6) 0%, var(--color-bg-primary) 100%);
+}
+
+.hero-video-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.hero-video-container iframe {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100vw;
+  height: 56.25vw; /* 16:9 Aspect Ratio */
+  min-height: 100vh;
+  min-width: 177.78vh; /* 16:9 Aspect Ratio */
+  transform: translate(-50%, -50%);
+}
+
+/* Section Dividers with Gold Diamond */
+.section-divider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1.5rem 0;
+}
+
+.section-divider::before,
+.section-divider::after {
+  content: '';
+  flex: 1;
+  height: 1px;
+  background: linear-gradient(to var(--direction, right), rgba(30, 91, 173, 0), rgba(30, 91, 173, 0.4));
+}
+
+.section-divider::before {
+  --direction: right;
+  margin-right: 1.5rem;
+}
+
+.section-divider::after {
+  --direction: left;
+  margin-left: 1.5rem;
+}
+
+.section-divider-diamond {
+  width: 10px;
+  height: 10px;
+  background: var(--color-gold);
+  transform: rotate(45deg);
+  box-shadow: 0 0 10px var(--color-gold);
+}
+
+/* Inputs styling */
+.form-input {
+  background: rgba(7, 17, 36, 0.6);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  color: #ffffff;
+  transition: all 0.3s ease;
+}
+
+.form-input:focus {
+  outline: none;
+  border-color: var(--color-gold);
+  box-shadow: 0 0 0 2px var(--color-gold-glow);
+  background: rgba(11, 26, 54, 0.8);
+}
+
+/* Toast Message */
+.toast-success {
+  transform: translateY(100px);
+  opacity: 0;
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.toast-success.show {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+/* Navigation active class */
+.nav-link {
+  position: relative;
+  color: var(--color-text-secondary);
+  transition: color 0.3s ease;
+}
+
+.nav-link::after {
+  content: '';
+  position: absolute;
+  bottom: -4px;
+  left: 50%;
+  width: 0;
+  height: 2px;
+  background: var(--color-accent-green);
+  transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  transform: translateX(-50%);
+}
+
+.nav-link:hover {
+  color: var(--color-accent-green);
+}
+
+.nav-link:hover::after {
+  width: 100%;
+}
+
+.nav-link.active {
+  color: var(--color-accent-green);
+}
+
+.nav-link.active::after {
+  width: 100%;
+  background: var(--color-accent-green);
+}
+
+/* Premium Titles Gold Underline */
+.section-title-underline {
+  position: relative;
+  padding-bottom: 12px;
+}
+
+.section-title-underline::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 44px;
+  height: 3px;
+  background-color: var(--color-accent-green);
+  border-radius: 9999px;
+}
+
+.section-title-underline-left {
+  position: relative;
+  padding-bottom: 18px;
+}
+
+.section-title-underline-left::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 40px;
+  height: 3px;
+  background-color: var(--color-accent-green);
+  border-radius: 9999px;
+}
+
+/* WhatsApp Chatbot CSS Widget */
+#whatsapp-chat-window {
+  box-shadow: 0 20px 50px -15px rgba(0, 0, 0, 0.9);
+}
+
+.chat-quick-reply-btn {
+  background: rgba(30, 91, 173, 0.04);
+  border: 1px solid rgba(30, 91, 173, 0.25);
+  color: #ffffff;
+  transition: all 0.3s ease;
+}
+
+.chat-quick-reply-btn:hover {
+  background: rgba(30, 91, 173, 0.12);
+  border-color: var(--color-gold);
+  transform: translateY(-1px);
+}
+
+/* Back to Top Button */
+#back-to-top {
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.6);
+}
+
+/* Dynamic Scroll Reveal Base (Default to visible for bulletproof fallback rendering) */
+.reveal-on-scroll {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94),
+              transform 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.reveal-on-scroll.revealed {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Service Card IFrame Overlay Trigger */
+.service-video-overlay {
+  background: rgba(3, 8, 18, 0.45);
+  backdrop-filter: blur(2px);
+  transition: all 0.4s ease;
+}
+
+.service-video-container:hover .service-video-overlay {
+  background: rgba(3, 8, 18, 0.25);
+  backdrop-filter: blur(0px);
+}
+
+/* Perfect Loop Ticker / Marquee */
+.ticker-wrap {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  background: rgba(0, 0, 0, 0.6);
+  border-top: 1px solid rgba(46, 173, 74, 0.25);
+  border-bottom: 1px solid rgba(46, 173, 74, 0.25);
+  z-index: 10;
+  padding: 12px 0;
+}
+
+.ticker {
+  display: flex;
+  width: max-content;
+}
+
+.ticker__move {
+  display: flex;
+  animation: ticker-move 36s linear infinite;
+}
+
+.ticker__item {
+  flex-shrink: 0;
+  padding: 0 1.5rem;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  color: var(--color-accent-green);
+}
+
+@keyframes ticker-move {
+  0% { transform: translate3d(0, 0, 0); }
+  100% { transform: translate3d(-50%, 0, 0); }
+}
+
+/* Hero CTA Redesigned Buttons */
+.hero-btn-gold {
+  background: var(--color-gold);
+  color: #ffffff !important;
+  font-weight: 700;
+  font-size: 12px;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  padding: 16px 32px;
+  border-radius: 9999px;
+  transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--color-gold);
+}
+
+.hero-btn-gold:hover {
+  transform: scale(1.04);
+  box-shadow: 0 0 20px 2px rgba(30, 91, 173, 0.45);
+}
+
+.hero-btn-outline {
+  background: transparent;
+  color: var(--color-gold) !important;
+  font-weight: 700;
+  font-size: 12px;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  padding: 16px 32px;
+  border-radius: 9999px;
+  border: 1px solid var(--color-gold);
+  transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-btn-outline:hover {
+  transform: scale(1.04);
+  box-shadow: 0 0 20px 2px rgba(30, 91, 173, 0.45);
+  background: rgba(30, 91, 173, 0.05);
+}
+
+/* IMDb credentials section radial glow background */
+.imdb-section-bg {
+  background: #060F1E;
+  background-image: radial-gradient(circle at center, rgba(30, 91, 173, 0.06) 0%, transparent 70%);
+  position: relative;
+}
+
+/* Pulsing IMDb badge */
+@keyframes badge-pulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(30, 91, 173, 0.6);
+  }
+  70% {
+    box-shadow: 0 0 0 8px rgba(30, 91, 173, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(30, 91, 173, 0);
+  }
+}
+
+.pulse-gold-badge {
+  animation: badge-pulse 3s infinite;
+}
+
+/* About Section Biography Founder Cards */
+.founder-card {
+  background-color: #0D1B2E;
+  border-top: 3px solid var(--color-gold);
+  border-radius: 12px;
+  box-shadow: 0 8px 40px rgba(0, 0, 0, 0.5);
+  transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.founder-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 45px rgba(0, 0, 0, 0.65), 0 0 25px 0 rgba(30, 91, 173, 0.25);
+}
+
+
+
+/* Lightbox Modal */
+.lightbox-modal {
+  position: fixed;
+  inset: 0;
+  background: rgba(3, 8, 18, 0.95);
+  backdrop-filter: blur(8px);
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+}
+
+.lightbox-modal.active {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.lightbox-content {
+  position: relative;
+  width: 90%;
+  max-width: 900px;
+  aspect-ratio: 16 / 9;
+  border: 1px solid rgba(30, 91, 173, 0.3);
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.9);
+}
+
+.lightbox-close {
+  position: absolute;
+  top: 1.5rem;
+  right: 1.5rem;
+  background: rgba(3, 8, 18, 0.8);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  color: #ffffff;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  z-index: 110;
+}
+
+.lightbox-close:hover {
+  color: var(--color-gold);
+  border-color: var(--color-gold);
+  transform: scale(1.05);
+}
+
+/* Process Timeline (Desktop Horizontal) */
+.process-step {
+  position: relative;
+  text-align: center;
+  flex: 1;
+}
+
+.process-line {
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  width: 100%;
+  height: 1px;
+  border-top: 1px dashed rgba(46, 173, 74, 0.4);
+  z-index: 0;
+}
+
+.process-step:last-child .process-line {
+  display: none;
+}
+
+.process-circle {
+  position: relative;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: var(--color-bg-primary);
+  border: 2px solid var(--color-gold);
+  color: var(--color-gold);
+  font-family: 'Cinzel', serif;
+  font-weight: 700;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 16px auto;
+  z-index: 1;
+  box-shadow: 0 0 10px rgba(30, 91, 173, 0.2);
+  transition: all 0.3s ease;
+}
+
+.process-step:hover .process-circle {
+  background-color: var(--color-gold);
+  color: #030812;
+  box-shadow: 0 0 15px var(--color-gold-glow);
+}
+
+/* Staggered Grid Items */
+.stagger-item {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94),
+              transform 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.stagger-item.revealed {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Service Video Carousel Fade */
+.service-video-container iframe {
+  transition: opacity 0.4s ease-in-out;
+}
+.service-video-container iframe.iframe-fade-out {
+  opacity: 0;
+}
+
+/* Scrollbar hiding utility */
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+.scrollbar-hide {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+</style>
+</head>
+<body class="bg-cinematicNavy text-white font-montserrat">
+
+  <!-- Preloader -->
+  <div id="preloader" class="fixed inset-0 bg-black z-[100] flex items-center justify-center transition-opacity duration-500">
+    <div class="flex flex-col items-center space-y-6 px-4 text-center">
+      <img src="assets/logo_icon.png" alt="Tikvah Ark Productions Logo" class="h-28 sm:h-36 w-auto object-contain transition-all duration-300">
+      <div class="h-[2px] w-48 bg-slate-800 rounded-full overflow-hidden">
+        <div id="preloader-bar" class="h-full w-full bg-gold origin-left transform scale-x-0 transition-transform duration-[1700ms] ease-out"></div>
+      </div>
+      <div class="font-cinzel text-xs uppercase tracking-[0.25em] text-gold/80">Cinematic Storytelling</div>
+    </div>
+  </div>
+
+  <!-- 1. NAVBAR -->
+  <header class="fixed top-0 left-0 w-full z-50 glass-nav transition-all duration-300">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-20">
+        <!-- Logo -->
+        <a href="#home" class="flex items-center space-x-3 group" aria-label="Tikvah Ark Productions Home">
+          <img src="assets/logo_icon.png" alt="Tikvah Ark Productions Logo" class="h-[44px] md:h-[56px] w-auto object-contain transition-all duration-300">
+          <div class="hidden sm:block">
+            <span class="font-cinzel text-lg font-bold tracking-wider text-white group-hover:text-[#2EAD4A] transition-colors duration-300 block leading-tight">TIKVAH ARK</span>
+            <span class="text-[9px] uppercase tracking-widest text-slate-400 block leading-none">PRODUCTIONS</span>
+          </div>
+        </a>
+
+        <!-- Desktop Navigation -->
+        <nav class="hidden md:flex space-x-6 text-sm font-medium">
+          <a href="#home" class="nav-link py-2">Home</a>
+          <a href="about.html" class="nav-link py-2">About</a>
+          <a href="#services" class="nav-link py-2">Services</a>
+          <a href="#process" class="nav-link py-2">Our Process</a>
+          <a href="#showreel" class="nav-link py-2">Showreel</a>
+          <a href="#portfolio" class="nav-link py-2">Portfolio</a>
+          <a href="#testimonials" class="nav-link py-2">Testimonials</a>
+          <a href="#contact" class="nav-link py-2">Contact</a>
+        </nav>
+
+        <!-- CTA & Mobile Toggle -->
+        <div class="flex items-center space-x-4">
+          <a href="https://wa.me/918657561060" target="_blank" rel="noopener" class="hidden sm:inline-flex items-center px-5 py-2 text-xs uppercase tracking-wider btn-gold transition-all duration-300 space-x-2">
+            <i class="fa-brands fa-whatsapp text-sm"></i>
+            <span>WhatsApp Us</span>
+          </a>
+
+          <!-- Social Icons in Navbar (Desktop only) -->
+          <div class="hidden md:flex items-center space-x-3.5 border-l border-slate-800/80 pl-4">
+            <a href="https://www.instagram.com/tikvaharkproductions?igsh=b2l3bHFyNGF4OHQw&utm_source=qr" target="_blank" rel="noopener" aria-label="Instagram" class="text-[#8AAAC8] hover:text-[#E1306C] transition-colors duration-300">
+              <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24">
+                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.051.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/>
+              </svg>
+            </a>
+            <a href="https://youtube.com/@tikvahark123?si=F02KAGmnGIhGlMXs" target="_blank" rel="noopener" aria-label="YouTube" class="text-[#8AAAC8] hover:text-[#FF0000] transition-colors duration-300">
+              <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24">
+                <path d="M23.498 6.163a3.003 3.003 0 00-2.11-2.107C19.525 3.545 12 3.545 12 3.545s-7.525 0-9.388.511a3.002 3.002 0 00-2.11 2.107C0 8.028 0 12 0 12s0 3.972.502 5.837a3.002 3.002 0 002.11 2.107C4.475 20.455 12 20.455 12 20.455s7.525 0 9.388-.511a3.002 3.002 0 002.11-2.107C24 15.972 24 12 24 12s0-3.972-.502-5.837zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+              </svg>
+            </a>
+            <a href="https://www.linkedin.com/company/tikvaharkproductions/" target="_blank" rel="noopener" aria-label="LinkedIn" class="text-[#8AAAC8] hover:text-[#0A66C2] transition-colors duration-300">
+              <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24">
+                <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.779-1.75-1.75s.784-1.75 1.75-1.75 1.75.779 1.75 1.75-.784 1.75-1.75 1.75zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+              </svg>
+            </a>
+          </div>
+
+          <!-- Hamburger Button -->
+          <button id="mobile-menu-btn" class="md:hidden flex flex-col justify-center items-center w-10 h-10 border border-slate-700/50 rounded-lg bg-cinematicNavyLight text-white hover:text-gold focus:outline-none" aria-expanded="false" aria-label="Toggle mobile menu">
+            <span class="w-5 h-0.5 bg-current transition-all duration-300 ease-in-out mb-1.5 rounded-full"></span>
+            <span class="w-5 h-0.5 bg-current transition-all duration-300 ease-in-out mb-1.5 rounded-full"></span>
+            <span class="w-5 h-0.5 bg-current transition-all duration-300 ease-in-out rounded-full"></span>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Mobile Navigation Drawer -->
+    <div id="mobile-nav" class="fixed top-20 right-0 w-64 h-[calc(100vh-80px)] bg-cinematicNavyDark/95 border-l border-slate-800/80 transform translate-x-full transition-transform duration-300 ease-in-out md:hidden z-40 backdrop-blur-lg flex flex-col justify-between py-8 px-6">
+      <nav class="flex flex-col space-y-5 text-base font-medium">
+        <a href="#home" class="mobile-nav-link text-slate-300 hover:text-gold transition-colors duration-300 border-b border-slate-800/50 pb-2">Home</a>
+        <a href="about.html" class="mobile-nav-link text-slate-300 hover:text-gold transition-colors duration-300 border-b border-slate-800/50 pb-2">About</a>
+        <a href="#services" class="mobile-nav-link text-slate-300 hover:text-gold transition-colors duration-300 border-b border-slate-800/50 pb-2">Services</a>
+        <a href="#process" class="mobile-nav-link text-slate-300 hover:text-gold transition-colors duration-300 border-b border-slate-800/50 pb-2">Our Process</a>
+        <a href="#showreel" class="mobile-nav-link text-slate-300 hover:text-gold transition-colors duration-300 border-b border-slate-800/50 pb-2">Showreel</a>
+        <a href="#portfolio" class="mobile-nav-link text-slate-300 hover:text-gold transition-colors duration-300 border-b border-slate-800/50 pb-2">Portfolio</a>
+        <a href="#testimonials" class="mobile-nav-link text-slate-300 hover:text-gold transition-colors duration-300 border-b border-slate-800/50 pb-2">Testimonials</a>
+        <a href="#contact" class="mobile-nav-link text-slate-300 hover:text-gold transition-colors duration-300 border-b border-slate-800/50 pb-2">Contact</a>
+      </nav>
+      
+      <div class="space-y-4">
+        <a href="https://wa.me/918657561060" target="_blank" rel="noopener" class="w-full justify-center flex items-center py-3 px-4 btn-gold text-xs uppercase tracking-widest space-x-2">
+          <i class="fa-brands fa-whatsapp text-base"></i>
+          <span>Get WhatsApp Quote</span>
+        </a>
+        <p class="text-[10px] text-center text-slate-500 font-medium">Mumbai, Maharashtra, India</p>
+      </div>
+    </div>
+  </header>
+
+  <!-- 2. HERO SECTION -->
+  <section id="home" class="relative min-h-screen flex items-center justify-center overflow-hidden pt-20">
+    <!-- Looping Video Background -->
+    <div class="absolute inset-0 z-0">
+      <div class="hero-video-container">
+        <video autoplay muted loop playsinline class="w-full h-full object-cover">
+          <source src="assets/video/showreel.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </div>
+      <!-- Dark overlay for legibility -->
+      <div class="absolute inset-0 hero-overlay"></div>
+    </div>
+
+    <!-- Content -->
+    <div class="relative z-10 max-w-5xl mx-auto px-4 text-center mt-8">
+      <span class="inline-block px-3 py-1 mb-6 border border-gold/30 rounded-full bg-gold/10 text-xs font-semibold tracking-[0.2em] text-gold uppercase animate-pulse">
+        Premium Film Production House
+      </span>
+      
+      <h1 class="font-cinzel text-4xl sm:text-6xl md:text-7xl lg:text-8xl font-black tracking-wider text-white mb-6 uppercase leading-none">
+        Tikvah Ark<br class="hidden sm:block"> <span class="gold-text-gradient">Productions</span>
+      </h1>
+      
+      <p class="font-cinzel text-lg sm:text-2xl md:text-3xl text-[#4FA3E0] tracking-wide font-light mb-4">
+        Cinematic Stories. Strategic Impact.
+      </p>
+      
+      <p class="max-w-2xl mx-auto text-sm sm:text-base md:text-lg text-slate-400 font-light mb-10 leading-relaxed">
+        Mumbai-based film & content production for brands, businesses, institutions, and organizations across India. We turn visions into powerful screens.
+      </p>
+
+      <div class="flex flex-col sm:flex-row items-center justify-center gap-4 px-4">
+        <a href="#services" class="w-full sm:w-auto hero-btn-gold">
+          View Our Services
+        </a>
+        <a href="https://wa.me/918657561060?text=Hi%2C%20I%20would%20like%20to%20get%20a%20quote." target="_blank" rel="noopener" class="w-full sm:w-auto px-8 py-4 border border-[#2EAD4A] text-[#2EAD4A] hover:bg-[#2EAD4A]/10 font-bold rounded-xl transition-all duration-300 text-xs uppercase tracking-wider flex items-center justify-center space-x-2">
+          <i class="fa-brands fa-whatsapp text-lg"></i>
+          <span>Get a Quote on WhatsApp</span>
+        </a>
+      </div>
+    </div>
+
+    <!-- Cinematic Ticker / Marquee Strip -->
+    <div class="ticker-wrap">
+      <div class="ticker">
+        <div class="ticker__move">
+          <span class="ticker__item">✦ Documentary Films</span>
+          <span class="ticker__item">✦ Corporate Films</span>
+          <span class="ticker__item">✦ Ad Films & Commercials</span>
+          <span class="ticker__item">✦ Industrial Films</span>
+          <span class="ticker__item">✦ Tourism & Heritage</span>
+          <span class="ticker__item">✦ CSR & Impact Films</span>
+          <span class="ticker__item">✦ Motion Graphics</span>
+          <span class="ticker__item">✦ Social Media Content</span>
+          <span class="ticker__item">✦ Event Coverage</span>
+          <span class="ticker__item">✦ Music Videos</span>
+          <span class="ticker__item">✦ Photography</span>
+          <span class="ticker__item">✦ Post-Production</span>
+          <!-- Duplicate content for infinite seamless looping -->
+          <span class="ticker__item">✦ Documentary Films</span>
+          <span class="ticker__item">✦ Corporate Films</span>
+          <span class="ticker__item">✦ Ad Films & Commercials</span>
+          <span class="ticker__item">✦ Industrial Films</span>
+          <span class="ticker__item">✦ Tourism & Heritage</span>
+          <span class="ticker__item">✦ CSR & Impact Films</span>
+          <span class="ticker__item">✦ Motion Graphics</span>
+          <span class="ticker__item">✦ Social Media Content</span>
+          <span class="ticker__item">✦ Event Coverage</span>
+          <span class="ticker__item">✦ Music Videos</span>
+          <span class="ticker__item">✦ Photography</span>
+          <span class="ticker__item">✦ Post-Production</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 3. HOLLYWOOD ACHIEVEMENT SECTION -->
+  <section id="achievements" class="imdb-section-bg py-10 md:py-16 border-y border-gold/40 overflow-hidden">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-3 gap-12 lg:gap-8 divide-y divide-gold/20 lg:divide-y-0 lg:divide-x lg:divide-gold/40">
+        
+        <!-- COLUMN 1 — Hollywood VFX Credit -->
+        <div class="flex flex-col items-center text-center px-4 pb-8 lg:pb-0" data-aos="fade-up" data-aos-delay="100">
+          <div class="w-12 h-12 rounded-full bg-gold/10 flex items-center justify-center text-gold mb-4">
+            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm0-12.5c-.83 0-1.5.67-1.5 1.5s.67 1.5 1.5 1.5 1.5-.67 1.5-1.5-.67-1.5-1.5-1.5zm-3.5 3.5c-.83 0-1.5.67-1.5 1.5s.67 1.5 1.5 1.5 1.5-.67 1.5-1.5-.67-1.5-1.5-1.5zm7 0c-.83 0-1.5.67-1.5 1.5s.67 1.5 1.5 1.5 1.5-.67 1.5-1.5-.67-1.5-1.5-1.5zm-3.5 3.5c-.83 0-1.5.67-1.5 1.5s.67 1.5 1.5 1.5 1.5-.67 1.5-1.5-.67-1.5-1.5-1.5zm0-7c-.83 0-1.5.67-1.5 1.5s.67 1.5 1.5 1.5 1.5-.67 1.5-1.5-.67-1.5-1.5-1.5z"/>
+            </svg>
+          </div>
+          <span class="text-xs uppercase tracking-[0.2em] text-gold font-bold mb-3">HOLLYWOOD VFX CREDIT</span>
+          <h3 class="font-cinzel text-xl sm:text-2xl font-bold text-white mb-1">Iron Man 3</h3>
+          <p class="font-cinzel text-sm text-slate-300 mb-3">Star Trek Into Darkness</p>
+          <p class="text-xs text-slate-400 font-light mb-5 max-w-xs leading-relaxed">
+            Stereo Compositor · Marvel Studios · Paramount Pictures · 2013
+          </p>
+          <div class="mb-2">
+            <a href="https://www.imdb.com/name/nm5718975/" target="_blank" rel="noopener" class="inline-flex items-center justify-center px-5 py-2.5 text-xs font-bold uppercase tracking-wider btn-gold-outline rounded-full space-x-1.5">
+              <span>⭐ View on IMDb ↗</span>
+            </a>
+          </div>
+          <span class="text-[10px] text-slate-500 font-medium tracking-wide">Credited under Saurabh Shingare</span>
+        </div>
+        
+        <!-- COLUMN 2 — Career Credentials -->
+        <div class="flex flex-col items-center text-center px-4 py-8 lg:py-0" data-aos="fade-up" data-aos-delay="200">
+          <div class="w-12 h-12 rounded-full bg-gold/10 flex items-center justify-center text-gold mb-4">
+            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M17 10.5V7c0-.55-.45-1-1-1H4c-.55 0-1 .45-1 1v10c0 .55.45 1 1 1h12c.55 0 1-.45 1-1v-3.5l4 4v-11l-4 4zM14 13h-3v3H9v-3H6v-2h3V8h2v3h3v2z"/>
+            </svg>
+          </div>
+          <span class="text-xs uppercase tracking-[0.2em] text-gold font-bold mb-3">INDUSTRY EXPERIENCE</span>
+          <h3 class="font-cinzel text-xl sm:text-2xl font-bold text-white mb-4">25+ Years</h3>
+          <div class="space-y-2 text-xs sm:text-sm text-slate-300 font-light max-w-xs leading-relaxed">
+            <p><span class="font-medium text-white">Creative Director</span> · Jio Platforms</p>
+            <p><span class="font-medium text-white">Creative Producer</span> · Mahindra Group</p>
+            <p><span class="font-medium text-white">Stereo Compositor</span> · Prime Focus World</p>
+            <p><span class="font-medium text-white">Stereo Compositor</span> · Deluxe Digital Studios</p>
+          </div>
+        </div>
+        
+        <!-- COLUMN 3 — Production Range -->
+        <div class="flex flex-col items-center text-center px-4 pt-8 lg:pt-0" data-aos="fade-up" data-aos-delay="300">
+          <div class="w-12 h-12 rounded-full bg-gold/10 flex items-center justify-center text-gold mb-4">
+            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/>
+            </svg>
+          </div>
+          <span class="text-xs uppercase tracking-[0.2em] text-gold font-bold mb-3">PRODUCTION EXPERTISE</span>
+          <h3 class="font-cinzel text-xl sm:text-2xl font-bold text-white mb-4">End-to-End</h3>
+          <div class="space-y-2 text-xs sm:text-sm text-slate-300 font-light max-w-xs leading-relaxed">
+            <p>Documentaries · Corporate Films</p>
+            <p>VFX · Post-Production</p>
+            <p>Brand Films · Social Content</p>
+            <p>Govt · NGO · Corporate · Startups</p>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+  </section>
+  <!-- Divider -->
+  <div class="max-w-7xl mx-auto px-4">
+    <div class="section-divider">
+      <div class="section-divider-diamond"></div>
+    </div>
+  </div>
+
+  <!-- 3. ABOUT SECTION -->
+  <section id="about" class="py-10 md:py-16 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <!-- PART A — Company Vision -->
+    <div class="text-center max-w-4xl mx-auto">
+      <span class="text-xs uppercase tracking-[0.25em] text-[#2EAD4A] font-bold block mb-3">Who We Are</span>
+      <h2 class="font-cinzel text-3xl sm:text-4xl md:text-5xl font-bold tracking-wide text-white mb-6 uppercase section-title-underline">
+        About Tikvah Ark Productions
+      </h2>
+      <p class="font-cinzel text-sm sm:text-base text-[#1E5BAD] font-medium tracking-widest uppercase mb-6 mt-4">
+        Cinematic Stories. Strategic Impact. Lasting Legacy.
+      </p>
+      <p class="text-sm sm:text-base text-slate-300 leading-relaxed font-light mx-auto max-w-[800px]">
+        Tikvah Ark Productions is a Mumbai-based film and content production company specializing in creating compelling visual stories for brands, businesses, institutions, and organizations. We combine cinematic storytelling, strategic communication, and high-quality production to deliver impactful films that engage audiences and drive results. From documentaries and corporate films to digital content and advertising campaigns, we provide end-to-end production services including concept development, scripting, filming, editing, motion graphics, and final delivery across multiple platforms.
+      </p>
+    </div>
+
+    <!-- Stats Grid -->
+    <div class="grid grid-cols-2 lg:grid-cols-4 gap-6 mt-12 max-w-5xl mx-auto">
+      <!-- Stat 1 -->
+      <div class="glass-panel p-6 rounded-xl border border-slate-800/80 text-center hover:border-[#1E5BAD]/30 transition-all duration-300">
+        <div class="text-2xl sm:text-3xl font-cinzel font-bold text-[#4FA3E0] mb-2">11+</div>
+        <div class="text-xs uppercase tracking-wider text-slate-400">Services</div>
+      </div>
+      <!-- Stat 2 -->
+      <div class="glass-panel p-6 rounded-xl border border-slate-800/80 text-center hover:border-[#1E5BAD]/30 transition-all duration-300">
+        <div class="text-2xl sm:text-3xl font-cinzel font-bold text-[#4FA3E0] mb-2">End-to-End</div>
+        <div class="text-xs uppercase tracking-wider text-slate-400">Production</div>
+      </div>
+      <!-- Stat 3 -->
+      <div class="glass-panel p-6 rounded-xl border border-slate-800/80 text-center hover:border-[#1E5BAD]/30 transition-all duration-300">
+        <div class="text-2xl sm:text-3xl font-cinzel font-bold text-[#4FA3E0] mb-2">Pan-India</div>
+        <div class="text-xs uppercase tracking-wider text-slate-400">Reach</div>
+      </div>
+      <!-- Stat 4 -->
+      <div class="glass-panel p-6 rounded-xl border border-slate-800/80 text-center hover:border-[#1E5BAD]/30 transition-all duration-300">
+        <div class="text-2xl sm:text-xl md:text-2xl font-cinzel font-bold text-[#4FA3E0] mb-2">Brands · NGOs · Govt</div>
+        <div class="text-xs uppercase tracking-wider text-slate-400">Trusted By</div>
+      </div>
+    </div>
+
+    <!-- Meet the Team CTA Button -->
+    <div class="text-center mt-12">
+      <a href="about.html" class="inline-flex items-center px-8 py-3.5 bg-[#1E5BAD] hover:bg-[#1E5BAD]/80 text-white font-bold rounded-xl transition-all duration-300 text-xs uppercase tracking-wider shadow-lg shadow-[#1E5BAD]/20">
+        Meet Our Team <i class="fa-solid fa-arrow-right ml-2"></i>
+      </a>
+    </div>
+  </section>
+
+  <!-- 4. SECTORS WE SERVE SECTION -->
+  <section id="sectors" class="py-10 md:py-16 bg-[#060F1E] border-y border-slate-900">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <!-- Section Title -->
+      <div class="text-center max-w-3xl mx-auto mb-16" data-aos="fade-up">
+        <span class="text-xs uppercase tracking-[0.25em] text-gold font-bold">What We Do</span>
+        <h2 class="font-cinzel text-3xl sm:text-4xl md:text-5xl font-bold tracking-wide text-white mt-3 mb-6 uppercase section-title-underline">
+          Sectors We Serve
+        </h2>
+        <p class="text-sm sm:text-base text-gold font-medium tracking-widest uppercase mb-4 mt-8">
+          Trusted by organizations across industries
+        </p>
+      </div>
+
+      <!-- Sector Grid -->
+      <div class="grid grid-cols-2 lg:grid-cols-4 gap-6" data-aos="fade-up">
+        
+        <!-- Sector 1 -->
+        <div class="glass-panel p-6 sm:p-8 rounded-xl border border-slate-800 flex flex-col items-center text-center group hover:border-b-2 hover:border-b-gold transition-all duration-300">
+          <span class="text-gold text-3xl sm:text-4xl mb-4 group-hover:scale-110 transition-transform duration-300">
+            <i class="fa-solid fa-building-columns"></i>
+          </span>
+          <h3 class="text-sm sm:text-base font-bold text-white mb-2 uppercase tracking-wide">Government & Public Bodies</h3>
+          <p class="text-[10px] sm:text-xs text-slate-400 font-light leading-relaxed">
+            Policy, culture, tourism, national initiatives
+          </p>
+        </div>
+
+        <!-- Sector 2 -->
+        <div class="glass-panel p-6 sm:p-8 rounded-xl border border-slate-800 flex flex-col items-center text-center group hover:border-b-2 hover:border-b-gold transition-all duration-300">
+          <span class="text-gold text-3xl sm:text-4xl mb-4 group-hover:scale-110 transition-transform duration-300">
+            <i class="fa-solid fa-building"></i>
+          </span>
+          <h3 class="text-sm sm:text-base font-bold text-white mb-2 uppercase tracking-wide">Corporate & Enterprises</h3>
+          <p class="text-[10px] sm:text-xs text-slate-400 font-light leading-relaxed">
+            Brand stories, CSR, leadership, culture films
+          </p>
+        </div>
+
+        <!-- Sector 3 -->
+        <div class="glass-panel p-6 sm:p-8 rounded-xl border border-slate-800 flex flex-col items-center text-center group hover:border-b-2 hover:border-b-gold transition-all duration-300">
+          <span class="text-gold text-3xl sm:text-4xl mb-4 group-hover:scale-110 transition-transform duration-300">
+            <i class="fa-solid fa-seedling"></i>
+          </span>
+          <h3 class="text-sm sm:text-base font-bold text-white mb-2 uppercase tracking-wide">NGOs & Foundations</h3>
+          <p class="text-[10px] sm:text-xs text-slate-400 font-light leading-relaxed">
+            Social impact, community, sustainability narratives
+          </p>
+        </div>
+
+        <!-- Sector 4 -->
+        <div class="glass-panel p-6 sm:p-8 rounded-xl border border-slate-800 flex flex-col items-center text-center group hover:border-b-2 hover:border-b-gold transition-all duration-300">
+          <span class="text-gold text-3xl sm:text-4xl mb-4 group-hover:scale-110 transition-transform duration-300">
+            <i class="fa-solid fa-rocket"></i>
+          </span>
+          <h3 class="text-sm sm:text-base font-bold text-white mb-2 uppercase tracking-wide">Startups & Brands</h3>
+          <p class="text-[10px] sm:text-xs text-slate-400 font-light leading-relaxed">
+            Product launches, growth stories, ad films
+          </p>
+        </div>
+
+        <!-- Sector 5 -->
+        <div class="glass-panel p-6 sm:p-8 rounded-xl border border-slate-800 flex flex-col items-center text-center group hover:border-b-2 hover:border-b-gold transition-all duration-300">
+          <span class="text-gold text-3xl sm:text-4xl mb-4 group-hover:scale-110 transition-transform duration-300">
+            <i class="fa-solid fa-industry"></i>
+          </span>
+          <h3 class="text-sm sm:text-base font-bold text-white mb-2 uppercase tracking-wide">Manufacturing & Industrial</h3>
+          <p class="text-[10px] sm:text-xs text-slate-400 font-light leading-relaxed">
+            Process films, safety, facility showcasing
+          </p>
+        </div>
+
+        <!-- Sector 6 -->
+        <div class="glass-panel p-6 sm:p-8 rounded-xl border border-slate-800 flex flex-col items-center text-center group hover:border-b-2 hover:border-b-gold transition-all duration-300">
+          <span class="text-gold text-3xl sm:text-4xl mb-4 group-hover:scale-110 transition-transform duration-300">
+            <i class="fa-solid fa-graduation-cap"></i>
+          </span>
+          <h3 class="text-sm sm:text-base font-bold text-white mb-2 uppercase tracking-wide">Education & Institutions</h3>
+          <p class="text-[10px] sm:text-xs text-slate-400 font-light leading-relaxed">
+            Training, e-learning, onboarding, thought leadership
+          </p>
+        </div>
+
+        <!-- Sector 7 -->
+        <div class="glass-panel p-6 sm:p-8 rounded-xl border border-slate-800 flex flex-col items-center text-center group hover:border-b-2 hover:border-b-gold transition-all duration-300">
+          <span class="text-gold text-3xl sm:text-4xl mb-4 group-hover:scale-110 transition-transform duration-300">
+            <i class="fa-solid fa-earth-americas"></i>
+          </span>
+          <h3 class="text-sm sm:text-base font-bold text-white mb-2 uppercase tracking-wide">Tourism & Hospitality</h3>
+          <p class="text-[10px] sm:text-xs text-slate-400 font-light leading-relaxed">
+            Destination films, heritage, cultural experiences
+          </p>
+        </div>
+
+        <!-- Sector 8 -->
+        <div class="glass-panel p-6 sm:p-8 rounded-xl border border-slate-800 flex flex-col items-center text-center group hover:border-b-2 hover:border-b-gold transition-all duration-300">
+          <span class="text-gold text-3xl sm:text-4xl mb-4 group-hover:scale-110 transition-transform duration-300">
+            <i class="fa-solid fa-music"></i>
+          </span>
+          <h3 class="text-sm sm:text-base font-bold text-white mb-2 uppercase tracking-wide">Artists & Entertainment</h3>
+          <p class="text-[10px] sm:text-xs text-slate-400 font-light leading-relaxed">
+            Music videos, event coverage, performing arts
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Divider -->
+  <div class="max-w-7xl mx-auto px-4">
+    <div class="section-divider">
+      <div class="section-divider-diamond"></div>
+    </div>
+  </div>
+
+  <!-- 4. SERVICES SECTION -->
+  <section id="services" class="py-10 md:py-16 bg-cinematicNavyDark/50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <!-- Heading -->
+      <div class="text-center max-w-3xl mx-auto mb-20 reveal-on-scroll">
+        <span class="text-xs uppercase tracking-[0.25em] text-gold font-bold">Our Expertise</span>
+        <h2 class="font-cinzel text-3xl sm:text-4xl md:text-5xl font-bold tracking-wide text-white mt-3 mb-6 uppercase section-title-underline">
+          Production Services
+        </h2>
+        <p class="text-sm sm:text-base text-slate-400 font-light leading-relaxed mt-6">
+          From full-length documentaries to corporate showcases, we combine film-grade visual excellence with strategic marketing communication.
+        </p>
+      </div>
+
+      <!-- Services List (13 Alternating Services) -->
+      <div class="space-y-16 lg:space-y-24">
+        
+        <!-- Service 1: Documentary Films (Odd) -->
+        <div class="service-row-container flex flex-col md:flex-row gap-8 lg:gap-12 items-center reveal-on-scroll">
+          <div class="w-full md:w-1/2 order-1 md:order-1">
+            <div class="service-info-card rounded-2xl p-6 sm:p-8">
+              <div class="flex items-center space-x-4 mb-4">
+                <span class="text-gold text-2xl"><i class="fa-solid fa-camera-retro"></i></span>
+                <h3 class="font-cinzel text-lg sm:text-xl font-bold text-white tracking-wide uppercase">Documentary Films</h3>
+              </div>
+              <p class="text-xs sm:text-sm text-slate-300 font-light leading-relaxed mb-6">
+                Research-driven films capturing real stories, heritage, culture, social impact, sustainability, and tourism.
+              </p>
+              <div class="border-t border-slate-800/80 pt-4 mb-4">
+                <span class="text-[10px] text-slate-500 font-bold uppercase tracking-wider block mb-1">Ideal For:</span>
+                <span class="inline-block px-2.5 py-1 text-[10px] font-semibold text-gold/90 bg-gold/5 border border-gold/20 rounded-full">Government, NGOs, CSR, Tourism</span>
+              </div>
+              <div class="flex items-center justify-between mt-8">
+                <span class="text-xs text-slate-500 font-medium">Contact for Pricing</span>
+                <a href="https://wa.me/918657561060?text=Hi%20Tikvah%20Ark%20Productions%2C%20I'm%20interested%20in%20your%20Documentary%20Films%20service." target="_blank" rel="noopener" class="text-xs px-5 py-2.5 btn-gold uppercase tracking-wider">Get Quote</a>
+              </div>
+            </div>
+          </div>
+          <div class="w-full md:w-1/2 order-2 md:order-2">
+            <div class="service-video-container aspect-video w-full rounded-xl overflow-hidden relative" data-video-ids="bt7PQag2Nxg,i9AcOISHQsg">
+              <iframe 
+                class="w-full h-full border-0" 
+                src="https://www.youtube.com/embed/bt7PQag2Nxg?autoplay=1&mute=1&loop=1&playlist=bt7PQag2Nxg&controls=0&showinfo=0&rel=0&enablejsapi=1" 
+                allow="autoplay; encrypted-media" 
+                allowfullscreen
+                loading="lazy"
+                title="Documentary Films Sample Video">
+              </iframe>
+              <div class="absolute inset-0 z-10 flex flex-col items-center justify-center service-video-overlay">
+                <button class="watch-sample-btn flex flex-col items-center justify-center space-y-2 group focus:outline-none" aria-label="Watch Sample Video">
+                  <div class="w-14 h-14 rounded-full bg-gold hover:bg-gold-light flex items-center justify-center text-white transition-all duration-300 group-hover:scale-110 shadow-lg shadow-gold/20">
+                    <i class="fa-solid fa-play text-lg ml-1"></i>
+                  </div>
+                  <span class="text-[10px] uppercase tracking-widest text-gold font-bold transition-colors group-hover:text-gold-light">Watch Sample ▶</span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Service 2: Corporate Films (Even) -->
+        <div class="service-row-container flex flex-col md:flex-row gap-8 lg:gap-12 items-center reveal-on-scroll">
+          <div class="w-full md:w-1/2 order-1 md:order-2">
+            <div class="service-info-card rounded-2xl p-6 sm:p-8">
+              <div class="flex items-center space-x-4 mb-4">
+                <span class="text-gold text-2xl"><i class="fa-solid fa-briefcase"></i></span>
+                <h3 class="font-cinzel text-lg sm:text-xl font-bold text-white tracking-wide uppercase">Corporate Films</h3>
+              </div>
+              <p class="text-xs sm:text-sm text-slate-300 font-light leading-relaxed mb-6">
+                Showcase company vision, achievements, culture, leadership, facilities, and products.
+              </p>
+              <div class="border-t border-slate-800/80 pt-4 mb-4">
+                <span class="text-[10px] text-slate-500 font-bold uppercase tracking-wider block mb-1">Ideal For:</span>
+                <span class="inline-block px-2.5 py-1 text-[10px] font-semibold text-gold/90 bg-gold/5 border border-gold/20 rounded-full">Businesses, Startups, Enterprises</span>
+              </div>
+              <div class="flex items-center justify-between mt-8">
+                <span class="text-xs text-slate-500 font-medium">Contact for Pricing</span>
+                <a href="https://wa.me/918657561060?text=Hi%20Tikvah%20Ark%20Productions%2C%20I'm%20interested%20in%20your%20Corporate%20Films%20service." target="_blank" rel="noopener" class="text-xs px-5 py-2.5 btn-gold uppercase tracking-wider">Get Quote</a>
+              </div>
+            </div>
+          </div>
+          <div class="w-full md:w-1/2 order-2 md:order-1">
+            <div class="service-video-container aspect-video w-full rounded-xl overflow-hidden relative" data-video-ids="hV_EkX04bcM,RdD7ScQp2q0,3wXrdP724fo">
+              <iframe 
+                class="w-full h-full border-0" 
+                src="https://www.youtube.com/embed/hV_EkX04bcM?autoplay=1&mute=1&loop=1&playlist=hV_EkX04bcM&controls=0&showinfo=0&rel=0&enablejsapi=1" 
+                allow="autoplay; encrypted-media" 
+                allowfullscreen
+                loading="lazy"
+                title="Corporate Films Sample Video">
+              </iframe>
+              <div class="absolute inset-0 z-10 flex flex-col items-center justify-center service-video-overlay">
+                <button class="watch-sample-btn flex flex-col items-center justify-center space-y-2 group focus:outline-none" aria-label="Watch Sample Video">
+                  <div class="w-14 h-14 rounded-full bg-gold hover:bg-gold-light flex items-center justify-center text-white transition-all duration-300 group-hover:scale-110 shadow-lg shadow-gold/20">
+                    <i class="fa-solid fa-play text-lg ml-1"></i>
+                  </div>
+                  <span class="text-[10px] uppercase tracking-widest text-gold font-bold transition-colors group-hover:text-gold-light">Watch Sample ▶</span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Service 3: Ad Films / Commercials (Odd) -->
+        <div class="service-row-container flex flex-col md:flex-row gap-8 lg:gap-12 items-center reveal-on-scroll">
+          <div class="w-full md:w-1/2 order-1 md:order-1">
+            <div class="service-info-card rounded-2xl p-6 sm:p-8">
+              <div class="flex items-center space-x-4 mb-4">
+                <span class="text-gold text-2xl"><i class="fa-solid fa-rectangle-ad"></i></span>
+                <h3 class="font-cinzel text-lg sm:text-xl font-bold text-white tracking-wide uppercase">Ad Films / Commercials</h3>
+              </div>
+              <p class="text-xs sm:text-sm text-slate-300 font-light leading-relaxed mb-6">
+                Creative ads for TV, digital distribution, social media campaigns, and product launches.
+              </p>
+              <div class="border-t border-slate-800/80 pt-4 mb-4">
+                <span class="text-[10px] text-slate-500 font-bold uppercase tracking-wider block mb-1">Ideal For:</span>
+                <span class="inline-block px-2.5 py-1 text-[10px] font-semibold text-gold/90 bg-gold/5 border border-gold/20 rounded-full">Brands, Marketing Agencies, Startups</span>
+              </div>
+              <div class="flex items-center justify-between mt-8">
+                <span class="text-xs text-slate-500 font-medium">Contact for Pricing</span>
+                <a href="https://wa.me/918657561060?text=Hi%20Tikvah%20Ark%20Productions%2C%20I'm%20interested%20in%20your%20Ad%20Films%20service." target="_blank" rel="noopener" class="text-xs px-5 py-2.5 btn-gold uppercase tracking-wider">Get Quote</a>
+              </div>
+            </div>
+          </div>
+          <div class="w-full md:w-1/2 order-2 md:order-2">
+            <div class="service-video-container aspect-video w-full rounded-xl overflow-hidden relative" data-video-ids="z6Lz-lMF2Ag,f8EleZfc5rA,_xF9SYVqXOk,YhrNsW_sEq8,qkDuv59z_TI">
+              <iframe 
+                class="w-full h-full border-0" 
+                src="https://www.youtube.com/embed/z6Lz-lMF2Ag?autoplay=1&mute=1&loop=1&playlist=z6Lz-lMF2Ag&controls=0&showinfo=0&rel=0&enablejsapi=1" 
+                allow="autoplay; encrypted-media" 
+                allowfullscreen
+                loading="lazy"
+                title="Ad Films Sample Video">
+              </iframe>
+              <div class="absolute inset-0 z-10 flex flex-col items-center justify-center service-video-overlay">
+                <button class="watch-sample-btn flex flex-col items-center justify-center space-y-2 group focus:outline-none" aria-label="Watch Sample Video">
+                  <div class="w-14 h-14 rounded-full bg-gold hover:bg-gold-light flex items-center justify-center text-white transition-all duration-300 group-hover:scale-110 shadow-lg shadow-gold/20">
+                    <i class="fa-solid fa-play text-lg ml-1"></i>
+                  </div>
+                  <span class="text-[10px] uppercase tracking-widest text-gold font-bold transition-colors group-hover:text-gold-light">Watch Sample ▶</span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Service 4: Industrial Films (Even) -->
+        <div class="service-row-container flex flex-col md:flex-row gap-8 lg:gap-12 items-center reveal-on-scroll">
+          <div class="w-full md:w-1/2 order-1 md:order-2">
+            <div class="service-info-card rounded-2xl p-6 sm:p-8">
+              <div class="flex items-center space-x-4 mb-4">
+                <span class="text-gold text-2xl"><i class="fa-solid fa-industry"></i></span>
+                <h3 class="font-cinzel text-lg sm:text-xl font-bold text-white tracking-wide uppercase">Industrial Films</h3>
+              </div>
+              <p class="text-xs sm:text-sm text-slate-300 font-light leading-relaxed mb-6">
+                Manufacturing processes, plant operations, safety guidelines, technology, and production capabilities.
+              </p>
+              <div class="border-t border-slate-800/80 pt-4 mb-4">
+                <span class="text-[10px] text-slate-500 font-bold uppercase tracking-wider block mb-1">Ideal For:</span>
+                <span class="inline-block px-2.5 py-1 text-[10px] font-semibold text-gold/90 bg-gold/5 border border-gold/20 rounded-full">Factories, Manufacturing Units, Engineers</span>
+              </div>
+              <div class="flex items-center justify-between mt-8">
+                <span class="text-xs text-slate-500 font-medium">Contact for Pricing</span>
+                <a href="https://wa.me/918657561060?text=Hi%20Tikvah%20Ark%20Productions%2C%20I'm%20interested%20in%20your%20Industrial%20Films%20service." target="_blank" rel="noopener" class="text-xs px-5 py-2.5 btn-gold uppercase tracking-wider">Get Quote</a>
+              </div>
+            </div>
+          </div>
+          <div class="w-full md:w-1/2 order-2 md:order-1">
+            <div class="service-video-container aspect-video w-full rounded-xl overflow-hidden relative" data-video-ids="OhL9HEPBRzg">
+              <iframe 
+                class="w-full h-full border-0" 
+                src="https://www.youtube.com/embed/OhL9HEPBRzg?autoplay=1&mute=1&loop=1&playlist=OhL9HEPBRzg&controls=0&showinfo=0&rel=0&enablejsapi=1" 
+                allow="autoplay; encrypted-media" 
+                allowfullscreen
+                loading="lazy"
+                title="Industrial Films Sample Video">
+              </iframe>
+              <div class="absolute inset-0 z-10 flex flex-col items-center justify-center service-video-overlay">
+                <button class="watch-sample-btn flex flex-col items-center justify-center space-y-2 group focus:outline-none" aria-label="Watch Sample Video">
+                  <div class="w-14 h-14 rounded-full bg-gold hover:bg-gold-light flex items-center justify-center text-white transition-all duration-300 group-hover:scale-110 shadow-lg shadow-gold/20">
+                    <i class="fa-solid fa-play text-lg ml-1"></i>
+                  </div>
+                  <span class="text-[10px] uppercase tracking-widest text-gold font-bold transition-colors group-hover:text-gold-light">Watch Sample ▶</span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Service 5: Vertical Films & Social Media Content (Odd) -->
+        <div class="service-row-container flex flex-col md:flex-row gap-8 lg:gap-12 items-center reveal-on-scroll">
+          <div class="w-full md:w-1/2 order-1 md:order-1">
+            <div class="service-info-card rounded-2xl p-6 sm:p-8">
+              <div class="flex items-center space-x-4 mb-4">
+                <span class="text-gold text-2xl"><i class="fa-solid fa-mobile-screen-button"></i></span>
+                <h3 class="font-cinzel text-lg sm:text-xl font-bold text-white tracking-wide uppercase">Vertical Films & Social Media Content</h3>
+              </div>
+              <p class="text-xs sm:text-sm text-slate-300 font-light leading-relaxed mb-6">
+                Short-form mobile-first cinematic content designed for Reels, Shorts, and TikTok campaigns.
+              </p>
+              <div class="border-t border-slate-800/80 pt-4 mb-4">
+                <span class="text-[10px] text-slate-500 font-bold uppercase tracking-wider block mb-1">Ideal For:</span>
+                <span class="inline-block px-2.5 py-1 text-[10px] font-semibold text-gold/90 bg-gold/5 border border-gold/20 rounded-full">Brands, Influencers, Marketing Campaigns</span>
+              </div>
+              <div class="flex items-center justify-between mt-8">
+                <span class="text-xs text-slate-500 font-medium">Contact for Pricing</span>
+                <a href="https://wa.me/918657561060?text=Hi%20Tikvah%20Ark%20Productions%2C%20I'm%20interested%20in%20your%20Vertical%20and%20Social%20Media%20service." target="_blank" rel="noopener" class="text-xs px-5 py-2.5 btn-gold uppercase tracking-wider">Get Quote</a>
+              </div>
+            </div>
+          </div>
+          <div class="w-full md:w-1/2 order-2 md:order-2">
+            <div class="service-video-container aspect-video w-full rounded-xl overflow-hidden relative" data-video-ids="IPmx88O5W_o,UcznDP5BbZM,GCDityiv_EA,v83TzABRzw8,I3I-qSo511c,3srwqF-PRSE">
+              <iframe 
+                class="w-full h-full border-0" 
+                src="https://www.youtube.com/embed/IPmx88O5W_o?autoplay=1&mute=1&loop=1&playlist=IPmx88O5W_o&controls=0&showinfo=0&rel=0&enablejsapi=1" 
+                allow="autoplay; encrypted-media" 
+                allowfullscreen
+                loading="lazy"
+                title="Vertical & Social Films Sample Video">
+              </iframe>
+              <div class="absolute inset-0 z-10 flex flex-col items-center justify-center service-video-overlay">
+                <button class="watch-sample-btn flex flex-col items-center justify-center space-y-2 group focus:outline-none" aria-label="Watch Sample Video">
+                  <div class="w-14 h-14 rounded-full bg-gold hover:bg-gold-light flex items-center justify-center text-white transition-all duration-300 group-hover:scale-110 shadow-lg shadow-gold/20">
+                    <i class="fa-solid fa-play text-lg ml-1"></i>
+                  </div>
+                  <span class="text-[10px] uppercase tracking-widest text-gold font-bold transition-colors group-hover:text-gold-light">Watch Sample ▶</span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Service 6: CSR & Impact Films (Even) -->
+        <div class="service-row-container flex flex-col md:flex-row gap-8 lg:gap-12 items-center reveal-on-scroll">
+          <div class="w-full md:w-1/2 order-1 md:order-2">
+            <div class="service-info-card rounded-2xl p-6 sm:p-8">
+              <div class="flex items-center space-x-4 mb-4">
+                <span class="text-gold text-2xl"><i class="fa-solid fa-handshake-angle"></i></span>
+                <h3 class="font-cinzel text-lg sm:text-xl font-bold text-white tracking-wide uppercase">CSR & Impact Films</h3>
+              </div>
+              <p class="text-xs sm:text-sm text-slate-300 font-light leading-relaxed mb-6">
+                Community development, sustainability, environmental conservation, and social legacy stories.
+              </p>
+              <div class="border-t border-slate-800/80 pt-4 mb-4">
+                <span class="text-[10px] text-slate-500 font-bold uppercase tracking-wider block mb-1">Ideal For:</span>
+                <span class="inline-block px-2.5 py-1 text-[10px] font-semibold text-gold/90 bg-gold/5 border border-gold/20 rounded-full">Corporates, NGOs, Foundations</span>
+              </div>
+              <div class="flex items-center justify-between mt-8">
+                <span class="text-xs text-slate-500 font-medium">Contact for Pricing</span>
+                <a href="https://wa.me/918657561060?text=Hi%20Tikvah%20Ark%20Productions%2C%20I'm%20interested%20in%20your%20CSR%20and%20Impact%20Films%20service." target="_blank" rel="noopener" class="text-xs px-5 py-2.5 btn-gold uppercase tracking-wider">Get Quote</a>
+              </div>
+            </div>
+          </div>
+          <div class="w-full md:w-1/2 order-2 md:order-1">
+            <div class="service-video-container aspect-video w-full rounded-xl overflow-hidden relative" data-video-ids="OenNg8Id0rs,NAom0d3eQ2g,1gydHNvwO2U,c2L3OWdgykc,gwxzL6-ETBg,YqC86_PCyuc">
+              <iframe 
+                class="w-full h-full border-0" 
+                src="https://www.youtube.com/embed/OenNg8Id0rs?autoplay=1&mute=1&loop=1&playlist=OenNg8Id0rs&controls=0&showinfo=0&rel=0&enablejsapi=1" 
+                allow="autoplay; encrypted-media" 
+                allowfullscreen
+                loading="lazy"
+                title="CSR & Impact Films Sample Video">
+              </iframe>
+              <div class="absolute inset-0 z-10 flex flex-col items-center justify-center service-video-overlay">
+                <button class="watch-sample-btn flex flex-col items-center justify-center space-y-2 group focus:outline-none" aria-label="Watch Sample Video">
+                  <div class="w-14 h-14 rounded-full bg-gold hover:bg-gold-light flex items-center justify-center text-white transition-all duration-300 group-hover:scale-110 shadow-lg shadow-gold/20">
+                    <i class="fa-solid fa-play text-lg ml-1"></i>
+                  </div>
+                  <span class="text-[10px] uppercase tracking-widest text-gold font-bold transition-colors group-hover:text-gold-light">Watch Sample ▶</span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Service 7: Tourism & Heritage Films (Odd) -->
+        <div class="service-row-container flex flex-col md:flex-row gap-8 lg:gap-12 items-center reveal-on-scroll">
+          <div class="w-full md:w-1/2 order-1 md:order-1">
+            <div class="service-info-card rounded-2xl p-6 sm:p-8">
+              <div class="flex items-center space-x-4 mb-4">
+                <span class="text-gold text-2xl"><i class="fa-solid fa-map"></i></span>
+                <h3 class="font-cinzel text-lg sm:text-xl font-bold text-white tracking-wide uppercase">Tourism & Heritage Films</h3>
+              </div>
+              <p class="text-xs sm:text-sm text-slate-300 font-light leading-relaxed mb-6">
+                Cultural heritage showcases, landmarks documentation, local travel, and hospitality experiences.
+              </p>
+              <div class="border-t border-slate-800/80 pt-4 mb-4">
+                <span class="text-[10px] text-slate-500 font-bold uppercase tracking-wider block mb-1">Ideal For:</span>
+                <span class="inline-block px-2.5 py-1 text-[10px] font-semibold text-gold/90 bg-gold/5 border border-gold/20 rounded-full">Tourism Departments, Travel Brands, Hotels</span>
+              </div>
+              <div class="flex items-center justify-between mt-8">
+                <span class="text-xs text-slate-500 font-medium">Contact for Pricing</span>
+                <a href="https://wa.me/918657561060?text=Hi%20Tikvah%20Ark%20Productions%2C%20I'm%20interested%20in%20your%20Tourism%20and%20Heritage%20Films%20service." target="_blank" rel="noopener" class="text-xs px-5 py-2.5 btn-gold uppercase tracking-wider">Get Quote</a>
+              </div>
+            </div>
+          </div>
+          <div class="w-full md:w-1/2 order-2 md:order-2">
+            <div class="service-video-container aspect-video w-full rounded-xl overflow-hidden relative" data-video-ids="Q97-OmNdbj8,K5YYZUprQTY">
+              <iframe 
+                class="w-full h-full border-0" 
+                src="https://www.youtube.com/embed/Q97-OmNdbj8?autoplay=1&mute=1&loop=1&playlist=Q97-OmNdbj8&controls=0&showinfo=0&rel=0&enablejsapi=1" 
+                allow="autoplay; encrypted-media" 
+                allowfullscreen
+                loading="lazy"
+                title="Tourism & Heritage Films Sample Video">
+              </iframe>
+              <div class="absolute inset-0 z-10 flex flex-col items-center justify-center service-video-overlay">
+                <button class="watch-sample-btn flex flex-col items-center justify-center space-y-2 group focus:outline-none" aria-label="Watch Sample Video">
+                  <div class="w-14 h-14 rounded-full bg-gold hover:bg-gold-light flex items-center justify-center text-white transition-all duration-300 group-hover:scale-110 shadow-lg shadow-gold/20">
+                    <i class="fa-solid fa-play text-lg ml-1"></i>
+                  </div>
+                  <span class="text-[10px] uppercase tracking-widest text-gold font-bold transition-colors group-hover:text-gold-light">Watch Sample ▶</span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Service 8: Event Coverage Films (Even) -->
+        <div class="service-row-container flex flex-col md:flex-row gap-8 lg:gap-12 items-center reveal-on-scroll">
+          <div class="w-full md:w-1/2 order-1 md:order-2">
+            <div class="service-info-card rounded-2xl p-6 sm:p-8">
+              <div class="flex items-center space-x-4 mb-4">
+                <span class="text-gold text-2xl"><i class="fa-solid fa-microphone-lines"></i></span>
+                <h3 class="font-cinzel text-lg sm:text-xl font-bold text-white tracking-wide uppercase">Event Coverage Films</h3>
+              </div>
+              <p class="text-xs sm:text-sm text-slate-300 font-light leading-relaxed mb-6">
+                Corporate summits, exhibitions, brand launches, cultural festivals, and award ceremonies.
+              </p>
+              <div class="border-t border-slate-800/80 pt-4 mb-4">
+                <span class="text-[10px] text-slate-500 font-bold uppercase tracking-wider block mb-1">Ideal For:</span>
+                <span class="inline-block px-2.5 py-1 text-[10px] font-semibold text-gold/90 bg-gold/5 border border-gold/20 rounded-full">Corporates, Event Organizers, Institutions</span>
+              </div>
+              <div class="flex items-center justify-between mt-8">
+                <span class="text-xs text-slate-500 font-medium">Contact for Pricing</span>
+                <a href="https://wa.me/918657561060?text=Hi%20Tikvah%20Ark%20Productions%2C%20I'm%20interested%20in%20your%20Event%20Coverage%20Films%20service." target="_blank" rel="noopener" class="text-xs px-5 py-2.5 btn-gold uppercase tracking-wider">Get Quote</a>
+              </div>
+            </div>
+          </div>
+          <div class="w-full md:w-1/2 order-2 md:order-1">
+            <div class="service-video-container aspect-video w-full rounded-xl overflow-hidden relative" data-video-id="CXs_v35-Slo">
+              <iframe 
+                class="w-full h-full border-0" 
+                src="https://www.youtube.com/embed/CXs_v35-Slo?autoplay=1&mute=1&loop=1&playlist=CXs_v35-Slo&controls=0&showinfo=0&rel=0&enablejsapi=1" 
+                allow="autoplay; encrypted-media" 
+                allowfullscreen
+                loading="lazy"
+                title="Event Coverage Films Sample Video">
+              </iframe>
+              <div class="absolute inset-0 z-10 flex flex-col items-center justify-center service-video-overlay">
+                <button class="watch-sample-btn flex flex-col items-center justify-center space-y-2 group focus:outline-none" aria-label="Watch Sample Video">
+                  <div class="w-14 h-14 rounded-full bg-gold hover:bg-gold-light flex items-center justify-center text-white transition-all duration-300 group-hover:scale-110 shadow-lg shadow-gold/20">
+                    <i class="fa-solid fa-play text-lg ml-1"></i>
+                  </div>
+                  <span class="text-[10px] uppercase tracking-widest text-gold font-bold transition-colors group-hover:text-gold-light">Watch Sample ▶</span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Service 9: Training & Educational Videos (Odd) -->
+        <div class="service-row-container flex flex-col md:flex-row gap-8 lg:gap-12 items-center reveal-on-scroll">
+          <div class="w-full md:w-1/2 order-1 md:order-1">
+            <div class="service-info-card rounded-2xl p-6 sm:p-8">
+              <div class="flex items-center space-x-4 mb-4">
+                <span class="text-gold text-2xl"><i class="fa-solid fa-graduation-cap"></i></span>
+                <h3 class="font-cinzel text-lg sm:text-xl font-bold text-white tracking-wide uppercase">Training & Educational</h3>
+              </div>
+              <p class="text-xs sm:text-sm text-slate-300 font-light leading-relaxed mb-6">
+                Employee training, corporate onboarding, interactive e-learning modules, and compliance tutorials.
+              </p>
+              <div class="border-t border-slate-800/80 pt-4 mb-4">
+                <span class="text-[10px] text-slate-500 font-bold uppercase tracking-wider block mb-1">Ideal For:</span>
+                <span class="inline-block px-2.5 py-1 text-[10px] font-semibold text-gold/90 bg-gold/5 border border-gold/20 rounded-full">Corporates, Academies, Schools</span>
+              </div>
+              <div class="flex items-center justify-between mt-8">
+                <span class="text-xs text-slate-500 font-medium">Contact for Pricing</span>
+                <a href="https://wa.me/918657561060?text=Hi%20Tikvah%20Ark%20Productions%2C%20I'm%20interested%20in%20your%20Training%20and%20Educational%20Videos%20service." target="_blank" rel="noopener" class="text-xs px-5 py-2.5 btn-gold uppercase tracking-wider">Get Quote</a>
+              </div>
+            </div>
+          </div>
+          <div class="w-full md:w-1/2 order-2 md:order-2">
+            <div class="service-video-container aspect-video w-full rounded-xl overflow-hidden relative" data-video-id="c2L3OWdgykc">
+              <iframe 
+                class="w-full h-full border-0" 
+                src="https://www.youtube.com/embed/c2L3OWdgykc?autoplay=1&mute=1&loop=1&playlist=c2L3OWdgykc&controls=0&showinfo=0&rel=0&enablejsapi=1" 
+                allow="autoplay; encrypted-media" 
+                allowfullscreen
+                loading="lazy"
+                title="Training & Educational Videos Sample Video">
+              </iframe>
+              <div class="absolute inset-0 z-10 flex flex-col items-center justify-center service-video-overlay">
+                <button class="watch-sample-btn flex flex-col items-center justify-center space-y-2 group focus:outline-none" aria-label="Watch Sample Video">
+                  <div class="w-14 h-14 rounded-full bg-gold hover:bg-gold-light flex items-center justify-center text-white transition-all duration-300 group-hover:scale-110 shadow-lg shadow-gold/20">
+                    <i class="fa-solid fa-play text-lg ml-1"></i>
+                  </div>
+                  <span class="text-[10px] uppercase tracking-widest text-gold font-bold transition-colors group-hover:text-gold-light">Watch Sample ▶</span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Service 10: Post-Production Services (Even) -->
+        <div class="service-row-container flex flex-col md:flex-row gap-8 lg:gap-12 items-center reveal-on-scroll">
+          <div class="w-full md:w-1/2 order-1 md:order-2">
+            <div class="service-info-card rounded-2xl p-6 sm:p-8">
+              <div class="flex items-center space-x-4 mb-4">
+                <span class="text-gold text-2xl"><i class="fa-solid fa-sliders"></i></span>
+                <h3 class="font-cinzel text-lg sm:text-xl font-bold text-white tracking-wide uppercase">Post-Production</h3>
+              </div>
+              <p class="text-xs sm:text-sm text-slate-300 font-light leading-relaxed mb-6">
+                Cinematic video editing, color grading (LUT workflows), sound synthesis, subtitles, and mastering.
+              </p>
+              <div class="border-t border-slate-800/80 pt-4 mb-4">
+                <span class="text-[10px] text-slate-500 font-bold uppercase tracking-wider block mb-1">Ideal For:</span>
+                <span class="inline-block px-2.5 py-1 text-[10px] font-semibold text-gold/90 bg-gold/5 border border-gold/20 rounded-full">Directors, Production Houses, Brands</span>
+              </div>
+              <div class="flex items-center justify-between mt-8">
+                <span class="text-xs text-slate-500 font-medium">Contact for Pricing</span>
+                <a href="https://wa.me/918657561060?text=Hi%20Tikvah%20Ark%20Productions%2C%20I'm%20interested%20in%20your%20Post-Production%20Services%20service." target="_blank" rel="noopener" class="text-xs px-5 py-2.5 btn-gold uppercase tracking-wider">Get Quote</a>
+              </div>
+            </div>
+          </div>
+          <div class="w-full md:w-1/2 order-2 md:order-1">
+            <div class="service-video-container aspect-video w-full rounded-xl overflow-hidden relative" data-video-id="frRtaLJ5-Ls">
+              <iframe 
+                class="w-full h-full border-0" 
+                src="https://www.youtube.com/embed/frRtaLJ5-Ls?autoplay=1&mute=1&loop=1&playlist=frRtaLJ5-Ls&controls=0&showinfo=0&rel=0&enablejsapi=1" 
+                allow="autoplay; encrypted-media" 
+                allowfullscreen
+                loading="lazy"
+                title="Post-Production Services Sample Video">
+              </iframe>
+              <div class="absolute inset-0 z-10 flex flex-col items-center justify-center service-video-overlay">
+                <button class="watch-sample-btn flex flex-col items-center justify-center space-y-2 group focus:outline-none" aria-label="Watch Sample Video">
+                  <div class="w-14 h-14 rounded-full bg-gold hover:bg-gold-light flex items-center justify-center text-white transition-all duration-300 group-hover:scale-110 shadow-lg shadow-gold/20">
+                    <i class="fa-solid fa-play text-lg ml-1"></i>
+                  </div>
+                  <span class="text-[10px] uppercase tracking-widest text-gold font-bold transition-colors group-hover:text-gold-light">Watch Sample ▶</span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Service 11: Podcast Production (Odd) -->
+        <div class="service-row-container flex flex-col md:flex-row gap-8 lg:gap-12 items-center reveal-on-scroll">
+          <div class="w-full md:w-1/2 order-1 md:order-1">
+            <div class="service-info-card rounded-2xl p-6 sm:p-8">
+              <div class="flex items-center space-x-4 mb-4">
+                <span class="text-gold text-2xl"><i class="fa-solid fa-podcast"></i></span>
+                <h3 class="font-cinzel text-lg sm:text-xl font-bold text-white tracking-wide uppercase">Podcast Production</h3>
+              </div>
+              <p class="text-xs sm:text-sm text-slate-300 font-light leading-relaxed mb-6">
+                Conversational, story-driven podcast content blending visual production with authentic dialogue — built for brand storytelling, leadership voices, and thought leadership.
+              </p>
+              <div class="border-t border-slate-800/80 pt-4 mb-4">
+                <span class="text-[10px] text-slate-500 font-bold uppercase tracking-wider block mb-1">Ideal For:</span>
+                <span class="inline-block px-2.5 py-1 text-[10px] font-semibold text-gold/90 bg-gold/5 border border-gold/20 rounded-full">Brands, professionals, thought leaders, founders</span>
+              </div>
+              <div class="flex items-center justify-between mt-8">
+                <span class="text-xs text-slate-500 font-medium">Contact for Pricing</span>
+                <a href="https://wa.me/918657561060?text=Hi%20Tikvah%20Ark%20Productions%2C%20I'm%20interested%20in%20your%20Podcast%20Production%20service." target="_blank" rel="noopener" class="text-xs px-5 py-2.5 btn-gold uppercase tracking-wider">Get Quote</a>
+              </div>
+            </div>
+          </div>
+          <div class="w-full md:w-1/2 order-2 md:order-2">
+            <div class="service-video-container aspect-video w-full rounded-xl overflow-hidden relative" data-video-ids="f8VP7QLQUSc,ObBEsREaI2c">
+              <iframe 
+                class="w-full h-full border-0" 
+                src="https://www.youtube.com/embed/f8VP7QLQUSc?autoplay=1&mute=1&loop=1&playlist=f8VP7QLQUSc&controls=0&showinfo=0&rel=0&enablejsapi=1" 
+                allow="autoplay; encrypted-media" 
+                allowfullscreen
+                loading="lazy"
+                title="Podcast Production Sample Video">
+              </iframe>
+              <div class="absolute inset-0 z-10 flex flex-col items-center justify-center service-video-overlay">
+                <button class="watch-sample-btn flex flex-col items-center justify-center space-y-2 group focus:outline-none" aria-label="Watch Sample Video">
+                  <div class="w-14 h-14 rounded-full bg-gold hover:bg-gold-light flex items-center justify-center text-white transition-all duration-300 group-hover:scale-110 shadow-lg shadow-gold/20">
+                    <i class="fa-solid fa-play text-lg ml-1"></i>
+                  </div>
+                  <span class="text-[10px] uppercase tracking-widest text-gold font-bold transition-colors group-hover:text-gold-light">Watch Sample ▶</span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+          <div class="w-full md:w-1/2 order-2 md:order-1">
+            <div class="service-video-container aspect-video w-full rounded-xl overflow-hidden relative" data-video-ids="f8VP7QLQUSc,ObBEsREaI2c">
+              <iframe 
+                class="w-full h-full border-0" 
+                src="https://www.youtube.com/embed/f8VP7QLQUSc?autoplay=1&mute=1&loop=1&playlist=f8VP7QLQUSc&controls=0&showinfo=0&rel=0&enablejsapi=1" 
+                allow="autoplay; encrypted-media" 
+                allowfullscreen
+                loading="lazy"
+                title="Podcast Production Sample Video">
+              </iframe>
+              <div class="absolute inset-0 z-10 flex flex-col items-center justify-center service-video-overlay">
+                <button class="watch-sample-btn flex flex-col items-center justify-center space-y-2 group focus:outline-none" aria-label="Watch Sample Video">
+                  <div class="w-14 h-14 rounded-full bg-gold hover:bg-gold-light flex items-center justify-center text-white transition-all duration-300 group-hover:scale-110 shadow-lg shadow-gold/20">
+                    <i class="fa-solid fa-play text-lg ml-1"></i>
+                  </div>
+                  <span class="text-[10px] uppercase tracking-widest text-gold font-bold transition-colors group-hover:text-gold-light">Watch Sample ▶</span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Toggle button for mobile scroll-fatigue prevention -->
+      <div class="text-center mt-16 md:hidden">
+        <button id="toggle-services-btn" class="w-full sm:w-auto px-8 py-3.5 btn-gold-outline text-xs uppercase tracking-wider font-semibold">
+          Show All Services
+        </button>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Divider -->
+  <div class="max-w-7xl mx-auto px-4">
+    <div class="section-divider">
+      <div class="section-divider-diamond"></div>
+    </div>
+  </div>
+
+  <!-- 4B. OUR PROCESS SECTION -->
+  <section id="process" class="py-10 md:py-16 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 reveal-on-scroll">
+    <!-- Section Title -->
+    <div class="text-center max-w-3xl mx-auto mb-16" data-aos="fade-up">
+      <span class="text-xs uppercase tracking-[0.25em] text-gold font-bold">Execution Workflow</span>
+      <h2 class="font-cinzel text-3xl sm:text-4xl md:text-5xl font-bold tracking-wide text-white mt-3 mb-6 uppercase section-title-underline">
+        Our Process
+      </h2>
+      <p class="text-sm sm:text-base text-slate-400 font-light mt-6">
+        A structured, collaborative approach from concept to final screening.
+      </p>
+    </div>
+
+    <!-- Timeline Grid / Flow -->
+    <div class="relative flex flex-col md:flex-row justify-between items-stretch md:items-start gap-8 md:gap-4 mt-12">
+      
+      <!-- Step 1 -->
+      <div class="process-step stagger-item" data-aos="fade-up" data-aos-delay="100">
+        <div class="process-line hidden md:block"></div>
+        <div class="process-circle">1</div>
+        <h3 class="text-sm sm:text-base font-bold text-white uppercase tracking-wide mb-2">Discovery & Brief</h3>
+        <p class="text-xs text-slate-400 font-light max-w-[200px] mx-auto leading-relaxed">
+          Aligning on vision, objectives, brand voice, and deliverables.
+        </p>
+      </div>
+
+      <!-- Step 2 -->
+      <div class="process-step stagger-item" data-aos="fade-up" data-aos-delay="200">
+        <div class="process-line hidden md:block"></div>
+        <div class="process-circle">2</div>
+        <h3 class="text-sm sm:text-base font-bold text-white uppercase tracking-wide mb-2">Concept & Scripting</h3>
+        <p class="text-xs text-slate-400 font-light max-w-[200px] mx-auto leading-relaxed">
+          Crafting the narrative outline, storyboards, and final script screenplays.
+        </p>
+      </div>
+
+      <!-- Step 3 -->
+      <div class="process-step stagger-item" data-aos="fade-up" data-aos-delay="300">
+        <div class="process-line hidden md:block"></div>
+        <div class="process-circle">3</div>
+        <h3 class="text-sm sm:text-base font-bold text-white uppercase tracking-wide mb-2">Pre-Production</h3>
+        <p class="text-xs text-slate-400 font-light max-w-[200px] mx-auto leading-relaxed">
+          Casting, location scouting, equipment prep, and scheduling logistics.
+        </p>
+      </div>
+
+      <!-- Step 4 -->
+      <div class="process-step stagger-item" data-aos="fade-up" data-aos-delay="400">
+        <div class="process-line hidden md:block"></div>
+        <div class="process-circle">4</div>
+        <h3 class="text-sm sm:text-base font-bold text-white uppercase tracking-wide mb-2">Filming & Direction</h3>
+        <p class="text-xs text-slate-400 font-light max-w-[200px] mx-auto leading-relaxed">
+          Directing and capturing scenes with cinema-grade tech on location or studio.
+        </p>
+      </div>
+
+      <!-- Step 5 -->
+      <div class="process-step stagger-item" data-aos="fade-up" data-aos-delay="500">
+        <div class="process-line hidden md:block"></div>
+        <div class="process-circle">5</div>
+        <h3 class="text-sm sm:text-base font-bold text-white uppercase tracking-wide mb-2">Post-Production & VFX</h3>
+        <p class="text-xs text-slate-400 font-light max-w-[200px] mx-auto leading-relaxed">
+          Editing, color grading, sound composition, and professional VFX additions.
+        </p>
+      </div>
+
+      <!-- Step 6 -->
+      <div class="process-step stagger-item" data-aos="fade-up" data-aos-delay="600">
+        <div class="process-circle">6</div>
+        <h3 class="text-sm sm:text-base font-bold text-white uppercase tracking-wide mb-2">Delivery & Distribution</h3>
+        <p class="text-xs text-slate-400 font-light max-w-[200px] mx-auto leading-relaxed">
+          Exporting optimized screen formats and assistance with deployment.
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Divider -->
+  <div class="max-w-7xl mx-auto px-4">
+    <div class="section-divider">
+      <div class="section-divider-diamond"></div>
+    </div>
+  </div>
+
+  <!-- 4C. SHOWREEL SECTION -->
+  <section id="showreel" class="py-10 md:py-16 bg-cinematicNavyLight/10 border-y border-gold/40 reveal-on-scroll">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <!-- Section Title -->
+      <div class="text-center max-w-3xl mx-auto mb-16" data-aos="fade-up">
+        <span class="text-xs uppercase tracking-[0.25em] text-gold font-bold">Featured Video</span>
+        <h2 class="font-cinzel text-3xl sm:text-4xl md:text-5xl font-bold tracking-wide text-white mt-3 mb-6 uppercase section-title-underline">
+          Our Showreel
+        </h2>
+        <p class="text-sm sm:text-base text-slate-400 font-light mt-6">
+          A collection of our finest cinematic work across documentaries, corporate films, brand stories, and beyond.
+        </p>
+      </div>
+
+      <!-- Main Showreel Player -->
+      <div class="max-w-[900px] mx-auto aspect-video rounded-2xl overflow-hidden border border-gold/30 shadow-2xl relative mb-4 group/showreel cursor-pointer" data-aos="zoom-in">
+        <video 
+          id="main-showreel-video"
+          poster="assets/logo.png"
+          class="w-full h-full object-cover">
+          <source src="assets/video/showreel.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <!-- Premium Custom Play Overlay -->
+        <div id="showreel-video-overlay" class="absolute inset-0 z-10 bg-slate-950/60 backdrop-blur-[3px] flex flex-col items-center justify-center transition-all duration-500 hover:bg-slate-950/45">
+          <div class="w-20 h-20 rounded-full bg-gold text-slate-950 flex items-center justify-center hover:scale-110 hover:bg-gold-light transition-all duration-300 shadow-xl shadow-gold/30 relative">
+            <div class="absolute inset-0 rounded-full bg-gold/40 animate-ping"></div>
+            <i class="fa-solid fa-play text-2xl ml-1.5 z-10"></i>
+          </div>
+          <span class="text-xs uppercase tracking-[0.25em] text-white font-bold mt-6 group-hover/showreel:text-gold transition-colors">Play Showreel</span>
+        </div>
+      </div>
+      <p class="text-center text-xs sm:text-sm text-slate-400 font-light italic mb-12">
+        Watch our complete showreel — a glimpse into the stories we tell.
+      </p>
+
+      <!-- Highlight Clips Grid -->
+      <div class="max-w-[900px] mx-auto">
+        <h3 class="text-xs font-bold text-gold uppercase tracking-[0.2em] text-center mb-8">Showreel Highlights</h3>
+        <div class="grid grid-cols-1 sm:grid-cols-3 gap-6">
+          
+          <!-- Highlight 1 -->
+          <div class="portfolio-card-trigger cursor-pointer group stagger-item" data-video-id="bt7PQag2Nxg" data-aos="fade-up" data-aos-delay="100">
+            <div class="aspect-video w-full rounded-xl overflow-hidden relative border border-slate-800 group-hover:border-gold/50 transition-colors duration-300">
+              <img src="https://img.youtube.com/vi/bt7PQag2Nxg/hqdefault.jpg" alt="SSPM Medical College Highlight" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+              <div class="absolute inset-0 bg-slate-950/40 flex items-center justify-center group-hover:bg-slate-950/20 transition-all">
+                <div class="w-10 h-10 rounded-full bg-gold/90 text-slate-950 flex items-center justify-center text-xs group-hover:scale-110 transition-transform">
+                  <i class="fa-solid fa-play ml-0.5"></i>
+                </div>
+              </div>
+            </div>
+            <h4 class="text-xs font-bold text-white uppercase tracking-wider mt-3 group-hover:text-gold transition-colors text-center">SSPM Medical College</h4>
+          </div>
+
+          <!-- Highlight 2 -->
+          <div class="portfolio-card-trigger cursor-pointer group stagger-item" data-video-id="NAom0d3eQ2g" data-aos="fade-up" data-aos-delay="200">
+            <div class="aspect-video w-full rounded-xl overflow-hidden relative border border-slate-800 group-hover:border-gold/50 transition-colors duration-300">
+              <img src="https://img.youtube.com/vi/NAom0d3eQ2g/hqdefault.jpg" alt="Mahindra Susten Highlight" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+              <div class="absolute inset-0 bg-slate-950/40 flex items-center justify-center group-hover:bg-slate-950/20 transition-all">
+                <div class="w-10 h-10 rounded-full bg-gold/90 text-slate-950 flex items-center justify-center text-xs group-hover:scale-110 transition-transform">
+                  <i class="fa-solid fa-play ml-0.5"></i>
+                </div>
+              </div>
+            </div>
+            <h4 class="text-xs font-bold text-white uppercase tracking-wider mt-3 group-hover:text-gold transition-colors text-center">Mahindra Susten</h4>
+          </div>
+
+          <!-- Highlight 3 -->
+          <div class="portfolio-card-trigger cursor-pointer group stagger-item" data-video-id="3wXrdP724fo" data-aos="fade-up" data-aos-delay="300">
+            <div class="aspect-video w-full rounded-xl overflow-hidden relative border border-slate-800 group-hover:border-gold/50 transition-colors duration-300">
+              <img src="https://img.youtube.com/vi/3wXrdP724fo/hqdefault.jpg" alt="Susten Vision Highlight" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+              <div class="absolute inset-0 bg-slate-950/40 flex items-center justify-center group-hover:bg-slate-950/20 transition-all">
+                <div class="w-10 h-10 rounded-full bg-gold/90 text-slate-950 flex items-center justify-center text-xs group-hover:scale-110 transition-transform">
+                  <i class="fa-solid fa-play ml-0.5"></i>
+                </div>
+              </div>
+            </div>
+            <h4 class="text-xs font-bold text-white uppercase tracking-wider mt-3 group-hover:text-gold transition-colors text-center">Mahindra Susten CEO</h4>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Divider -->
+  <div class="max-w-7xl mx-auto px-4">
+    <div class="section-divider">
+      <div class="section-divider-diamond"></div>
+    </div>
+  </div>
+
+  <!-- 5. PORTFOLIO SECTION -->
+  <section id="portfolio" class="py-10 md:py-16 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 reveal-on-scroll">
+    
+    <!-- Heading -->
+    <div class="text-center max-w-3xl mx-auto mb-16" data-aos="fade-up">
+      <span class="text-xs uppercase tracking-[0.25em] text-gold font-bold">Our Work</span>
+      <h2 class="font-cinzel text-3xl sm:text-4xl md:text-5xl font-bold tracking-wide text-white mt-3 mb-6 uppercase section-title-underline">
+        Video Portfolio
+      </h2>
+      <p class="text-sm sm:text-base text-slate-400 font-light mt-6">
+        A selection of our cinematic projects. Click to play samples instantly.
+      </p>
+
+      <!-- Category Filter Tabs -->
+      <div class="flex overflow-x-auto md:flex-wrap items-center md:justify-center gap-3 mt-8 pb-3 scrollbar-hide" style="-webkit-overflow-scrolling: touch; scrollbar-width: none;">
+        <button class="portfolio-filter-btn px-5 py-2 text-[10px] font-bold uppercase tracking-wider bg-gold text-slate-950 border border-gold rounded-full transition-all duration-300 whitespace-nowrap active-filter" data-filter="all">All</button>
+        <button class="portfolio-filter-btn px-5 py-2 text-[10px] font-bold uppercase tracking-wider border border-gold/40 text-gold hover:bg-gold/5 rounded-full transition-all duration-300 whitespace-nowrap" data-filter="documentary">Documentary</button>
+        <button class="portfolio-filter-btn px-5 py-2 text-[10px] font-bold uppercase tracking-wider border border-gold/40 text-gold hover:bg-gold/5 rounded-full transition-all duration-300 whitespace-nowrap" data-filter="corporate">Corporate</button>
+        <button class="portfolio-filter-btn px-5 py-2 text-[10px] font-bold uppercase tracking-wider border border-gold/40 text-gold hover:bg-gold/5 rounded-full transition-all duration-300 whitespace-nowrap" data-filter="industrial">Industrial</button>
+        <button class="portfolio-filter-btn px-5 py-2 text-[10px] font-bold uppercase tracking-wider border border-gold/40 text-gold hover:bg-gold/5 rounded-full transition-all duration-300 whitespace-nowrap" data-filter="csr">CSR & Impact</button>
+        <button class="portfolio-filter-btn px-5 py-2 text-[10px] font-bold uppercase tracking-wider border border-gold/40 text-gold hover:bg-gold/5 rounded-full transition-all duration-300 whitespace-nowrap" data-filter="ad-films">Ad Films</button>
+        <button class="portfolio-filter-btn px-5 py-2 text-[10px] font-bold uppercase tracking-wider border border-gold/40 text-gold hover:bg-gold/5 rounded-full transition-all duration-300 whitespace-nowrap" data-filter="vertical-social">Vertical & Social</button>
+        <button class="portfolio-filter-btn px-5 py-2 text-[10px] font-bold uppercase tracking-wider border border-gold/40 text-gold hover:bg-gold/5 rounded-full transition-all duration-300 whitespace-nowrap" data-filter="tourism">Tourism & Heritage</button>
+        <button class="portfolio-filter-btn px-5 py-2 text-[10px] font-bold uppercase tracking-wider border border-gold/40 text-gold hover:bg-gold/5 rounded-full transition-all duration-300 whitespace-nowrap" data-filter="podcast">Podcast</button>
+      </div>
+    </div>
+
+    <!-- Portfolio Grid -->
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+      
+      <!-- Video 1 -->
+      <div class="portfolio-item portfolio-card cursor-pointer portfolio-card-trigger stagger-item group" data-category="documentary" data-video-id="bt7PQag2Nxg" data-aos="fade-up" data-aos-delay="100">
+        <img src="https://img.youtube.com/vi/bt7PQag2Nxg/hqdefault.jpg" alt="SSPM Medical College" loading="lazy">
+        <div class="portfolio-overlay flex flex-col justify-between">
+          <div class="flex justify-between items-start w-full">
+            <span class="inline-block px-2.5 py-1 text-[9px] font-semibold text-slate-950 bg-gold rounded-full uppercase tracking-wider">Documentary</span>
+          </div>
+          <div class="absolute inset-0 flex items-center justify-center pointer-events-none">
+            <div class="w-12 h-12 rounded-full bg-gold/90 text-slate-950 flex items-center justify-center text-sm shadow-lg shadow-gold/20 transform translate-y-3 opacity-0 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300 portfolio-play-btn">
+              <i class="fa-solid fa-play ml-0.5"></i>
+            </div>
+          </div>
+          <div class="mt-auto">
+            <h3 class="text-sm font-bold text-white uppercase tracking-wide leading-snug mb-1">SSPM Medical College</h3>
+            <p class="text-[10px] text-slate-400 font-light">Research-driven film capturing the facility and educational excellence.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Video 2 -->
+      <div class="portfolio-item portfolio-card cursor-pointer portfolio-card-trigger stagger-item group" data-category="documentary" data-video-id="i9AcOISHQsg" data-aos="fade-up" data-aos-delay="200">
+        <img src="https://img.youtube.com/vi/i9AcOISHQsg/hqdefault.jpg" alt="SSPM Hospital Showcase" loading="lazy">
+        <div class="portfolio-overlay flex flex-col justify-between">
+          <div class="flex justify-between items-start w-full">
+            <span class="inline-block px-2.5 py-1 text-[9px] font-semibold text-slate-950 bg-gold rounded-full uppercase tracking-wider">Documentary</span>
+          </div>
+          <div class="absolute inset-0 flex items-center justify-center pointer-events-none">
+            <div class="w-12 h-12 rounded-full bg-gold/90 text-slate-950 flex items-center justify-center text-sm shadow-lg shadow-gold/20 transform translate-y-3 opacity-0 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300 portfolio-play-btn">
+              <i class="fa-solid fa-play ml-0.5"></i>
+            </div>
+          </div>
+          <div class="mt-auto">
+            <h3 class="text-sm font-bold text-white uppercase tracking-wide leading-snug mb-1">SSPM Hospital Showcase</h3>
+            <p class="text-[10px] text-slate-400 font-light">Documenting healthcare facilities and patient care solutions.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Video 3 -->
+      <div class="portfolio-item portfolio-card cursor-pointer portfolio-card-trigger stagger-item group" data-category="corporate" data-video-id="hV_EkX04bcM" data-aos="fade-up" data-aos-delay="300">
+        <img src="https://img.youtube.com/vi/hV_EkX04bcM/hqdefault.jpg" alt="Mahindra Susten Solar Power" loading="lazy">
+        <div class="portfolio-overlay flex flex-col justify-between">
+          <div class="flex justify-between items-start w-full">
+            <span class="inline-block px-2.5 py-1 text-[9px] font-semibold text-slate-950 bg-gold rounded-full uppercase tracking-wider">Corporate</span>
+          </div>
+          <div class="absolute inset-0 flex items-center justify-center pointer-events-none">
+            <div class="w-12 h-12 rounded-full bg-gold/90 text-slate-950 flex items-center justify-center text-sm shadow-lg shadow-gold/20 transform translate-y-3 opacity-0 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300 portfolio-play-btn">
+              <i class="fa-solid fa-play ml-0.5"></i>
+            </div>
+          </div>
+          <div class="mt-auto">
+            <h3 class="text-sm font-bold text-white uppercase tracking-wide leading-snug mb-1">Mahindra Susten Solar Power</h3>
+            <p class="text-[10px] text-slate-400 font-light">Showcasing utility-scale solar installations and green initiatives.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Video 4 -->
+      <div class="portfolio-item portfolio-card cursor-pointer portfolio-card-trigger stagger-item group" data-category="corporate" data-video-id="RdD7ScQp2q0" data-aos="fade-up" data-aos-delay="100">
+        <img src="https://img.youtube.com/vi/RdD7ScQp2q0/hqdefault.jpg" alt="Together We Rise" loading="lazy">
+        <div class="portfolio-overlay flex flex-col justify-between">
+          <div class="flex justify-between items-start w-full">
+            <span class="inline-block px-2.5 py-1 text-[9px] font-semibold text-slate-950 bg-gold rounded-full uppercase tracking-wider">Corporate</span>
+          </div>
+          <div class="absolute inset-0 flex items-center justify-center pointer-events-none">
+            <div class="w-12 h-12 rounded-full bg-gold/90 text-slate-950 flex items-center justify-center text-sm shadow-lg shadow-gold/20 transform translate-y-3 opacity-0 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300 portfolio-play-btn">
+              <i class="fa-solid fa-play ml-0.5"></i>
+            </div>
+          </div>
+          <div class="mt-auto">
+            <h3 class="text-sm font-bold text-white uppercase tracking-wide leading-snug mb-1">Together We Rise</h3>
+            <p class="text-[10px] text-slate-400 font-light">Mahindra Group corporate vision and brand value campaign.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Video 5 -->
+      <div class="portfolio-item portfolio-card cursor-pointer portfolio-card-trigger stagger-item group" data-category="corporate" data-video-id="3wXrdP724fo" data-aos="fade-up" data-aos-delay="200">
+        <img src="https://img.youtube.com/vi/3wXrdP724fo/hqdefault.jpg" alt="Mahindra CEO Leadership Address" loading="lazy">
+        <div class="portfolio-overlay flex flex-col justify-between">
+          <div class="flex justify-between items-start w-full">
+            <span class="inline-block px-2.5 py-1 text-[9px] font-semibold text-slate-950 bg-gold rounded-full uppercase tracking-wider">Corporate</span>
+          </div>
+          <div class="absolute inset-0 flex items-center justify-center pointer-events-none">
+            <div class="w-12 h-12 rounded-full bg-gold/90 text-slate-950 flex items-center justify-center text-sm shadow-lg shadow-gold/20 transform translate-y-3 opacity-0 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300 portfolio-play-btn">
+              <i class="fa-solid fa-play ml-0.5"></i>
+            </div>
+          </div>
+          <div class="mt-auto">
+            <h3 class="text-sm font-bold text-white uppercase tracking-wide leading-snug mb-1">Mahindra CEO Address</h3>
+            <p class="text-[10px] text-slate-400 font-light">Thought leadership address detailing future clean energy goals.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Video 6 -->
+      <div class="portfolio-item portfolio-card cursor-pointer portfolio-card-trigger stagger-item group" data-category="industrial" data-video-id="OhL9HEPBRzg" data-aos="fade-up" data-aos-delay="300">
+        <img src="https://img.youtube.com/vi/OhL9HEPBRzg/hqdefault.jpg" alt="Industrial Manufacturing Showcase" loading="lazy">
+        <div class="portfolio-overlay flex flex-col justify-between">
+          <div class="flex justify-between items-start w-full">
+            <span class="inline-block px-2.5 py-1 text-[9px] font-semibold text-slate-950 bg-gold rounded-full uppercase tracking-wider">Industrial</span>
+          </div>
+          <div class="absolute inset-0 flex items-center justify-center pointer-events-none">
+            <div class="w-12 h-12 rounded-full bg-gold/90 text-slate-950 flex items-center justify-center text-sm shadow-lg shadow-gold/20 transform translate-y-3 opacity-0 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300 portfolio-play-btn">
+              <i class="fa-solid fa-play ml-0.5"></i>
+            </div>
+          </div>
+          <div class="mt-auto">
+            <h3 class="text-sm font-bold text-white uppercase tracking-wide leading-snug mb-1">Industrial Showcase</h3>
+            <p class="text-[10px] text-slate-400 font-light">Step-by-step factory operations and high-precision assembly lines.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Video 7 -->
+      <div class="portfolio-item portfolio-card cursor-pointer portfolio-card-trigger stagger-item group" data-category="csr" data-video-id="OenNg8Id0rs" data-aos="fade-up" data-aos-delay="100">
+        <img src="https://img.youtube.com/vi/OenNg8Id0rs/hqdefault.jpg" alt="Model School Program | Tide India" loading="lazy">
+        <div class="portfolio-overlay flex flex-col justify-between">
+          <div class="flex justify-between items-start w-full">
+            <span class="inline-block px-2.5 py-1 text-[9px] font-semibold text-slate-950 bg-gold rounded-full uppercase tracking-wider">CSR & Impact</span>
+          </div>
+          <div class="absolute inset-0 flex items-center justify-center pointer-events-none">
+            <div class="w-12 h-12 rounded-full bg-gold/90 text-slate-950 flex items-center justify-center text-sm shadow-lg shadow-gold/20 transform translate-y-3 opacity-0 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300 portfolio-play-btn">
+              <i class="fa-solid fa-play ml-0.5"></i>
+            </div>
+          </div>
+          <div class="mt-auto">
+            <h3 class="text-sm font-bold text-white uppercase tracking-wide leading-snug mb-1">Model School Program</h3>
+            <p class="text-[10px] text-slate-400 font-light">Documenting CSR programs empowering municipal school networks.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Video 8 -->
+      <div class="portfolio-item portfolio-card cursor-pointer portfolio-card-trigger stagger-item group" data-category="csr" data-video-id="NAom0d3eQ2g" data-aos="fade-up" data-aos-delay="200">
+        <img src="https://img.youtube.com/vi/NAom0d3eQ2g/hqdefault.jpg" alt="Solar Electrification Impact" loading="lazy">
+        <div class="portfolio-overlay flex flex-col justify-between">
+          <div class="flex justify-between items-start w-full">
+            <span class="inline-block px-2.5 py-1 text-[9px] font-semibold text-slate-950 bg-gold rounded-full uppercase tracking-wider">CSR & Impact</span>
+          </div>
+          <div class="absolute inset-0 flex items-center justify-center pointer-events-none">
+            <div class="w-12 h-12 rounded-full bg-gold/90 text-slate-950 flex items-center justify-center text-sm shadow-lg shadow-gold/20 transform translate-y-3 opacity-0 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300 portfolio-play-btn">
+              <i class="fa-solid fa-play ml-0.5"></i>
+            </div>
+          </div>
+          <div class="mt-auto">
+            <h3 class="text-sm font-bold text-white uppercase tracking-wide leading-snug mb-1">Solar Electrification</h3>
+            <p class="text-[10px] text-slate-400 font-light">Transforming rural communities with sustainable off-grid electricity.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Video 9 -->
+      <div class="portfolio-item portfolio-card cursor-pointer portfolio-card-trigger stagger-item group" data-category="csr" data-video-id="1gydHNvwO2U" data-aos="fade-up" data-aos-delay="300">
+        <img src="https://img.youtube.com/vi/1gydHNvwO2U/hqdefault.jpg" alt="Water Conservation Initiative" loading="lazy">
+        <div class="portfolio-overlay flex flex-col justify-between">
+          <div class="flex justify-between items-start w-full">
+            <span class="inline-block px-2.5 py-1 text-[9px] font-semibold text-slate-950 bg-gold rounded-full uppercase tracking-wider">CSR & Impact</span>
+          </div>
+          <div class="absolute inset-0 flex items-center justify-center pointer-events-none">
+            <div class="w-12 h-12 rounded-full bg-gold/90 text-slate-950 flex items-center justify-center text-sm shadow-lg shadow-gold/20 transform translate-y-3 opacity-0 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300 portfolio-play-btn">
+              <i class="fa-solid fa-play ml-0.5"></i>
+            </div>
+          </div>
+          <div class="mt-auto">
+            <h3 class="text-sm font-bold text-white uppercase tracking-wide leading-snug mb-1">Water Conservation</h3>
+            <p class="text-[10px] text-slate-400 font-light">Tracking watershed development programs and community impact.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Video 10 -->
+      <div class="portfolio-item portfolio-card cursor-pointer portfolio-card-trigger stagger-item group" data-category="csr" data-video-id="c2L3OWdgykc" data-aos="fade-up" data-aos-delay="100">
+        <img src="https://img.youtube.com/vi/c2L3OWdgykc/hqdefault.jpg" alt="Surya Shakti CoE Program" loading="lazy">
+        <div class="portfolio-overlay flex flex-col justify-between">
+          <div class="flex justify-between items-start w-full">
+            <span class="inline-block px-2.5 py-1 text-[9px] font-semibold text-slate-950 bg-gold rounded-full uppercase tracking-wider">CSR & Impact</span>
+          </div>
+          <div class="absolute inset-0 flex items-center justify-center pointer-events-none">
+            <div class="w-12 h-12 rounded-full bg-gold/90 text-slate-950 flex items-center justify-center text-sm shadow-lg shadow-gold/20 transform translate-y-3 opacity-0 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300 portfolio-play-btn">
+              <i class="fa-solid fa-play ml-0.5"></i>
+            </div>
+          </div>
+          <div class="mt-auto">
+            <h3 class="text-sm font-bold text-white uppercase tracking-wide leading-snug mb-1">Surya Shakti CoE</h3>
+            <p class="text-[10px] text-slate-400 font-light">Documenting training centers and green energy job creation.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Video 11 -->
+      <div class="portfolio-item portfolio-card cursor-pointer portfolio-card-trigger stagger-item group" data-category="csr" data-video-id="gwxzL6-ETBg" data-aos="fade-up" data-aos-delay="200">
+        <img src="https://img.youtube.com/vi/gwxzL6-ETBg/hqdefault.jpg" alt="Cooking Electric Campaign" loading="lazy">
+        <div class="portfolio-overlay flex flex-col justify-between">
+          <div class="flex justify-between items-start w-full">
+            <span class="inline-block px-2.5 py-1 text-[9px] font-semibold text-slate-950 bg-gold rounded-full uppercase tracking-wider">CSR & Impact</span>
+          </div>
+          <div class="absolute inset-0 flex items-center justify-center pointer-events-none">
+            <div class="w-12 h-12 rounded-full bg-gold/90 text-slate-950 flex items-center justify-center text-sm shadow-lg shadow-gold/20 transform translate-y-3 opacity-0 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300 portfolio-play-btn">
+              <i class="fa-solid fa-play ml-0.5"></i>
+            </div>
+          </div>
+          <div class="mt-auto">
+            <h3 class="text-sm font-bold text-white uppercase tracking-wide leading-snug mb-1">Cooking Electric</h3>
+            <p class="text-[10px] text-slate-400 font-light">Empowering household energy transitions via clean cooking tech.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Video 12 -->
+      <div class="portfolio-item portfolio-card cursor-pointer portfolio-card-trigger stagger-item group" data-category="csr" data-video-id="YqC86_PCyuc" data-aos="fade-up" data-aos-delay="300">
+        <img src="https://img.youtube.com/vi/YqC86_PCyuc/hqdefault.jpg" alt="Sustainable Travel: Coorg" loading="lazy">
+        <div class="portfolio-overlay flex flex-col justify-between">
+          <div class="flex justify-between items-start w-full">
+            <span class="inline-block px-2.5 py-1 text-[9px] font-semibold text-slate-950 bg-gold rounded-full uppercase tracking-wider">CSR & Impact</span>
+          </div>
+          <div class="absolute inset-0 flex items-center justify-center pointer-events-none">
+            <div class="w-12 h-12 rounded-full bg-gold/90 text-slate-950 flex items-center justify-center text-sm shadow-lg shadow-gold/20 transform translate-y-3 opacity-0 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300 portfolio-play-btn">
+              <i class="fa-solid fa-play ml-0.5"></i>
+            </div>
+          </div>
+          <div class="mt-auto">
+            <h3 class="text-sm font-bold text-white uppercase tracking-wide leading-snug mb-1">Sustainable Travel</h3>
+            <p class="text-[10px] text-slate-400 font-light">Highlighting sustainable tourism practices and community heritage.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Video 13 -->
+      <div class="portfolio-item portfolio-card cursor-pointer portfolio-card-trigger stagger-item group" data-category="ad-films" data-video-id="z6Lz-lMF2Ag" data-aos="fade-up" data-aos-delay="100">
+        <img src="https://img.youtube.com/vi/z6Lz-lMF2Ag/hqdefault.jpg" alt="Microfinance Empowerment Ad" loading="lazy">
+        <div class="portfolio-overlay flex flex-col justify-between">
+          <div class="flex justify-between items-start w-full">
+            <span class="inline-block px-2.5 py-1 text-[9px] font-semibold text-slate-950 bg-gold rounded-full uppercase tracking-wider">Ad Films</span>
+          </div>
+          <div class="absolute inset-0 flex items-center justify-center pointer-events-none">
+            <div class="w-12 h-12 rounded-full bg-gold/90 text-slate-950 flex items-center justify-center text-sm shadow-lg shadow-gold/20 transform translate-y-3 opacity-0 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300 portfolio-play-btn">
+              <i class="fa-solid fa-play ml-0.5"></i>
+            </div>
+          </div>
+          <div class="mt-auto">
+            <h3 class="text-sm font-bold text-white uppercase tracking-wide leading-snug mb-1">Microfinance Ad</h3>
+            <p class="text-[10px] text-slate-400 font-light">Inspiring commercial on financial inclusion and independence.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Video 14 -->
+      <div class="portfolio-item portfolio-card cursor-pointer portfolio-card-trigger stagger-item group" data-category="ad-films" data-video-id="f8EleZfc5rA" data-aos="fade-up" data-aos-delay="200">
+        <img src="https://img.youtube.com/vi/f8EleZfc5rA/hqdefault.jpg" alt="Mahindra Electric Commercial" loading="lazy">
+        <div class="portfolio-overlay flex flex-col justify-between">
+          <div class="flex justify-between items-start w-full">
+            <span class="inline-block px-2.5 py-1 text-[9px] font-semibold text-slate-950 bg-gold rounded-full uppercase tracking-wider">Ad Films</span>
+          </div>
+          <div class="absolute inset-0 flex items-center justify-center pointer-events-none">
+            <div class="w-12 h-12 rounded-full bg-gold/90 text-slate-950 flex items-center justify-center text-sm shadow-lg shadow-gold/20 transform translate-y-3 opacity-0 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300 portfolio-play-btn">
+              <i class="fa-solid fa-play ml-0.5"></i>
+            </div>
+          </div>
+          <div class="mt-auto">
+            <h3 class="text-sm font-bold text-white uppercase tracking-wide leading-snug mb-1">Mahindra Electric</h3>
+            <p class="text-[10px] text-slate-400 font-light">Sleek promotional commercial launching next-gen EV platforms.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Video 15 -->
+      <div class="portfolio-item portfolio-card cursor-pointer portfolio-card-trigger stagger-item group" data-category="ad-films" data-video-id="_xF9SYVqXOk" data-aos="fade-up" data-aos-delay="300">
+        <img src="https://img.youtube.com/vi/_xF9SYVqXOk/hqdefault.jpg" alt="Sustainable Tech Campaign" loading="lazy">
+        <div class="portfolio-overlay flex flex-col justify-between">
+          <div class="flex justify-between items-start w-full">
+            <span class="inline-block px-2.5 py-1 text-[9px] font-semibold text-slate-950 bg-gold rounded-full uppercase tracking-wider">Ad Films</span>
+          </div>
+          <div class="absolute inset-0 flex items-center justify-center pointer-events-none">
+            <div class="w-12 h-12 rounded-full bg-gold/90 text-slate-950 flex items-center justify-center text-sm shadow-lg shadow-gold/20 transform translate-y-3 opacity-0 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300 portfolio-play-btn">
+              <i class="fa-solid fa-play ml-0.5"></i>
+            </div>
+          </div>
+          <div class="mt-auto">
+            <h3 class="text-sm font-bold text-white uppercase tracking-wide leading-snug mb-1">Sustainable Tech</h3>
+            <p class="text-[10px] text-slate-400 font-light">Digital campaign showcasing sustainability-driven brand solutions.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Video 16 -->
+      <div class="portfolio-item portfolio-card cursor-pointer portfolio-card-trigger stagger-item group" data-category="ad-films" data-video-id="YhrNsW_sEq8" data-aos="fade-up" data-aos-delay="100">
+        <img src="https://img.youtube.com/vi/YhrNsW_sEq8/hqdefault.jpg" alt="Mahindra Tractor Rise Ad" loading="lazy">
+        <div class="portfolio-overlay flex flex-col justify-between">
+          <div class="flex justify-between items-start w-full">
+            <span class="inline-block px-2.5 py-1 text-[9px] font-semibold text-slate-950 bg-gold rounded-full uppercase tracking-wider">Ad Films</span>
+          </div>
+          <div class="absolute inset-0 flex items-center justify-center pointer-events-none">
+            <div class="w-12 h-12 rounded-full bg-gold/90 text-slate-950 flex items-center justify-center text-sm shadow-lg shadow-gold/20 transform translate-y-3 opacity-0 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300 portfolio-play-btn">
+              <i class="fa-solid fa-play ml-0.5"></i>
+            </div>
+          </div>
+          <div class="mt-auto">
+            <h3 class="text-sm font-bold text-white uppercase tracking-wide leading-snug mb-1">Mahindra Tractor Rise</h3>
+            <p class="text-[10px] text-slate-400 font-light">Promotional video highlighting agricultural tech and farmer support.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Video 17 -->
+      <div class="portfolio-item portfolio-card cursor-pointer portfolio-card-trigger stagger-item group" data-category="ad-films" data-video-id="qkDuv59z_TI" data-aos="fade-up" data-aos-delay="200">
+        <img src="https://img.youtube.com/vi/qkDuv59z_TI/hqdefault.jpg" alt="Green Energy Commercial" loading="lazy">
+        <div class="portfolio-overlay flex flex-col justify-between">
+          <div class="flex justify-between items-start w-full">
+            <span class="inline-block px-2.5 py-1 text-[9px] font-semibold text-slate-950 bg-gold rounded-full uppercase tracking-wider">Ad Films</span>
+          </div>
+          <div class="absolute inset-0 flex items-center justify-center pointer-events-none">
+            <div class="w-12 h-12 rounded-full bg-gold/90 text-slate-950 flex items-center justify-center text-sm shadow-lg shadow-gold/20 transform translate-y-3 opacity-0 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300 portfolio-play-btn">
+              <i class="fa-solid fa-play ml-0.5"></i>
+            </div>
+          </div>
+          <div class="mt-auto">
+            <h3 class="text-sm font-bold text-white uppercase tracking-wide leading-snug mb-1">Green Energy Ad</h3>
+            <p class="text-[10px] text-slate-400 font-light">Cinema-grade advertisement focusing on residential solar growth.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Video 18 -->
+      <div class="portfolio-item portfolio-card cursor-pointer portfolio-card-trigger stagger-item group" data-category="vertical-social" data-video-id="IPmx88O5W_o" data-aos="fade-up" data-aos-delay="300">
+        <img src="https://img.youtube.com/vi/IPmx88O5W_o/hqdefault.jpg" alt="Mahindra Group Short Story" loading="lazy">
+        <div class="portfolio-overlay flex flex-col justify-between">
+          <div class="flex justify-between items-start w-full">
+            <span class="inline-block px-2.5 py-1 text-[9px] font-semibold text-slate-950 bg-gold rounded-full uppercase tracking-wider">Vertical & Social</span>
+          </div>
+          <div class="absolute inset-0 flex items-center justify-center pointer-events-none">
+            <div class="w-12 h-12 rounded-full bg-gold/90 text-slate-950 flex items-center justify-center text-sm shadow-lg shadow-gold/20 transform translate-y-3 opacity-0 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300 portfolio-play-btn">
+              <i class="fa-solid fa-play ml-0.5"></i>
+            </div>
+          </div>
+          <div class="mt-auto">
+            <h3 class="text-sm font-bold text-white uppercase tracking-wide leading-snug mb-1">Mahindra Short Story</h3>
+            <p class="text-[10px] text-slate-400 font-light">Mobile-first documentary short celebrating group heritage.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Video 19 -->
+      <div class="portfolio-item portfolio-card cursor-pointer portfolio-card-trigger stagger-item group" data-category="vertical-social" data-video-id="UcznDP5BbZM" data-aos="fade-up" data-aos-delay="100">
+        <img src="https://img.youtube.com/vi/UcznDP5BbZM/hqdefault.jpg" alt="Sustainability Reel" loading="lazy">
+        <div class="portfolio-overlay flex flex-col justify-between">
+          <div class="flex justify-between items-start w-full">
+            <span class="inline-block px-2.5 py-1 text-[9px] font-semibold text-slate-950 bg-gold rounded-full uppercase tracking-wider">Vertical & Social</span>
+          </div>
+          <div class="absolute inset-0 flex items-center justify-center pointer-events-none">
+            <div class="w-12 h-12 rounded-full bg-gold/90 text-slate-950 flex items-center justify-center text-sm shadow-lg shadow-gold/20 transform translate-y-3 opacity-0 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300 portfolio-play-btn">
+              <i class="fa-solid fa-play ml-0.5"></i>
+            </div>
+          </div>
+          <div class="mt-auto">
+            <h3 class="text-sm font-bold text-white uppercase tracking-wide leading-snug mb-1">Sustainability Reel</h3>
+            <p class="text-[10px] text-slate-400 font-light">Engaging vertical edit highlighting corporate recycling drives.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Video 20 -->
+      <div class="portfolio-item portfolio-card cursor-pointer portfolio-card-trigger stagger-item group" data-category="vertical-social" data-video-id="GCDityiv_EA" data-aos="fade-up" data-aos-delay="200">
+        <img src="https://img.youtube.com/vi/GCDityiv_EA/hqdefault.jpg" alt="Mahindra Tractor Launch Short" loading="lazy">
+        <div class="portfolio-overlay flex flex-col justify-between">
+          <div class="flex justify-between items-start w-full">
+            <span class="inline-block px-2.5 py-1 text-[9px] font-semibold text-slate-950 bg-gold rounded-full uppercase tracking-wider">Vertical & Social</span>
+          </div>
+          <div class="absolute inset-0 flex items-center justify-center pointer-events-none">
+            <div class="w-12 h-12 rounded-full bg-gold/90 text-slate-950 flex items-center justify-center text-sm shadow-lg shadow-gold/20 transform translate-y-3 opacity-0 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300 portfolio-play-btn">
+              <i class="fa-solid fa-play ml-0.5"></i>
+            </div>
+          </div>
+          <div class="mt-auto">
+            <h3 class="text-sm font-bold text-white uppercase tracking-wide leading-snug mb-1">Tractor Launch Short</h3>
+            <p class="text-[10px] text-slate-400 font-light">Instagram-style quick launch recap with punchy visual editing.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Video 21 -->
+      <div class="portfolio-item portfolio-card cursor-pointer portfolio-card-trigger stagger-item group" data-category="vertical-social" data-video-id="v83TzABRzw8" data-aos="fade-up" data-aos-delay="300">
+        <img src="https://img.youtube.com/vi/v83TzABRzw8/hqdefault.jpg" alt="Mahindra Tech Innovation Short" loading="lazy">
+        <div class="portfolio-overlay flex flex-col justify-between">
+          <div class="flex justify-between items-start w-full">
+            <span class="inline-block px-2.5 py-1 text-[9px] font-semibold text-slate-950 bg-gold rounded-full uppercase tracking-wider">Vertical & Social</span>
+          </div>
+          <div class="absolute inset-0 flex items-center justify-center pointer-events-none">
+            <div class="w-12 h-12 rounded-full bg-gold/90 text-slate-950 flex items-center justify-center text-sm shadow-lg shadow-gold/20 transform translate-y-3 opacity-0 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300 portfolio-play-btn">
+              <i class="fa-solid fa-play ml-0.5"></i>
+            </div>
+          </div>
+          <div class="mt-auto">
+            <h3 class="text-sm font-bold text-white uppercase tracking-wide leading-snug mb-1">Tech Innovation Short</h3>
+            <p class="text-[10px] text-slate-400 font-light">Snackable tech recap explaining modern composite manufacturing.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Video 22 -->
+      <div class="portfolio-item portfolio-card cursor-pointer portfolio-card-trigger stagger-item group" data-category="vertical-social" data-video-id="I3I-qSo511c" data-aos="fade-up" data-aos-delay="100">
+        <img src="https://img.youtube.com/vi/I3I-qSo511c/hqdefault.jpg" alt="Clean Energy Future Short" loading="lazy">
+        <div class="portfolio-overlay flex flex-col justify-between">
+          <div class="flex justify-between items-start w-full">
+            <span class="inline-block px-2.5 py-1 text-[9px] font-semibold text-slate-950 bg-gold rounded-full uppercase tracking-wider">Vertical & Social</span>
+          </div>
+          <div class="absolute inset-0 flex items-center justify-center pointer-events-none">
+            <div class="w-12 h-12 rounded-full bg-gold/90 text-slate-950 flex items-center justify-center text-sm shadow-lg shadow-gold/20 transform translate-y-3 opacity-0 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300 portfolio-play-btn">
+              <i class="fa-solid fa-play ml-0.5"></i>
+            </div>
+          </div>
+          <div class="mt-auto">
+            <h3 class="text-sm font-bold text-white uppercase tracking-wide leading-snug mb-1">Clean Energy Short</h3>
+            <p class="text-[10px] text-slate-400 font-light">High-impact vertical loop highlighting solar panel operations.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Video 23 -->
+      <div class="portfolio-item portfolio-card cursor-pointer portfolio-card-trigger stagger-item group" data-category="vertical-social" data-video-id="3srwqF-PRSE" data-aos="fade-up" data-aos-delay="200">
+        <img src="https://img.youtube.com/vi/3srwqF-PRSE/hqdefault.jpg" alt="Rise Challenge Highlight Short" loading="lazy">
+        <div class="portfolio-overlay flex flex-col justify-between">
+          <div class="flex justify-between items-start w-full">
+            <span class="inline-block px-2.5 py-1 text-[9px] font-semibold text-slate-950 bg-gold rounded-full uppercase tracking-wider">Vertical & Social</span>
+          </div>
+          <div class="absolute inset-0 flex items-center justify-center pointer-events-none">
+            <div class="w-12 h-12 rounded-full bg-gold/90 text-slate-950 flex items-center justify-center text-sm shadow-lg shadow-gold/20 transform translate-y-3 opacity-0 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300 portfolio-play-btn">
+              <i class="fa-solid fa-play ml-0.5"></i>
+            </div>
+          </div>
+          <div class="mt-auto">
+            <h3 class="text-sm font-bold text-white uppercase tracking-wide leading-snug mb-1">Rise Challenge Short</h3>
+            <p class="text-[10px] text-slate-400 font-light">Recap short documenting national innovation hackathon energy.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Video 24 -->
+      <div class="portfolio-item portfolio-card cursor-pointer portfolio-card-trigger stagger-item group" data-category="tourism" data-video-id="Q97-OmNdbj8" data-aos="fade-up" data-aos-delay="300">
+        <img src="https://img.youtube.com/vi/Q97-OmNdbj8/hqdefault.jpg" alt="Sanatkada Lucknow Festival" loading="lazy">
+        <div class="portfolio-overlay flex flex-col justify-between">
+          <div class="flex justify-between items-start w-full">
+            <span class="inline-block px-2.5 py-1 text-[9px] font-semibold text-slate-950 bg-gold rounded-full uppercase tracking-wider">Tourism</span>
+          </div>
+          <div class="absolute inset-0 flex items-center justify-center pointer-events-none">
+            <div class="w-12 h-12 rounded-full bg-gold/90 text-slate-950 flex items-center justify-center text-sm shadow-lg shadow-gold/20 transform translate-y-3 opacity-0 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300 portfolio-play-btn">
+              <i class="fa-solid fa-play ml-0.5"></i>
+            </div>
+          </div>
+          <div class="mt-auto">
+            <h3 class="text-sm font-bold text-white uppercase tracking-wide leading-snug mb-1">Lucknow Festival</h3>
+            <p class="text-[10px] text-slate-400 font-light">Documenting local food, music, and crafts of historic Awadh.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Video 25 -->
+      <div class="portfolio-item portfolio-card cursor-pointer portfolio-card-trigger stagger-item group" data-category="tourism" data-video-id="K5YYZUprQTY" data-aos="fade-up" data-aos-delay="100">
+        <img src="https://img.youtube.com/vi/K5YYZUprQTY/hqdefault.jpg" alt="Cultural Heritage Film" loading="lazy">
+        <div class="portfolio-overlay flex flex-col justify-between">
+          <div class="flex justify-between items-start w-full">
+            <span class="inline-block px-2.5 py-1 text-[9px] font-semibold text-slate-950 bg-gold rounded-full uppercase tracking-wider">Tourism</span>
+          </div>
+          <div class="absolute inset-0 flex items-center justify-center pointer-events-none">
+            <div class="w-12 h-12 rounded-full bg-gold/90 text-slate-950 flex items-center justify-center text-sm shadow-lg shadow-gold/20 transform translate-y-3 opacity-0 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300 portfolio-play-btn">
+              <i class="fa-solid fa-play ml-0.5"></i>
+            </div>
+          </div>
+          <div class="mt-auto">
+            <h3 class="text-sm font-bold text-white uppercase tracking-wide leading-snug mb-1">Cultural Heritage</h3>
+            <p class="text-[10px] text-slate-400 font-light">Promotional film showcasing traditional art and weaving legacies.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Video 26 -->
+      <div class="portfolio-item portfolio-card cursor-pointer portfolio-card-trigger stagger-item group" data-category="podcast" data-video-id="f8VP7QLQUSc" data-aos="fade-up" data-aos-delay="200">
+        <img src="https://img.youtube.com/vi/f8VP7QLQUSc/hqdefault.jpg" alt="Founder Spotlight Podcast" loading="lazy">
+        <div class="portfolio-overlay flex flex-col justify-between">
+          <div class="flex justify-between items-start w-full">
+            <span class="inline-block px-2.5 py-1 text-[9px] font-semibold text-slate-950 bg-gold rounded-full uppercase tracking-wider">Podcast</span>
+          </div>
+          <div class="absolute inset-0 flex items-center justify-center pointer-events-none">
+            <div class="w-12 h-12 rounded-full bg-gold/90 text-slate-950 flex items-center justify-center text-sm shadow-lg shadow-gold/20 transform translate-y-3 opacity-0 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300 portfolio-play-btn">
+              <i class="fa-solid fa-play ml-0.5"></i>
+            </div>
+          </div>
+          <div class="mt-auto">
+            <h3 class="text-sm font-bold text-white uppercase tracking-wide leading-snug mb-1">Founder Spotlight</h3>
+            <p class="text-[10px] text-slate-400 font-light">Deep dive conversation with corporate pioneers on clean energy.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Video 27 -->
+      <div class="portfolio-item portfolio-card cursor-pointer portfolio-card-trigger stagger-item group" data-category="podcast" data-video-id="ObBEsREaI2c" data-aos="fade-up" data-aos-delay="300">
+        <img src="https://img.youtube.com/vi/ObBEsREaI2c/hqdefault.jpg" alt="Brand Strategy Session" loading="lazy">
+        <div class="portfolio-overlay flex flex-col justify-between">
+          <div class="flex justify-between items-start w-full">
+            <span class="inline-block px-2.5 py-1 text-[9px] font-semibold text-slate-950 bg-gold rounded-full uppercase tracking-wider">Podcast</span>
+          </div>
+          <div class="absolute inset-0 flex items-center justify-center pointer-events-none">
+            <div class="w-12 h-12 rounded-full bg-gold/90 text-slate-950 flex items-center justify-center text-sm shadow-lg shadow-gold/20 transform translate-y-3 opacity-0 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300 portfolio-play-btn">
+              <i class="fa-solid fa-play ml-0.5"></i>
+            </div>
+          </div>
+          <div class="mt-auto">
+            <h3 class="text-sm font-bold text-white uppercase tracking-wide leading-snug mb-1">Brand Strategy</h3>
+            <p class="text-[10px] text-slate-400 font-light">Podcast panel discussion regarding brand storytelling and engagement.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- YouTube Playlist Link Button -->
+    <div class="text-center mt-12" data-aos="fade-up">
+      <a 
+        href="https://youtube.com/playlist?list=PLqtkrDw29uSicFw6a4o88sN03L9E5TZjl" 
+        target="_blank" 
+        rel="noopener" 
+        class="inline-flex items-center justify-center px-8 py-3.5 text-xs font-bold uppercase tracking-wider btn-gold-outline hover:bg-gold/5"
+      >
+        View Full Portfolio on YouTube ▶
+      </a>
+    </div>
+
+  </section>
+
+  <!-- Divider -->
+  <div class="max-w-7xl mx-auto px-4">
+    <div class="section-divider">
+      <div class="section-divider-diamond"></div>
+    </div>
+  </div>
+
+  <!-- 6. WHY TIKVAH ARK SECTION -->
+  <section id="why-us" class="py-10 md:py-16 bg-cinematicNavyLight/30 reveal-on-scroll">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <!-- Section Title -->
+      <div class="text-center max-w-3xl mx-auto mb-16" data-aos="fade-up">
+        <span class="text-xs uppercase tracking-[0.25em] text-gold font-bold">Our Philosophy</span>
+        <h2 class="font-cinzel text-3xl sm:text-4xl md:text-5xl font-bold tracking-wide text-white mt-3 mb-6 uppercase section-title-underline">
+          Why Tikvah Ark?
+        </h2>
+        <p class="text-sm sm:text-base text-gold font-medium tracking-widest uppercase mb-4 mt-2">
+          Crafting visual legacies, one frame at a time
+        </p>
+      </div>
+
+      <!-- Cards Grid -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        
+        <!-- Card 1 -->
+        <div class="glass-panel p-6 rounded-xl border border-slate-800 flex flex-col justify-between group hover:border-gold/50 transition-all duration-300 stagger-item" data-aos="fade-up" data-aos-delay="100">
+          <div>
+            <div class="text-gold text-3xl mb-4 group-hover:scale-110 transition-transform duration-300">
+              <i class="fa-solid fa-clapperboard"></i>
+            </div>
+            <h3 class="text-base font-bold text-white mb-2 uppercase tracking-wide">Cinematic Excellence</h3>
+            <p class="text-xs text-slate-400 font-light leading-relaxed">
+              🎬 Hollywood-grade VFX expertise meets documentary storytelling.
+            </p>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="glass-panel p-6 rounded-xl border border-slate-800 flex flex-col justify-between group hover:border-gold/50 transition-all duration-300 stagger-item" data-aos="fade-up" data-aos-delay="200">
+          <div>
+            <div class="text-gold text-3xl mb-4 group-hover:scale-110 transition-transform duration-300">
+              <i class="fa-solid fa-arrows-spin"></i>
+            </div>
+            <h3 class="text-base font-bold text-white mb-2 uppercase tracking-wide">Full-Service Studio</h3>
+            <p class="text-xs text-slate-400 font-light leading-relaxed">
+              🔄 Concept to delivery, everything under one roof.
+            </p>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="glass-panel p-6 rounded-xl border border-slate-800 flex flex-col justify-between group hover:border-gold/50 transition-all duration-300 stagger-item" data-aos="fade-up" data-aos-delay="300">
+          <div>
+            <div class="text-gold text-3xl mb-4 group-hover:scale-110 transition-transform duration-300">
+              <i class="fa-solid fa-bullseye"></i>
+            </div>
+            <h3 class="text-base font-bold text-white mb-2 uppercase tracking-wide">Story-First Approach</h3>
+            <p class="text-xs text-slate-400 font-light leading-relaxed">
+              🎯 Every frame has a purpose, every film has impact.
+            </p>
+          </div>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="glass-panel p-6 rounded-xl border border-slate-800 flex flex-col justify-between group hover:border-gold/50 transition-all duration-300 stagger-item" data-aos="fade-up" data-aos-delay="400">
+          <div>
+            <div class="text-gold text-3xl mb-4 group-hover:scale-110 transition-transform duration-300">
+              <i class="fa-solid fa-handshake"></i>
+            </div>
+            <h3 class="text-base font-bold text-white mb-2 uppercase tracking-wide">Long-Term Partnerships</h3>
+            <p class="text-xs text-slate-400 font-light leading-relaxed">
+              🤝 We don't just make films. We build your visual legacy.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Divider -->
+  <div class="max-w-7xl mx-auto px-4">
+    <div class="section-divider">
+      <div class="section-divider-diamond"></div>
+    </div>
+  </div>
+
+  <!-- 6B. TESTIMONIALS SECTION -->
+  <section id="testimonials" class="py-10 md:py-16 bg-[#060F1E] border-y border-slate-900">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <!-- Section Title -->
+      <div class="text-center max-w-3xl mx-auto mb-16" data-aos="fade-up">
+        <span class="text-xs uppercase tracking-[0.25em] text-gold font-bold">Client Reviews</span>
+        <h2 class="font-cinzel text-3xl sm:text-4xl md:text-5xl font-bold tracking-wide text-white mt-3 mb-6 uppercase section-title-underline">
+          Client Testimonials
+        </h2>
+        <p class="text-sm sm:text-base text-slate-400 font-light mt-6">
+          Hear from the brands, leaders, and organizations we partner with to create impact.
+        </p>
+      </div>
+
+      <!-- Testimonial Cards Grid -->
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        
+        <!-- Testimonial 1 -->
+        <div class="bg-[#0D1B2E] border-t-3 border-gold rounded-xl p-6 sm:p-8 shadow-xl flex flex-col justify-between hover:translate-y-[-4px] hover:shadow-gold/10 transition-all duration-300" data-aos="fade-up" data-aos-delay="100">
+          <div>
+            <!-- Star Ratings -->
+            <div class="flex items-center space-x-1 mb-4 text-gold text-xs">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <!-- Quote Text -->
+            <p class="text-xs sm:text-sm text-slate-300 font-light leading-relaxed italic mb-6">
+              "Tikvah Ark Productions transformed our CSR vision into an emotional, high-impact documentary. Their storytelling is world-class, and their team was professional, prompt, and highly creative throughout the filming process. The model school film they delivered received outstanding praise across the Mahindra Group."
+            </p>
+          </div>
+          <!-- Client Profile -->
+          <div class="flex items-center space-x-3 border-t border-slate-800/80 pt-4">
+            <div class="w-10 h-10 rounded-full bg-gold/10 border border-gold/30 flex items-center justify-center text-gold font-cinzel text-sm font-bold flex-shrink-0">
+              DT
+            </div>
+            <div>
+              <h4 class="text-xs font-bold text-white uppercase tracking-wider">Deepak Thakur</h4>
+              <p class="text-[10px] text-slate-400">GM, CSR & Communications</p>
+              <p class="text-[9px] text-gold font-medium">Mahindra Group</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Testimonial 2 -->
+        <div class="bg-[#0D1B2E] border-t-3 border-gold rounded-xl p-6 sm:p-8 shadow-xl flex flex-col justify-between hover:translate-y-[-4px] hover:shadow-gold/10 transition-all duration-300" data-aos="fade-up" data-aos-delay="200">
+          <div>
+            <!-- Star Ratings -->
+            <div class="flex items-center space-x-1 mb-4 text-gold text-xs">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <!-- Quote Text -->
+            <p class="text-xs sm:text-sm text-slate-300 font-light leading-relaxed italic mb-6">
+              "Working with Saurabh and the team on our institutional showcase film was a fantastic experience. They managed to capture the scale, the academic depth, and the state-of-the-art facilities of our campus beautifully. The final documentary is an essential asset for student admissions and public relations."
+            </p>
+          </div>
+          <!-- Client Profile -->
+          <div class="flex items-center space-x-3 border-t border-slate-800/80 pt-4">
+            <div class="w-10 h-10 rounded-full bg-gold/10 border border-gold/30 flex items-center justify-center text-gold font-cinzel text-sm font-bold flex-shrink-0">
+              AK
+            </div>
+            <div>
+              <h4 class="text-xs font-bold text-white uppercase tracking-wider">Dr. Abnish Kumar</h4>
+              <p class="text-[10px] text-slate-400">Director & Dean</p>
+              <p class="text-[9px] text-gold font-medium">SSPM Medical College</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Testimonial 3 -->
+        <div class="bg-[#0D1B2E] border-t-3 border-gold rounded-xl p-6 sm:p-8 shadow-xl flex flex-col justify-between hover:translate-y-[-4px] hover:shadow-gold/10 transition-all duration-300" data-aos="fade-up" data-aos-delay="300">
+          <div>
+            <!-- Star Ratings -->
+            <div class="flex items-center space-x-1 mb-4 text-gold text-xs">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <!-- Quote Text -->
+            <p class="text-xs sm:text-sm text-slate-300 font-light leading-relaxed italic mb-6">
+              "We commissioned Tikvah Ark for a series of commercial ad films and CSR impact videos. Their story-first approach, combined with film-grade compositing and cinematic direction, exceeded our expectations. They deliver premium-quality content under tight deadlines."
+            </p>
+          </div>
+          <!-- Client Profile -->
+          <div class="flex items-center space-x-3 border-t border-slate-800/80 pt-4">
+            <div class="w-10 h-10 rounded-full bg-gold/10 border border-gold/30 flex items-center justify-center text-gold font-cinzel text-sm font-bold flex-shrink-0">
+              PK
+            </div>
+            <div>
+              <h4 class="text-xs font-bold text-white uppercase tracking-wider">Pooja Kapadia</h4>
+              <p class="text-[10px] text-slate-400">Brand Head</p>
+              <p class="text-[9px] text-gold font-medium">Tide India & Microfinance</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Divider -->
+  <div class="max-w-7xl mx-auto px-4">
+    <div class="section-divider">
+      <div class="section-divider-diamond"></div>
+    </div>
+  </div>
+
+  <!-- 7. CONTACT SECTION -->
+  <section id="contact" class="py-10 md:py-16 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 reveal-on-scroll">
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-stretch">
+      
+      <!-- LEFT Column: Contact Info -->
+      <div class="flex flex-col justify-between space-y-8" data-aos="fade-right">
+        <div>
+          <span class="text-xs uppercase tracking-[0.25em] text-gold font-bold">Contact</span>
+          <h2 class="font-cinzel text-3xl sm:text-4xl md:text-5xl font-bold tracking-wide text-white mt-3 mb-2 uppercase">
+            Get In Touch
+          </h2>
+          <p class="text-gold text-sm font-semibold tracking-wide mb-6">
+            Let's create something extraordinary together.
+          </p>
+
+          <div class="space-y-6 mt-8">
+            <!-- Address block -->
+            <div class="flex items-start space-x-4">
+              <span class="text-gold text-xl mt-1"><i class="fa-solid fa-map-pin"></i></span>
+              <div>
+                <h4 class="text-xs font-bold text-slate-400 uppercase tracking-widest">Office Address</h4>
+                <p class="text-sm text-white font-light leading-relaxed mt-1">
+                  37, Shatrughna Building, 5th Floor, Room No. 504,<br>
+                  Mangalwadi, JSS Road, Girgaon,<br>
+                  Mumbai – 400004, Maharashtra, India
+                </p>
+              </div>
+            </div>
+
+            <!-- Phone/WhatsApp block -->
+            <div class="flex items-start space-x-4">
+              <span class="text-gold text-xl mt-1"><i class="fa-solid fa-phone"></i></span>
+              <div>
+                <h4 class="text-xs font-bold text-slate-400 uppercase tracking-widest">Phone & WhatsApp</h4>
+                <div class="space-y-2 mt-2">
+                  <div class="flex items-center space-x-3 text-sm">
+                    <a href="tel:+918657561060" class="flex items-center text-white hover:text-emerald-500 transition-colors font-medium">
+                      <span class="mr-2">📞</span> +91 86575 61060
+                    </a>
+                    <span class="text-slate-700">|</span>
+                    <a href="https://wa.me/918657561060" target="_blank" rel="noopener" class="flex items-center text-emerald-500 hover:text-emerald-400 transition-colors">
+                      <span class="mr-1.5"><i class="fa-brands fa-whatsapp text-base"></i></span> WhatsApp
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Email block -->
+            <div class="flex items-start space-x-4 mt-6">
+              <span class="text-gold text-xl mt-1"><i class="fa-solid fa-envelope"></i></span>
+              <div>
+                <h4 class="text-xs font-bold text-slate-400 uppercase tracking-widest">Email Addresses</h4>
+                <div class="space-y-2 mt-2">
+                  <div class="text-sm">
+                    <a href="mailto:bhagwati@tikvaharkproduction.com" class="text-white hover:text-[#2EAD4A] transition-colors font-medium">
+                      bhagwati@tikvaharkproduction.com
+                    </a>
+                  </div>
+                  <div class="text-sm">
+                    <a href="mailto:Saurabhshingare@tikvaharkproduction.com" class="text-white hover:text-[#2EAD4A] transition-colors font-medium">
+                      Saurabhshingare@tikvaharkproduction.com
+                    </a>
+                  </div>
+                  <div class="text-sm">
+                    <a href="mailto:tikvaharkproduction@gmail.com" class="text-white hover:text-[#2EAD4A] transition-colors font-medium">
+                      tikvaharkproduction@gmail.com
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Working Hours block -->
+            <div class="flex items-start space-x-4">
+              <span class="text-gold text-xl mt-1"><i class="fa-solid fa-clock"></i></span>
+              <div>
+                <h4 class="text-xs font-bold text-slate-400 uppercase tracking-widest">Working Hours</h4>
+                <p class="text-sm text-white font-light mt-1">
+                  Monday to Saturday | 11:00 AM – 7:00 PM
+                </p>
+              </div>
+            </div>
+
+            <!-- Social Links block -->
+            <div class="pt-4">
+              <h4 class="text-xs font-bold text-slate-400 uppercase tracking-widest mb-3">Connect Online</h4>
+              <div class="flex space-x-4">
+                <a href="https://youtube.com/playlist?list=PLqtkrDw29uSicFw6a4o88sN03L9E5TZjl" target="_blank" rel="noopener" aria-label="YouTube Playlist" class="w-10 h-10 rounded-full bg-slate-900 border border-slate-800 flex items-center justify-center text-slate-400 hover:text-white hover:border-gold hover:bg-gold/5 transition-all duration-300">
+                  <i class="fa-brands fa-youtube text-base"></i>
+                </a>
+                <a href="https://www.imdb.com/name/nm5718975/" target="_blank" rel="noopener" aria-label="IMDb Profile" class="w-10 h-10 rounded-full bg-slate-900 border border-slate-800 flex items-center justify-center text-slate-400 hover:text-white hover:border-gold hover:bg-gold/5 transition-all duration-300">
+                  <i class="fa-solid fa-star text-base"></i>
+                </a>
+                <a href="#" aria-label="Instagram Profile" class="w-10 h-10 rounded-full bg-slate-900 border border-slate-800 flex items-center justify-center text-slate-400 hover:text-white hover:border-gold hover:bg-gold/5 transition-all duration-300">
+                  <i class="fa-brands fa-instagram text-base"></i>
+                </a>
+                <a href="#" aria-label="LinkedIn Profile" class="w-10 h-10 rounded-full bg-slate-900 border border-slate-800 flex items-center justify-center text-slate-400 hover:text-white hover:border-gold hover:bg-gold/5 transition-all duration-300">
+                  <i class="fa-brands fa-linkedin-in text-base"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Big WhatsApp CTA button -->
+        <div class="pt-6 w-full">
+          <a 
+            href="https://wa.me/918657561060?text=Hi%2C%20I%20would%20like%20to%20discuss%20a%20project%20with%20Tikvah%20Ark%20Productions." 
+            target="_blank" 
+            rel="noopener" 
+            class="flex items-center justify-center px-8 py-4 text-sm font-bold uppercase tracking-widest btn-gold w-full text-center"
+          >
+            <span class="mr-2 text-lg">💬</span> Start a Conversation on WhatsApp
+          </a>
+        </div>
+      </div>
+
+      <!-- RIGHT Column: Google Map -->
+      <div class="h-[400px] lg:h-auto rounded-xl overflow-hidden border border-gold/30 relative" data-aos="fade-left" style="min-height: 400px;">
+        <iframe 
+          src="https://maps.google.com/maps?q=Mangalwadi,JSS+Road,Girgaon,Mumbai+400004&output=embed" 
+          class="w-full h-full border-0 grayscale invert opacity-70 contrast-125" 
+          allowfullscreen="" 
+          loading="lazy" 
+          referrerpolicy="no-referrer-when-downgrade" 
+          title="Tikvah Ark Productions Mumbai Office Map">
+        </iframe>
+        <div class="absolute bottom-3 left-3 bg-slate-950/90 backdrop-blur-md border border-gold/30 px-3 py-1.5 rounded text-[10px] text-slate-300 font-medium tracking-wide">
+          Shatrughna Building, Girgaon, Mumbai 400004
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Highlight Reel Band (NEW) -->
+  <section class="relative h-[70vh] flex items-center justify-center overflow-hidden">
+    <!-- Background Looping Video -->
+    <div class="absolute inset-0 z-0">
+      <video autoplay muted loop playsinline class="w-full h-full object-cover">
+        <source src="assets/video/showreel.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+      <!-- Dark overlay -->
+      <div class="absolute inset-0 bg-black/65"></div>
+    </div>
+    
+    <!-- Content Overlay -->
+    <div class="relative z-10 text-center px-4 max-w-2xl mx-auto">
+      <h2 class="font-cinzel text-3xl sm:text-5xl font-bold tracking-widest text-gold uppercase mb-4" data-aos="fade-up">
+        Stories That Move
+      </h2>
+      <p class="text-sm sm:text-lg text-white font-light tracking-wide mb-8" data-aos="fade-up" data-aos-delay="100">
+        From boardrooms to documentaries — every frame tells a story.
+      </p>
+      <a href="#showreel" class="inline-block px-8 py-3.5 text-xs font-bold uppercase tracking-widest btn-gold-outline rounded-full" data-aos="fade-up" data-aos-delay="200">
+        Watch Full Showreel
+      </a>
+    </div>
+  </section>
+
+  <!-- 8. FOOTER -->
+  <footer class="bg-cinematicNavyDark border-t border-slate-900 py-16">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 md:grid-cols-12 gap-8 mb-12">
+        
+        <!-- Left Side Info -->
+        <div class="md:col-span-5 space-y-4">
+          <div class="flex items-center space-x-3">
+            <img src="assets/logo_icon.png" alt="Tikvah Ark Productions Logo" class="h-[36px] md:h-[48px] w-auto object-contain">
+            <div>
+              <span class="font-cinzel text-base font-bold tracking-wider text-white block leading-tight">TIKVAH ARK</span>
+              <span class="text-[8px] uppercase tracking-widest text-slate-400 block leading-none">PRODUCTIONS</span>
+            </div>
+          </div>
+          <p class="text-xs text-slate-400 font-light leading-relaxed max-w-sm">
+            Cinematic storytelling for brands, businesses, institutions & organizations. End-to-end video and film execution in Mumbai, India.
+          </p>
+          <div class="pt-2 flex flex-col gap-2">
+            <a href="https://www.youtube.com/playlist?list=PLqtkrDw29uSicFw6a4o88sN03L9E5TZjl" target="_blank" rel="noopener" class="inline-flex items-center text-xs text-gold hover:text-gold-light transition-colors duration-300 font-semibold tracking-wider">
+              Watch Our Work ▶
+            </a>
+            <a href="https://www.imdb.com/name/nm5718975/" target="_blank" rel="noopener" class="inline-flex items-center text-xs text-gold hover:text-gold-light transition-colors duration-300 font-semibold tracking-wider">
+              IMDb Credits ↗
+            </a>
+          </div>
+        </div>
+
+        <!-- Middle Quick Links -->
+        <div class="md:col-span-4 space-y-3">
+          <h4 class="text-xs font-bold uppercase tracking-widest text-gold mb-4">Quick Links</h4>
+          <div class="grid grid-cols-2 gap-2 text-xs text-slate-400">
+            <a href="#home" class="hover:text-white transition-colors duration-300">Home</a>
+            <a href="about.html" class="hover:text-white transition-colors duration-300">About Studio</a>
+            <a href="#services" class="hover:text-white transition-colors duration-300">Services</a>
+            <a href="#portfolio" class="hover:text-white transition-colors duration-300">Portfolio</a>
+            <a href="#contact" class="hover:text-white transition-colors duration-300">Contact Us</a>
+            <a href="https://wa.me/918657561060" target="_blank" rel="noopener" class="text-gold/80 hover:text-gold transition-colors duration-300">Get Quote</a>
+          </div>
+        </div>
+
+        <!-- Right Social Icons -->
+        <div class="md:col-span-3 space-y-4">
+          <h4 class="text-xs font-bold uppercase tracking-widest text-gold mb-4">Follow Our Cameras</h4>
+          <div class="flex space-x-4">
+            <a href="#" aria-label="Instagram Profile" class="w-9 h-9 rounded-full bg-slate-900 border border-slate-800 flex items-center justify-center text-slate-400 hover:text-white hover:border-gold hover:bg-gold/5 transition-all duration-300">
+              <i class="fa-brands fa-instagram text-base"></i>
+            </a>
+            <a href="https://www.youtube.com/playlist?list=PLqtkrDw29uSicFw6a4o88sN03L9E5TZjl" target="_blank" rel="noopener" aria-label="YouTube Playlist" class="w-9 h-9 rounded-full bg-slate-900 border border-slate-800 flex items-center justify-center text-slate-400 hover:text-white hover:border-gold hover:bg-gold/5 transition-all duration-300">
+              <i class="fa-brands fa-youtube text-base"></i>
+            </a>
+            <a href="#" aria-label="LinkedIn Profile" class="w-9 h-9 rounded-full bg-slate-900 border border-slate-800 flex items-center justify-center text-slate-400 hover:text-white hover:border-gold hover:bg-gold/5 transition-all duration-300">
+              <i class="fa-brands fa-linkedin-in text-base"></i>
+            </a>
+          </div>
+          
+          <p class="text-[10px] text-slate-500 font-medium">
+            Designed for premium screens.
+          </p>
+        </div>
+
+      </div>
+
+      <!-- Dedicated Social Media Row -->
+      <div class="border-t border-slate-900/80 pt-8 pb-4 text-center">
+        <span class="text-[10px] uppercase tracking-[0.2em] text-slate-500 font-bold block mb-4">Follow Us</span>
+        <div class="flex justify-center space-x-4">
+          <!-- Instagram -->
+          <a href="https://www.instagram.com/tikvaharkproductions?igsh=b2l3bHFyNGF4OHQw&utm_source=qr" target="_blank" rel="noopener" aria-label="Follow us on Instagram" class="w-11 h-11 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-slate-400 hover:text-white hover:bg-[#E1306C] hover:border-[#E1306C] transition-all duration-300">
+            <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24">
+              <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.051.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/>
+            </svg>
+          </a>
+          <!-- YouTube -->
+          <a href="https://youtube.com/@tikvahark123?si=F02KAGmnGIhGlMXs" target="_blank" rel="noopener" aria-label="Follow us on YouTube" class="w-11 h-11 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-slate-400 hover:text-white hover:bg-[#FF0000] hover:border-[#FF0000] transition-all duration-300">
+            <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24">
+              <path d="M23.498 6.163a3.003 3.003 0 00-2.11-2.107C19.525 3.545 12 3.545 12 3.545s-7.525 0-9.388.511a3.002 3.002 0 00-2.11 2.107C0 8.028 0 12 0 12s0 3.972.502 5.837a3.002 3.002 0 002.11 2.107C4.475 20.455 12 20.455 12 20.455s7.525 0 9.388-.511a3.002 3.002 0 002.11-2.107C24 15.972 24 12 24 12s0-3.972-.502-5.837zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+            </svg>
+          </a>
+          <!-- LinkedIn -->
+          <a href="https://www.linkedin.com/company/tikvaharkproductions/" target="_blank" rel="noopener" aria-label="Follow us on LinkedIn" class="w-11 h-11 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-slate-400 hover:text-white hover:bg-[#0A66C2] hover:border-[#0A66C2] transition-all duration-300">
+            <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24">
+              <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.779-1.75-1.75s.784-1.75 1.75-1.75 1.75.779 1.75 1.75-.784 1.75-1.75 1.75zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+            </svg>
+          </a>
+          <!-- WhatsApp -->
+          <a href="https://wa.me/918657561060" target="_blank" rel="noopener" aria-label="Contact us on WhatsApp" class="w-11 h-11 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-slate-400 hover:text-white hover:bg-[#25D366] hover:border-[#25D366] transition-all duration-300">
+            <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24">
+              <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946C.06 5.348 5.397.01 12.008.01c3.202.001 6.212 1.246 8.477 3.514 2.266 2.268 3.507 5.28 3.505 8.484-.004 6.657-5.34 11.997-11.953 11.997-2.005-.001-3.973-.502-5.731-1.456L0 24zm6.59-4.846c1.6.95 2.568 1.488 4.415 1.489 5.568 0 10.099-4.547 10.102-10.136.002-2.707-1.047-5.253-2.955-7.163C16.29 1.433 13.738.384 11.026.384c-5.578 0-10.108 4.548-10.111 10.138 0 1.912.493 3.393 1.436 5.03l-.943 3.445 3.649-.933zM16.518 13.56c-.244-.122-1.45-.717-1.671-.801-.224-.084-.388-.122-.55.122-.163.244-.632.801-.774.962-.143.162-.285.183-.53.061-.244-.122-1.03-.38-1.962-1.213-.726-.647-1.216-1.448-1.358-1.691-.143-.244-.015-.376.107-.497.111-.11.244-.285.367-.428.122-.142.163-.244.244-.407.081-.162.041-.305-.02-.426-.062-.122-.55-1.32-.754-1.81-.198-.479-.399-.414-.55-.422-.143-.007-.306-.008-.469-.008-.163 0-.428.061-.652.305-.224.244-.855.834-.855 2.031 0 1.198.871 2.35 1.01 2.533.143.183 1.72 2.624 4.167 3.678.583.25 1.037.4 1.392.513.585.186 1.117.16 1.538.097.469-.071 1.45-.591 1.653-1.162.204-.57.204-1.059.143-1.161-.061-.102-.224-.162-.469-.284z"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+
+      <!-- Bottom Line -->
+      <div class="border-t border-slate-900/80 pt-8 flex flex-col sm:flex-row items-center justify-between text-[11px] text-slate-500">
+        <p>© 2026 Tikvah Ark Productions. All rights reserved.</p>
+        <p class="mt-2 sm:mt-0 font-medium">Mumbai, India</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- WhatsApp Chatbot UI Panel -->
+  <div 
+    id="whatsapp-chat-window" 
+    class="fixed bottom-20 right-4 sm:bottom-24 sm:right-6 w-[320px] sm:w-[360px] rounded-2xl glass-panel border border-slate-800/90 shadow-2xl overflow-hidden transition-all duration-300 transform opacity-0 scale-95 pointer-events-none z-50 flex flex-col"
+  >
+    <!-- Header -->
+    <div class="bg-[#1A2744] p-4 border-b border-[#1E5BAD] flex items-center justify-between">
+      <div class="flex items-center space-x-3">
+        <div class="w-10 h-10 rounded-full bg-slate-900 border border-[#1E5BAD]/30 p-1 flex items-center justify-center relative">
+          <img src="assets/logo_icon.png" alt="Tikvah Ark Logo" class="w-full h-full object-contain">
+          <span class="absolute bottom-0 right-0 w-3 h-3 bg-emerald-500 border-2 border-slate-950 rounded-full"></span>
+        </div>
+        <div>
+          <h4 class="font-cinzel text-xs font-bold text-white uppercase tracking-wider">Bhagwati — Tikvah Ark</h4>
+          <span class="text-[10px] text-emerald-500 font-medium flex items-center gap-1.5">
+            <span class="w-1.5 h-1.5 bg-emerald-500 rounded-full animate-ping"></span>
+            Online Now
+          </span>
+        </div>
+      </div>
+      <button 
+        id="close-chat-window" 
+        aria-label="Close Chat Window" 
+        class="text-slate-400 hover:text-white transition-colors duration-300 text-lg"
+      >
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+    </div>
+    
+    <!-- Body / Conversation -->
+    <div class="p-4 space-y-4 max-h-[280px] overflow-y-auto bg-slate-950/40">
+      <!-- Welcome Message -->
+      <div class="flex items-start space-x-2.5">
+        <div class="w-6 h-6 rounded-full bg-slate-900 border border-gold/20 flex items-center justify-center text-[10px] text-gold font-cinzel">
+          TA
+        </div>
+        <div class="bg-slate-900/90 border border-slate-800/50 p-3 rounded-2xl rounded-tl-none max-w-[80%]">
+          <p class="text-xs text-slate-300 leading-relaxed font-light">
+            Namaste! Welcome to Tikvah Ark Productions. How can we help you today?
+          </p>
+          <span class="text-[9px] text-slate-500 block text-right mt-1">Just now</span>
+        </div>
+      </div>
+      
+      <!-- Quick Replies Section -->
+      <div class="space-y-2 pt-2">
+        <p class="text-[10px] text-slate-500 font-semibold uppercase tracking-wider">Select an option:</p>
+        <div class="flex flex-col space-y-2">
+          <button 
+            class="chat-quick-reply-btn text-left px-3.5 py-2.5 rounded-xl text-xs font-medium tracking-wide transition-all duration-300 focus:outline-none"
+            data-wa-url="https://wa.me/918657561060?text=Hi%20Tikvah%20Ark%2C%20I'm%20interested%20in%20viewing%20your%20latest%20work.%20Can%20you%20please%20share%20your%20showreel%3F"
+          >
+            🎥 Request a Showreel
+          </button>
+          <button 
+            class="chat-quick-reply-btn text-left px-3.5 py-2.5 rounded-xl text-xs font-medium tracking-wide transition-all duration-300 focus:outline-none"
+            data-wa-url="https://wa.me/918657561060?text=Hi%20Tikvah%20Ark%2C%20I%20would%20like%20to%20get%20a%20quote%20for%20a%20video%20production%20project."
+          >
+            💰 Inquire about Pricing
+          </button>
+          <button 
+            class="chat-quick-reply-btn text-left px-3.5 py-2.5 rounded-xl text-xs font-medium tracking-wide transition-all duration-300 focus:outline-none"
+            data-wa-url="https://wa.me/918657561060?text=Hi%20Tikvah%20Ark%2C%20I'd%20like%20to%20book%20a%20consultation%20session%20with%20your%20creative%20directors%20to%20discuss%20a%20project."
+          >
+            📅 Book a Consultation
+          </button>
+          <button 
+            class="chat-quick-reply-btn text-left px-3.5 py-2.5 rounded-xl text-xs font-medium tracking-wide transition-all duration-300 focus:outline-none"
+            data-wa-url="https://wa.me/918657561060?text=Hi%2C%20I%20am%20interested%20in%20an%20Industrial%20or%20CSR%20Film."
+          >
+            🏭 Industrial / CSR Film
+          </button>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Footer / Input -->
+    <div class="p-3 border-t border-slate-900 bg-slate-950 flex items-center space-x-2">
+      <input 
+        type="text" 
+        id="chat-custom-message" 
+        placeholder="Type a custom message..." 
+        class="flex-1 bg-slate-900 border border-slate-800 text-xs px-3 py-2.5 rounded-xl focus:outline-none focus:border-gold text-white font-light placeholder:text-slate-500"
+      >
+      <button 
+        id="chat-send-btn" 
+        aria-label="Send Message on WhatsApp" 
+        class="w-9 h-9 rounded-xl bg-[#1E5BAD] hover:bg-[#1E5BAD]/80 text-white flex items-center justify-center transition-all duration-300 hover:scale-105 active:scale-95 text-sm"
+      >
+        <i class="fa-regular fa-paper-plane"></i>
+      </button>
+    </div>
+  </div>
+
+  <!-- WhatsApp Chat Bubble Trigger -->
+  <button 
+    id="whatsapp-chat-bubble" 
+    aria-label="Toggle WhatsApp Chatbot Panel" 
+    class="fixed bottom-4 right-4 sm:bottom-6 sm:right-6 w-12 h-12 sm:w-14 sm:h-14 rounded-full bg-[#25D366] hover:bg-[#20ba5a] text-white flex items-center justify-center text-xl sm:text-2xl z-50 transition-transform duration-300 hover:scale-110 active:scale-95 shadow-2xl whatsapp-pulse focus:outline-none"
+  >
+    <i class="fa-brands fa-whatsapp text-2xl sm:text-3xl"></i>
+  </button>
+
+  <!-- Back to Top Button -->
+  <button 
+    id="back-to-top" 
+    aria-label="Scroll to top" 
+    class="fixed bottom-20 right-4 sm:bottom-24 sm:right-6 w-10 h-10 rounded-full bg-gold hover:bg-gold-dark text-white flex items-center justify-center z-40 transition-all duration-300 opacity-0 translate-y-20 pointer-events-none hover:scale-105 active:scale-95 shadow-2xl focus:outline-none"
+  >
+    <i class="fa-solid fa-arrow-up text-sm font-bold"></i>
+  </button>
+
+  <!-- AOS Script -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <!-- Custom Javascript -->
+  <script>
+document.addEventListener('DOMContentLoaded', () => {
+  // Preloader Logic (1.8-second animation progress and fade-out)
+  const preloader = document.getElementById('preloader');
+  const preloaderBar = document.getElementById('preloader-bar');
+  if (preloaderBar) {
+    setTimeout(() => {
+      preloaderBar.style.transform = 'scale-x(1)';
+    }, 50);
+  }
+  
+  setTimeout(() => {
+    if (preloader) {
+      preloader.classList.add('opacity-0', 'pointer-events-none');
+      setTimeout(() => preloader.classList.add('hidden'), 500);
+    }
+  }, 1800);
+
+  // Sticky Header Navigation & Glassmorphism Toggle
+  const header = document.querySelector('header');
+  const checkScroll = () => {
+    if (window.scrollY > 50) {
+      header.classList.add('nav-scrolled');
+    } else {
+      header.classList.remove('nav-scrolled');
+    }
+  };
+  window.addEventListener('scroll', checkScroll);
+  checkScroll(); // Check on init in case of refresh in-page
+
+  // Mobile Menu Navigation Drawer Toggle
+  const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+  const mobileNav = document.getElementById('mobile-nav');
+  const mobileNavLinks = document.querySelectorAll('.mobile-nav-link');
+
+  const toggleMobileMenu = () => {
+    const isExpanded = mobileMenuBtn.getAttribute('aria-expanded') === 'true';
+    mobileMenuBtn.setAttribute('aria-expanded', !isExpanded);
+    
+    // Toggle classes
+    mobileNav.classList.toggle('translate-x-0');
+    mobileNav.classList.toggle('translate-x-full');
+    
+    // Animate hamburger icon
+    const burgerLines = mobileMenuBtn.querySelectorAll('span');
+    if (!isExpanded) {
+      burgerLines[0].classList.add('rotate-45', 'translate-y-2');
+      burgerLines[1].classList.add('opacity-0');
+      burgerLines[2].classList.add('-rotate-45', '-translate-y-2');
+      document.body.style.overflow = 'hidden'; // Stop scrolling behind menu
+    } else {
+      burgerLines[0].classList.remove('rotate-45', 'translate-y-2');
+      burgerLines[1].classList.remove('opacity-0');
+      burgerLines[2].classList.remove('-rotate-45', '-translate-y-2');
+      document.body.style.overflow = ''; // Resume scrolling
+    }
+  };
+
+  if (mobileMenuBtn) {
+    mobileMenuBtn.addEventListener('click', toggleMobileMenu);
+  }
+
+  // Close mobile menu when a link is clicked
+  mobileNavLinks.forEach(link => {
+    link.addEventListener('click', () => {
+      if (!mobileNav.classList.contains('translate-x-full')) {
+        toggleMobileMenu();
+      }
+    });
+  });
+
+  // Spotlight Mouse-Move Grid Glow Effect for Service Cards
+  const cards = document.querySelectorAll('.service-info-card');
+  cards.forEach(card => {
+    card.addEventListener('mousemove', (e) => {
+      const rect = card.getBoundingClientRect();
+      const x = e.clientX - rect.left;
+      const y = e.clientY - rect.top;
+      card.style.setProperty('--mouse-x', `${x}px`);
+      card.style.setProperty('--mouse-y', `${y}px`);
+    });
+  });
+
+  // Active Link Highlighting using IntersectionObserver
+  const sections = document.querySelectorAll('section[id]');
+  const navLinks = document.querySelectorAll('.nav-link');
+
+  const navObserverOptions = {
+    root: null,
+    rootMargin: '-30% 0px -60% 0px', // Trigger when section occupies the middle of screen
+    threshold: 0
+  };
+
+  const navObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        const id = entry.target.getAttribute('id');
+        navLinks.forEach(link => {
+          if (link.getAttribute('href') === `#${id}`) {
+            link.classList.add('active');
+          } else {
+            link.classList.remove('active');
+          }
+        });
+      }
+    });
+  }, navObserverOptions);
+
+  sections.forEach(section => navObserver.observe(section));
+
+  // Dynamic Portfolio Category Filter Logic
+  const filterButtons = document.querySelectorAll('.portfolio-filter-btn');
+  const portfolioItems = document.querySelectorAll('.portfolio-item');
+
+  filterButtons.forEach(btn => {
+    btn.addEventListener('click', () => {
+      filterButtons.forEach(b => {
+        b.classList.remove('bg-gold', 'text-slate-950', 'font-bold', 'border-gold', 'active-filter');
+        b.classList.add('border-gold/40', 'text-gold');
+      });
+      
+      btn.classList.add('bg-gold', 'text-slate-950', 'font-bold', 'border-gold', 'active-filter');
+      btn.classList.remove('border-gold/40', 'text-gold');
+
+      const filterValue = btn.getAttribute('data-filter');
+
+      portfolioItems.forEach(item => {
+        if (filterValue === 'all' || item.getAttribute('data-category') === filterValue) {
+          item.classList.remove('hidden');
+          setTimeout(() => {
+            item.style.opacity = '1';
+            item.style.transform = 'scale(1)';
+          }, 50);
+        } else {
+          item.style.opacity = '0';
+          item.style.transform = 'scale(0.95)';
+          setTimeout(() => {
+            item.classList.add('hidden');
+          }, 300);
+        }
+      });
+    });
+  });
+
+  // Mobile Services Toggle to prevent scroll-fatigue
+  const toggleServicesBtn = document.getElementById('toggle-services-btn');
+  const serviceCards = document.querySelectorAll('.service-row-container');
+  
+  if (toggleServicesBtn && serviceCards.length > 6) {
+    let isExpanded = false;
+    
+    const updateServicesVisibility = () => {
+      if (window.innerWidth < 768) {
+        serviceCards.forEach((card, index) => {
+          if (index >= 6) {
+            if (isExpanded) {
+              card.classList.remove('hidden');
+            } else {
+              card.classList.add('hidden');
+            }
+          }
+        });
+        toggleServicesBtn.textContent = isExpanded ? 'Show Less Services' : 'Show All Services';
+        toggleServicesBtn.parentElement.classList.remove('hidden');
+      } else {
+        // Desktop always shows all cards
+        serviceCards.forEach(card => card.classList.remove('hidden'));
+        toggleServicesBtn.parentElement.classList.add('hidden');
+      }
+    };
+
+    toggleServicesBtn.addEventListener('click', () => {
+      isExpanded = !isExpanded;
+      updateServicesVisibility();
+      
+      // If closing, scroll smoothly back to the top of the services section
+      if (!isExpanded) {
+        document.getElementById('services').scrollIntoView({ behavior: 'smooth' });
+      }
+    });
+
+    window.addEventListener('resize', updateServicesVisibility);
+    updateServicesVisibility();
+  }
+
+  // YouTube Service Video Carousel & Switcher Logic
+  const serviceContainers = document.querySelectorAll('.service-video-container');
+  serviceContainers.forEach(container => {
+    const videoIdsAttr = container.getAttribute('data-video-ids') || container.getAttribute('data-video-id');
+    if (!videoIdsAttr) return;
+
+    const videoIds = videoIdsAttr.split(',').map(id => id.trim());
+    const iframe = container.querySelector('iframe');
+    const overlay = container.querySelector('.service-video-overlay');
+    const watchBtn = container.querySelector('.watch-sample-btn');
+
+    let currentIndex = 0;
+    let isPlaying = false;
+    let intervalId = null;
+
+    const goToSlide = (idx) => {
+      if (idx === currentIndex) return;
+      currentIndex = idx;
+      const videoId = videoIds[currentIndex];
+
+      if (iframe) {
+        iframe.classList.add('iframe-fade-out');
+
+        setTimeout(() => {
+          if (isPlaying) {
+            iframe.src = `https://www.youtube.com/embed/${videoId}?autoplay=1&controls=1&mute=0&rel=0`;
+          } else {
+            iframe.src = `https://www.youtube.com/embed/${videoId}?autoplay=1&mute=1&loop=1&playlist=${videoId}&controls=0&showinfo=0&rel=0&enablejsapi=1`;
+            if (overlay) {
+              overlay.classList.remove('hidden', 'pointer-events-none');
+            }
+          }
+
+          const dots = container.querySelectorAll('.service-carousel-dot');
+          dots.forEach((dot, dotIdx) => {
+            if (dotIdx === currentIndex) {
+              dot.classList.remove('bg-white/40');
+              dot.classList.add('bg-gold', 'w-4');
+            } else {
+              dot.classList.add('bg-white/40');
+              dot.classList.remove('bg-gold', 'w-4');
+            }
+          });
+
+          iframe.classList.remove('iframe-fade-out');
+        }, 400);
+      }
+    };
+
+    if (videoIds.length > 1) {
+      const dotsContainer = document.createElement('div');
+      dotsContainer.className = 'service-carousel-dots absolute bottom-4 left-1/2 transform -translate-x-1/2 z-20 flex space-x-1.5';
+      
+      videoIds.forEach((_, idx) => {
+        const dot = document.createElement('button');
+        dot.className = `service-carousel-dot w-2 h-2 rounded-full transition-all duration-300 focus:outline-none ${idx === 0 ? 'bg-gold w-4' : 'bg-white/40'}`;
+        dot.setAttribute('aria-label', `Go to slide ${idx + 1}`);
+        dot.addEventListener('click', (e) => {
+          e.stopPropagation();
+          goToSlide(idx);
+        });
+        dotsContainer.appendChild(dot);
+      });
+      container.appendChild(dotsContainer);
+
+      const startAutoplay = () => {
+        intervalId = setInterval(() => {
+          if (!isPlaying) {
+            const nextIdx = (currentIndex + 1) % videoIds.length;
+            goToSlide(nextIdx);
+          }
+        }, 7000);
+      };
+      
+      startAutoplay();
+    }
+
+    if (watchBtn) {
+      watchBtn.addEventListener('click', (e) => {
+        e.stopPropagation();
+        isPlaying = true;
+        if (intervalId) {
+          clearInterval(intervalId);
+        }
+        const videoId = videoIds[currentIndex];
+        if (iframe) {
+          iframe.src = `https://www.youtube.com/embed/${videoId}?autoplay=1&controls=1&mute=0&rel=0`;
+          if (overlay) {
+            overlay.classList.add('hidden', 'pointer-events-none');
+          }
+        }
+      });
+    }
+  });
+
+  // Simulated WhatsApp Chatbot Window Actions
+  const chatBubble = document.getElementById('whatsapp-chat-bubble');
+  const chatWindow = document.getElementById('whatsapp-chat-window');
+  const closeChat = document.getElementById('close-chat-window');
+  const quickReplies = document.querySelectorAll('.chat-quick-reply-btn');
+  const customMsgInput = document.getElementById('chat-custom-message');
+  const sendChatBtn = document.getElementById('chat-send-btn');
+
+  // Toggle chatbot panel open/close
+  const toggleChatbot = () => {
+    if (chatWindow) {
+      chatWindow.classList.toggle('opacity-0');
+      chatWindow.classList.toggle('scale-95');
+      chatWindow.classList.toggle('pointer-events-none');
+    }
+  };
+
+  if (chatBubble) {
+    chatBubble.addEventListener('click', toggleChatbot);
+  }
+  if (closeChat) {
+    closeChat.addEventListener('click', toggleChatbot);
+  }
+
+  // Handle quick replies selection
+  quickReplies.forEach(btn => {
+    btn.addEventListener('click', () => {
+      const waUrl = btn.getAttribute('data-wa-url');
+      if (waUrl) {
+        window.open(waUrl, '_blank', 'noopener');
+        toggleChatbot(); // Close window after click
+      }
+    });
+  });
+
+  // Handle sending typed custom messages
+  const sendCustomMessage = () => {
+    const text = customMsgInput.value.trim();
+    if (!text) return;
+
+    const encodedText = encodeURIComponent(text);
+    const waUrl = `https://wa.me/918657561060?text=${encodedText}`;
+    window.open(waUrl, '_blank', 'noopener');
+
+    // Reset fields
+    customMsgInput.value = '';
+    toggleChatbot();
+  };
+
+  if (sendChatBtn) {
+    sendChatBtn.addEventListener('click', sendCustomMessage);
+  }
+  if (customMsgInput) {
+    customMsgInput.addEventListener('keydown', (e) => {
+      if (e.key === 'Enter') {
+        e.preventDefault();
+        sendCustomMessage();
+      }
+    });
+  }
+
+  // Back to Top scroll listener
+  const backToTop = document.getElementById('back-to-top');
+  if (backToTop) {
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 500) {
+        backToTop.classList.remove('opacity-0', 'translate-y-20', 'pointer-events-none');
+        backToTop.classList.add('opacity-100', 'translate-y-0', 'pointer-events-auto');
+      } else {
+        backToTop.classList.add('opacity-0', 'translate-y-20', 'pointer-events-none');
+        backToTop.classList.remove('opacity-100', 'translate-y-0', 'pointer-events-auto');
+      }
+    });
+
+    backToTop.addEventListener('click', () => {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+  }
+
+  // Native CSS Intersection Observer Reveal-on-Scroll animations
+  const revealElements = document.querySelectorAll('.reveal-on-scroll');
+  const revealObserverOptions = {
+    root: null,
+    rootMargin: '0px 0px -10% 0px',
+    threshold: 0.15
+  };
+
+  const revealObserver = new IntersectionObserver((entries, observer) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('revealed');
+        // Smoothly stagger child elements marked with .stagger-item
+        const staggerItems = entry.target.querySelectorAll('.stagger-item');
+        staggerItems.forEach((item, index) => {
+          item.style.transitionDelay = `${index * 0.15}s`;
+          item.classList.add('revealed');
+        });
+        observer.unobserve(entry.target); // Animate only once
+      }
+    });
+  }, revealObserverOptions);
+
+  revealElements.forEach(el => revealObserver.observe(el));
+
+  // Lightbox Modal Actions for Portfolio
+  const portfolioCards = document.querySelectorAll('.portfolio-card-trigger');
+  const lightbox = document.getElementById('portfolio-lightbox');
+  const lightboxIframe = document.getElementById('lightbox-iframe');
+  const lightboxClose = document.getElementById('lightbox-close');
+
+  if (portfolioCards && lightbox && lightboxIframe) {
+    portfolioCards.forEach(card => {
+      card.addEventListener('click', (e) => {
+        e.preventDefault();
+        const videoId = card.getAttribute('data-video-id');
+        if (videoId) {
+          lightboxIframe.src = `https://www.youtube.com/embed/${videoId}?autoplay=1&controls=1&mute=0&rel=0`;
+          lightbox.classList.remove('opacity-0', 'pointer-events-none');
+          lightbox.classList.add('active');
+        }
+      });
+    });
+
+    const closeLightboxModal = () => {
+      lightbox.classList.remove('active');
+      lightbox.classList.add('opacity-0', 'pointer-events-none');
+      lightboxIframe.src = '';
+    };
+
+    if (lightboxClose) {
+      lightboxClose.addEventListener('click', closeLightboxModal);
+    }
+
+    lightbox.addEventListener('click', (e) => {
+      if (e.target === lightbox) {
+        closeLightboxModal();
+      }
+    });
+
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && lightbox.classList.contains('active')) {
+        closeLightboxModal();
+      }
+    });
+  }
+
+  // Initialize Animate on Scroll (AOS)
+  if (typeof AOS !== 'undefined') {
+    AOS.init({
+      duration: 800,
+      easing: 'ease-out-quad',
+      once: true,
+      offset: 100
+    });
+  }
+
+  // Custom Showreel Play Button Overlay
+  const mainShowreelVideo = document.getElementById('main-showreel-video');
+  const showreelOverlay = document.getElementById('showreel-video-overlay');
+  if (mainShowreelVideo && showreelOverlay) {
+    showreelOverlay.addEventListener('click', (e) => {
+      e.stopPropagation();
+      mainShowreelVideo.setAttribute('controls', 'true');
+      mainShowreelVideo.play();
+      showreelOverlay.style.opacity = '0';
+      setTimeout(() => {
+        showreelOverlay.classList.add('hidden');
+      }, 500);
+    });
+  }
+});
+
+</script>
+</body>
+</html>

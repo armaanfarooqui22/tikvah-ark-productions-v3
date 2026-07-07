@@ -1,0 +1,1806 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us | Tikvah Ark Productions</title>
+  
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="Learn about Tikvah Ark Productions, a premium Mumbai-based film and content production company. Meet our founders and read our story.">
+  <meta name="author" content="Tikvah Ark Productions">
+  
+  <!-- Tailwind CSS via CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            cinematicNavy: '#0C1220',
+            cinematicNavyLight: '#111827',
+            cinematicNavyDark: '#070b14',
+            accentBlue: '#1E5BAD',
+            accentGreen: '#2EAD4A',
+            accentLightBlue: '#4FA3E0',
+            gold: {
+              DEFAULT: '#1E5BAD',
+              light: '#4FA3E0',
+              dark: '#2EAD4A',
+            }
+          },
+          fontFamily: {
+            cinzel: ['Cinzel', 'serif'],
+            montserrat: ['Montserrat', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- AOS (Animate on Scroll) CSS -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <!-- Custom Stylesheet -->
+  <style>
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700;900&family=Montserrat:wght@300;400;500;600;700;800&display=swap');
+
+:root {
+  --color-bg-primary: #0C1220;
+  --color-bg-secondary: #111827;
+  --color-bg-card: #162035;
+  --color-accent-blue: #1E5BAD;
+  --color-accent-green: #2EAD4A;
+  --color-accent-light-blue: #4FA3E0;
+  --color-text-primary: #FFFFFF;
+  --color-text-muted: #9BA8BE;
+  --color-border: rgba(30, 91, 173, 0.3);
+
+  /* Compatibility Mapping */
+  --color-gold: var(--color-accent-blue);
+  --color-gold-light: var(--color-accent-light-blue);
+  --color-gold-dark: var(--color-accent-green);
+  --color-gold-glow: rgba(30, 91, 173, 0.35);
+  --color-bg-tertiary: var(--color-bg-card);
+  --color-text-secondary: var(--color-text-muted);
+}
+
+/* Base styles */
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 80px; /* Offset for sticky navbar */
+  background-color: var(--color-bg-primary);
+  color: var(--color-text-primary);
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  overflow-x: hidden;
+}
+
+/* Headings font */
+h1, h2, h3, h4, h5, h6, .font-cinzel {
+  font-family: 'Cinzel', serif;
+  letter-spacing: 0.05em;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-bg-primary);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-bg-tertiary);
+  border-radius: 4px;
+  border: 1px solid rgba(30, 91, 173, 0.1);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-gold-dark);
+}
+
+/* Preloader */
+#preloader {
+  background-color: #000000;
+  z-index: 100;
+}
+
+/* Custom Gradients */
+.gold-text-gradient {
+  background: linear-gradient(135deg, var(--color-gold-light) 0%, var(--color-gold) 50%, var(--color-gold-dark) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.gold-bg-gradient {
+  background: linear-gradient(135deg, var(--color-gold-light) 0%, var(--color-gold) 50%, var(--color-gold-dark) 100%);
+}
+
+.gold-border-gradient {
+  border-image: linear-gradient(to right, var(--color-gold-dark), var(--color-gold-light), var(--color-gold-dark)) 1;
+}
+
+/* Glassmorphism Classes */
+.glass-panel {
+  background: rgba(7, 17, 36, 0.65);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.glass-nav {
+  background: rgba(3, 8, 18, 0.8);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border-bottom: 1px solid rgba(30, 91, 173, 0.1);
+  transition: all 0.3s ease-in-out;
+}
+
+.glass-nav.nav-scrolled {
+  background: rgba(2, 5, 11, 0.95);
+  box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.7);
+  border-bottom: 1px solid rgba(30, 91, 173, 0.2);
+}
+
+/* Service Row Hover Effects */
+.service-info-card {
+  background: linear-gradient(145deg, rgba(7, 17, 36, 0.8) 0%, rgba(3, 8, 18, 0.9) 100%);
+  border: 1px solid rgba(30, 91, 173, 0.1);
+  transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.service-info-card:hover {
+  border-color: rgba(30, 91, 173, 0.5);
+  box-shadow: 0 15px 30px -10px rgba(0, 0, 0, 0.8), 0 0 20px 0 var(--color-gold-glow);
+}
+
+.service-video-container {
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  transition: all 0.4s ease;
+  box-shadow: 0 10px 35px -10px rgba(0, 0, 0, 0.9);
+}
+
+.service-video-container:hover {
+  border-color: rgba(30, 91, 173, 0.4);
+  box-shadow: 0 15px 40px -10px rgba(0, 0, 0, 0.95), 0 0 25px 0 rgba(30, 91, 173, 0.15);
+}
+
+/* Button Animations & Effects */
+.btn-gold {
+  position: relative;
+  overflow: hidden;
+  transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
+  z-index: 1;
+  border-radius: 9999px;
+  background: linear-gradient(135deg, var(--color-gold-light) 0%, var(--color-gold) 50%, var(--color-gold-dark) 100%);
+  color: #ffffff !important;
+  font-weight: 600;
+  box-shadow: 0 4px 14px 0 rgba(30, 91, 173, 0.3);
+}
+
+.btn-gold::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, #ffffff 0%, rgba(255, 255, 255, 0) 100%);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  z-index: -1;
+}
+
+.btn-gold:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px 0 rgba(30, 91, 173, 0.5), 0 0 12px 2px rgba(255, 255, 255, 0.1);
+}
+
+.btn-gold:hover::after {
+  opacity: 0.2;
+}
+
+.btn-gold:active {
+  transform: translateY(0);
+}
+
+.btn-gold-outline {
+  position: relative;
+  overflow: hidden;
+  transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
+  z-index: 1;
+  border-radius: 9999px;
+  border: 1px solid var(--color-gold);
+  color: var(--color-gold);
+  font-weight: 600;
+  background: transparent;
+}
+
+.btn-gold-outline::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, var(--color-gold-light) 0%, var(--color-gold) 50%, var(--color-gold-dark) 100%);
+  z-index: -1;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.3s ease-in-out;
+}
+
+.btn-gold-outline:hover {
+  transform: translateY(-2px);
+  color: #ffffff !important;
+  border-color: transparent;
+  box-shadow: 0 6px 20px 0 rgba(30, 91, 173, 0.4);
+}
+
+.btn-gold-outline:hover::before {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
+.btn-gold-outline:active {
+  transform: translateY(0);
+}
+
+/* Floating WhatsApp pulse animation */
+.whatsapp-pulse {
+  box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.7);
+  animation: pulse-green 2s infinite;
+}
+
+@keyframes pulse-green {
+  0% {
+    transform: scale(1);
+    box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.7);
+  }
+  70% {
+    transform: scale(1.05);
+    box-shadow: 0 0 0 15px rgba(37, 211, 102, 0);
+  }
+  100% {
+    transform: scale(1);
+    box-shadow: 0 0 0 0 rgba(37, 211, 102, 0);
+  }
+}
+
+.portfolio-card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  aspect-ratio: 16 / 10;
+  transition: all 0.4s ease;
+}
+
+.portfolio-card:hover {
+  border-color: var(--color-gold);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.7), 0 0 20px 0 var(--color-gold-glow);
+}
+
+.portfolio-card img {
+  transition: transform 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.portfolio-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to top, rgba(3, 8, 18, 0.95) 0%, rgba(3, 8, 18, 0.4) 60%, rgba(3, 8, 18, 0.1) 100%);
+  opacity: 0.8;
+  transition: all 0.4s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 1.5rem;
+}
+
+.portfolio-card:hover img {
+  transform: scale(1.08);
+}
+
+.portfolio-card:hover .portfolio-overlay {
+  opacity: 1;
+  background: linear-gradient(to top, rgba(3, 8, 18, 0.98) 0%, rgba(3, 8, 18, 0.6) 60%, rgba(3, 8, 18, 0.2) 100%);
+  border-top: 2px solid var(--color-gold);
+}
+
+/* Video Section Overlay */
+.hero-overlay {
+  background: radial-gradient(circle, transparent 15%, var(--color-bg-primary) 95%),
+              linear-gradient(to bottom, rgba(3, 8, 18, 0.6) 0%, var(--color-bg-primary) 100%);
+}
+
+.hero-video-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.hero-video-container iframe {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100vw;
+  height: 56.25vw; /* 16:9 Aspect Ratio */
+  min-height: 100vh;
+  min-width: 177.78vh; /* 16:9 Aspect Ratio */
+  transform: translate(-50%, -50%);
+}
+
+/* Section Dividers with Gold Diamond */
+.section-divider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1.5rem 0;
+}
+
+.section-divider::before,
+.section-divider::after {
+  content: '';
+  flex: 1;
+  height: 1px;
+  background: linear-gradient(to var(--direction, right), rgba(30, 91, 173, 0), rgba(30, 91, 173, 0.4));
+}
+
+.section-divider::before {
+  --direction: right;
+  margin-right: 1.5rem;
+}
+
+.section-divider::after {
+  --direction: left;
+  margin-left: 1.5rem;
+}
+
+.section-divider-diamond {
+  width: 10px;
+  height: 10px;
+  background: var(--color-gold);
+  transform: rotate(45deg);
+  box-shadow: 0 0 10px var(--color-gold);
+}
+
+/* Inputs styling */
+.form-input {
+  background: rgba(7, 17, 36, 0.6);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  color: #ffffff;
+  transition: all 0.3s ease;
+}
+
+.form-input:focus {
+  outline: none;
+  border-color: var(--color-gold);
+  box-shadow: 0 0 0 2px var(--color-gold-glow);
+  background: rgba(11, 26, 54, 0.8);
+}
+
+/* Toast Message */
+.toast-success {
+  transform: translateY(100px);
+  opacity: 0;
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.toast-success.show {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+/* Navigation active class */
+.nav-link {
+  position: relative;
+  color: var(--color-text-secondary);
+  transition: color 0.3s ease;
+}
+
+.nav-link::after {
+  content: '';
+  position: absolute;
+  bottom: -4px;
+  left: 50%;
+  width: 0;
+  height: 2px;
+  background: var(--color-accent-green);
+  transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  transform: translateX(-50%);
+}
+
+.nav-link:hover {
+  color: var(--color-accent-green);
+}
+
+.nav-link:hover::after {
+  width: 100%;
+}
+
+.nav-link.active {
+  color: var(--color-accent-green);
+}
+
+.nav-link.active::after {
+  width: 100%;
+  background: var(--color-accent-green);
+}
+
+/* Premium Titles Gold Underline */
+.section-title-underline {
+  position: relative;
+  padding-bottom: 12px;
+}
+
+.section-title-underline::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 44px;
+  height: 3px;
+  background-color: var(--color-accent-green);
+  border-radius: 9999px;
+}
+
+.section-title-underline-left {
+  position: relative;
+  padding-bottom: 18px;
+}
+
+.section-title-underline-left::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 40px;
+  height: 3px;
+  background-color: var(--color-accent-green);
+  border-radius: 9999px;
+}
+
+/* WhatsApp Chatbot CSS Widget */
+#whatsapp-chat-window {
+  box-shadow: 0 20px 50px -15px rgba(0, 0, 0, 0.9);
+}
+
+.chat-quick-reply-btn {
+  background: rgba(30, 91, 173, 0.04);
+  border: 1px solid rgba(30, 91, 173, 0.25);
+  color: #ffffff;
+  transition: all 0.3s ease;
+}
+
+.chat-quick-reply-btn:hover {
+  background: rgba(30, 91, 173, 0.12);
+  border-color: var(--color-gold);
+  transform: translateY(-1px);
+}
+
+/* Back to Top Button */
+#back-to-top {
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.6);
+}
+
+/* Dynamic Scroll Reveal Base (Default to visible for bulletproof fallback rendering) */
+.reveal-on-scroll {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94),
+              transform 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.reveal-on-scroll.revealed {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Service Card IFrame Overlay Trigger */
+.service-video-overlay {
+  background: rgba(3, 8, 18, 0.45);
+  backdrop-filter: blur(2px);
+  transition: all 0.4s ease;
+}
+
+.service-video-container:hover .service-video-overlay {
+  background: rgba(3, 8, 18, 0.25);
+  backdrop-filter: blur(0px);
+}
+
+/* Perfect Loop Ticker / Marquee */
+.ticker-wrap {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  background: rgba(0, 0, 0, 0.6);
+  border-top: 1px solid rgba(46, 173, 74, 0.25);
+  border-bottom: 1px solid rgba(46, 173, 74, 0.25);
+  z-index: 10;
+  padding: 12px 0;
+}
+
+.ticker {
+  display: flex;
+  width: max-content;
+}
+
+.ticker__move {
+  display: flex;
+  animation: ticker-move 36s linear infinite;
+}
+
+.ticker__item {
+  flex-shrink: 0;
+  padding: 0 1.5rem;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  color: var(--color-accent-green);
+}
+
+@keyframes ticker-move {
+  0% { transform: translate3d(0, 0, 0); }
+  100% { transform: translate3d(-50%, 0, 0); }
+}
+
+/* Hero CTA Redesigned Buttons */
+.hero-btn-gold {
+  background: var(--color-gold);
+  color: #ffffff !important;
+  font-weight: 700;
+  font-size: 12px;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  padding: 16px 32px;
+  border-radius: 9999px;
+  transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--color-gold);
+}
+
+.hero-btn-gold:hover {
+  transform: scale(1.04);
+  box-shadow: 0 0 20px 2px rgba(30, 91, 173, 0.45);
+}
+
+.hero-btn-outline {
+  background: transparent;
+  color: var(--color-gold) !important;
+  font-weight: 700;
+  font-size: 12px;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  padding: 16px 32px;
+  border-radius: 9999px;
+  border: 1px solid var(--color-gold);
+  transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-btn-outline:hover {
+  transform: scale(1.04);
+  box-shadow: 0 0 20px 2px rgba(30, 91, 173, 0.45);
+  background: rgba(30, 91, 173, 0.05);
+}
+
+/* IMDb credentials section radial glow background */
+.imdb-section-bg {
+  background: #060F1E;
+  background-image: radial-gradient(circle at center, rgba(30, 91, 173, 0.06) 0%, transparent 70%);
+  position: relative;
+}
+
+/* Pulsing IMDb badge */
+@keyframes badge-pulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(30, 91, 173, 0.6);
+  }
+  70% {
+    box-shadow: 0 0 0 8px rgba(30, 91, 173, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(30, 91, 173, 0);
+  }
+}
+
+.pulse-gold-badge {
+  animation: badge-pulse 3s infinite;
+}
+
+/* About Section Biography Founder Cards */
+.founder-card {
+  background-color: #0D1B2E;
+  border-top: 3px solid var(--color-gold);
+  border-radius: 12px;
+  box-shadow: 0 8px 40px rgba(0, 0, 0, 0.5);
+  transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.founder-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 45px rgba(0, 0, 0, 0.65), 0 0 25px 0 rgba(30, 91, 173, 0.25);
+}
+
+
+
+/* Lightbox Modal */
+.lightbox-modal {
+  position: fixed;
+  inset: 0;
+  background: rgba(3, 8, 18, 0.95);
+  backdrop-filter: blur(8px);
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+}
+
+.lightbox-modal.active {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.lightbox-content {
+  position: relative;
+  width: 90%;
+  max-width: 900px;
+  aspect-ratio: 16 / 9;
+  border: 1px solid rgba(30, 91, 173, 0.3);
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.9);
+}
+
+.lightbox-close {
+  position: absolute;
+  top: 1.5rem;
+  right: 1.5rem;
+  background: rgba(3, 8, 18, 0.8);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  color: #ffffff;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  z-index: 110;
+}
+
+.lightbox-close:hover {
+  color: var(--color-gold);
+  border-color: var(--color-gold);
+  transform: scale(1.05);
+}
+
+/* Process Timeline (Desktop Horizontal) */
+.process-step {
+  position: relative;
+  text-align: center;
+  flex: 1;
+}
+
+.process-line {
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  width: 100%;
+  height: 1px;
+  border-top: 1px dashed rgba(46, 173, 74, 0.4);
+  z-index: 0;
+}
+
+.process-step:last-child .process-line {
+  display: none;
+}
+
+.process-circle {
+  position: relative;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: var(--color-bg-primary);
+  border: 2px solid var(--color-gold);
+  color: var(--color-gold);
+  font-family: 'Cinzel', serif;
+  font-weight: 700;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 16px auto;
+  z-index: 1;
+  box-shadow: 0 0 10px rgba(30, 91, 173, 0.2);
+  transition: all 0.3s ease;
+}
+
+.process-step:hover .process-circle {
+  background-color: var(--color-gold);
+  color: #030812;
+  box-shadow: 0 0 15px var(--color-gold-glow);
+}
+
+/* Staggered Grid Items */
+.stagger-item {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94),
+              transform 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.stagger-item.revealed {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Service Video Carousel Fade */
+.service-video-container iframe {
+  transition: opacity 0.4s ease-in-out;
+}
+.service-video-container iframe.iframe-fade-out {
+  opacity: 0;
+}
+
+/* Scrollbar hiding utility */
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+.scrollbar-hide {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+</style>
+</head>
+<body class="bg-cinematicNavy text-white font-montserrat">
+
+  <!-- Preloader (keeps script.js error-free) -->
+  <div id="preloader" class="fixed inset-0 bg-black z-[100] flex items-center justify-center transition-opacity duration-500">
+    <div class="flex flex-col items-center space-y-6 px-4 text-center">
+      <img src="assets/logo_icon.png" alt="Tikvah Ark Productions Logo" class="h-28 sm:h-36 w-auto object-contain">
+      <div class="w-48 h-[2px] bg-slate-900 rounded-full overflow-hidden relative">
+        <div id="preloader-bar" class="h-full w-full bg-[#1E5BAD] origin-left transform scale-x-0 transition-transform duration-[1700ms] ease-out"></div>
+      </div>
+      <div class="font-cinzel text-xs uppercase tracking-[0.25em] text-white/80">Cinematic Storytelling</div>
+    </div>
+  </div>
+
+  <!-- 1. NAVBAR -->
+  <header class="fixed top-0 left-0 w-full z-50 glass-nav transition-all duration-300">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-20">
+        <!-- Logo -->
+        <a href="index.html#home" class="flex items-center space-x-3 group" aria-label="Tikvah Ark Productions Home">
+          <img src="assets/logo_icon.png" alt="Tikvah Ark Productions Logo" class="h-[44px] md:h-[56px] w-auto object-contain transition-all duration-300">
+          <div class="hidden sm:block">
+            <span class="font-cinzel text-lg font-bold tracking-wider text-white group-hover:text-[#2EAD4A] transition-colors duration-300 block leading-tight">TIKVAH ARK</span>
+            <span class="text-[9px] uppercase tracking-widest text-slate-400 block leading-none">PRODUCTIONS</span>
+          </div>
+        </a>
+
+        <!-- Desktop Navigation -->
+        <nav class="hidden md:flex space-x-6 text-sm font-medium">
+          <a href="index.html#home" class="nav-link py-2">Home</a>
+          <a href="about.html" class="nav-link py-2 active">About</a>
+          <a href="index.html#services" class="nav-link py-2">Services</a>
+          <a href="index.html#process" class="nav-link py-2">Our Process</a>
+          <a href="index.html#showreel" class="nav-link py-2">Showreel</a>
+          <a href="index.html#portfolio" class="nav-link py-2">Portfolio</a>
+          <a href="index.html#testimonials" class="nav-link py-2">Testimonials</a>
+          <a href="index.html#contact" class="nav-link py-2">Contact</a>
+        </nav>
+
+        <!-- CTA & Mobile Toggle -->
+        <div class="flex items-center space-x-4">
+          <a href="https://wa.me/918657561060" target="_blank" rel="noopener" class="hidden sm:inline-flex items-center px-5 py-2 text-xs uppercase tracking-wider btn-gold transition-all duration-300 space-x-2">
+            <i class="fa-brands fa-whatsapp text-sm"></i>
+            <span>WhatsApp Us</span>
+          </a>
+
+          <!-- Social Icons in Navbar (Desktop only) -->
+          <div class="hidden md:flex items-center space-x-3.5 border-l border-slate-800/80 pl-4">
+            <a href="https://www.instagram.com/tikvaharkproductions?igsh=b2l3bHFyNGF4OHQw&utm_source=qr" target="_blank" rel="noopener" aria-label="Instagram" class="text-[#8AAAC8] hover:text-[#E1306C] transition-colors duration-300">
+              <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24">
+                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.051.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/>
+              </svg>
+            </a>
+            <a href="https://youtube.com/@tikvahark123?si=F02KAGmnGIhGlMXs" target="_blank" rel="noopener" aria-label="YouTube" class="text-[#8AAAC8] hover:text-[#FF0000] transition-colors duration-300">
+              <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24">
+                <path d="M23.498 6.163a3.003 3.003 0 00-2.11-2.107C19.525 3.545 12 3.545 12 3.545s-7.525 0-9.388.511a3.002 3.002 0 00-2.11 2.107C0 8.028 0 12 0 12s0 3.972.502 5.837a3.002 3.002 0 002.11 2.107C4.475 20.455 12 20.455 12 20.455s7.525 0 9.388-.511a3.002 3.002 0 002.11-2.107C24 15.972 24 12 24 12s0-3.972-.502-5.837zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+              </svg>
+            </a>
+            <a href="https://www.linkedin.com/company/tikvaharkproductions/" target="_blank" rel="noopener" aria-label="LinkedIn" class="text-[#8AAAC8] hover:text-[#0A66C2] transition-colors duration-300">
+              <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24">
+                <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.779-1.75-1.75s.784-1.75 1.75-1.75 1.75.779 1.75 1.75-.784 1.75-1.75 1.75zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+              </svg>
+            </a>
+          </div>
+
+          <!-- Hamburger Button -->
+          <button id="mobile-menu-btn" class="md:hidden flex flex-col justify-center items-center w-10 h-10 border border-slate-700/50 rounded-lg bg-cinematicNavyLight text-white hover:text-[#2EAD4A] focus:outline-none" aria-expanded="false" aria-label="Toggle mobile menu">
+            <span class="w-5 h-0.5 bg-current transition-all duration-300 ease-in-out mb-1.5 rounded-full"></span>
+            <span class="w-5 h-0.5 bg-current transition-all duration-300 ease-in-out mb-1.5 rounded-full"></span>
+            <span class="w-5 h-0.5 bg-current transition-all duration-300 ease-in-out rounded-full"></span>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Mobile Navigation Drawer -->
+    <div id="mobile-nav" class="fixed top-20 right-0 w-64 h-[calc(100vh-80px)] bg-cinematicNavyDark/95 border-l border-slate-800/80 transform translate-x-full transition-transform duration-300 ease-in-out md:hidden z-40 backdrop-blur-lg flex flex-col justify-between py-8 px-6">
+      <nav class="flex flex-col space-y-5 text-base font-medium">
+        <a href="index.html#home" class="mobile-nav-link text-slate-300 hover:text-[#2EAD4A] transition-colors duration-300 border-b border-slate-800/50 pb-2">Home</a>
+        <a href="about.html" class="mobile-nav-link text-[#2EAD4A] transition-colors duration-300 border-b border-slate-800/50 pb-2">About</a>
+        <a href="index.html#services" class="mobile-nav-link text-slate-300 hover:text-[#2EAD4A] transition-colors duration-300 border-b border-slate-800/50 pb-2">Services</a>
+        <a href="index.html#process" class="mobile-nav-link text-slate-300 hover:text-[#2EAD4A] transition-colors duration-300 border-b border-slate-800/50 pb-2">Our Process</a>
+        <a href="index.html#showreel" class="mobile-nav-link text-slate-300 hover:text-[#2EAD4A] transition-colors duration-300 border-b border-slate-800/50 pb-2">Showreel</a>
+        <a href="index.html#portfolio" class="mobile-nav-link text-slate-300 hover:text-[#2EAD4A] transition-colors duration-300 border-b border-slate-800/50 pb-2">Portfolio</a>
+        <a href="index.html#testimonials" class="mobile-nav-link text-slate-300 hover:text-[#2EAD4A] transition-colors duration-300 border-b border-slate-800/50 pb-2">Testimonials</a>
+        <a href="index.html#contact" class="mobile-nav-link text-slate-300 hover:text-[#2EAD4A] transition-colors duration-300 border-b border-slate-800/50 pb-2">Contact</a>
+      </nav>
+      
+      <div class="space-y-4">
+        <a href="https://wa.me/918657561060" target="_blank" rel="noopener" class="w-full justify-center flex items-center py-3 px-4 btn-gold text-xs uppercase tracking-widest space-x-2">
+          <i class="fa-brands fa-whatsapp text-base"></i>
+          <span>WhatsApp Us</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- PART A — Page Hero -->
+  <section class="relative h-[45vh] sm:h-[50vh] w-full flex items-center justify-center overflow-hidden">
+    <!-- Looping Backdrop Video -->
+    <div class="absolute inset-0 z-0">
+      <video autoplay loop muted playsinline class="w-full h-full object-cover opacity-30">
+        <source src="assets/video/showreel.mp4" type="video/mp4">
+      </video>
+      <div class="absolute inset-0 bg-gradient-to-t from-cinematicNavy via-cinematicNavy/80 to-cinematicNavyDark/95"></div>
+    </div>
+    
+    <div class="relative z-10 text-center px-4" data-aos="fade-up">
+      <h1 class="font-cinzel text-3xl sm:text-5xl md:text-6xl font-extrabold tracking-wide text-white mb-4 uppercase">
+        About Tikvah Ark
+      </h1>
+      <p class="font-cinzel text-xs sm:text-sm md:text-base text-accentLightBlue font-bold tracking-[0.2em] uppercase">
+        The story behind the stories
+      </p>
+    </div>
+  </section>
+
+  <!-- PART B — Company Vision -->
+  <section class="py-16 bg-cinematicNavy text-center">
+    <div class="max-w-[860px] mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="mb-16" data-aos="fade-up">
+        <h2 class="font-cinzel text-2xl sm:text-3xl font-bold tracking-wide text-white mb-6 uppercase section-title-underline">
+          Who We Are
+        </h2>
+        <p class="text-sm sm:text-base text-slate-300 leading-relaxed font-light text-justify sm:text-center mt-6">
+          Tikvah Ark Productions is a Mumbai-based film and content production company specializing in creating compelling visual stories for brands, businesses, institutions, and organizations. We combine cinematic storytelling, strategic communication, and high-quality production to deliver impactful films that engage audiences and drive results. From documentaries and corporate films to digital content and advertising campaigns, we provide end-to-end production services including concept development, scripting, filming, editing, motion graphics, and final delivery across multiple platforms.
+        </p>
+      </div>
+
+      <div class="mb-8" data-aos="fade-up" data-aos-delay="100">
+        <h2 class="font-cinzel text-2xl sm:text-3xl font-bold tracking-wide text-white mb-6 uppercase section-title-underline">
+          Our Vision
+        </h2>
+        <p class="text-sm sm:text-base text-slate-300 leading-relaxed font-light text-justify sm:text-center mt-6">
+          To build a world-class storytelling studio that creates meaningful content with purpose — films that go beyond communication, preserving legacies, inspiring action, and leaving a positive impact on society.
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Divider -->
+  <div class="max-w-7xl mx-auto px-4">
+    <div class="section-divider">
+      <div class="section-divider-diamond"></div>
+    </div>
+  </div>
+
+  <!-- PART C — Meet The Founders -->
+  <section class="py-16 bg-cinematicNavyLight">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <!-- Section Title -->
+      <div class="text-center mb-16" data-aos="fade-up">
+        <h2 class="font-cinzel text-3xl sm:text-4xl font-bold tracking-wide text-white uppercase section-title-underline">
+          Meet The Founders
+        </h2>
+      </div>
+
+      <!-- Founders Grid -->
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12 mt-12 max-w-5xl mx-auto">
+        
+        <!-- CARD 1 — Saurabh Shingare -->
+        <div class="founder-card p-6 sm:p-8 flex flex-col justify-between border border-slate-800/80 hover:border-accentBlue/30 hover:translate-y-[-4px] hover:shadow-[#1E5BAD]/10 transition-all duration-300 rounded-2xl bg-cinematicNavy" data-aos="fade-up" data-aos-delay="100">
+          <div>
+            <!-- Photo -->
+            <div class="flex justify-center mb-6">
+              <div class="w-[140px] h-[140px] rounded-full overflow-hidden border-3 border-accentBlue shadow-lg bg-slate-900">
+                <img src="assets/saurabh_photo.jpg" alt="Saurabh Shingare" class="w-full h-full object-cover">
+              </div>
+            </div>
+
+            <div class="text-center mb-6">
+              <h3 class="font-cinzel text-2xl font-bold text-white uppercase tracking-wide">Saurabh Shingare</h3>
+              <span class="inline-block mt-2 text-[11px] font-semibold uppercase tracking-wider text-white bg-accentBlue px-3.5 py-1 rounded-full">Founder & Creative Director</span>
+              
+              <div class="mt-4 flex justify-center">
+                <a 
+                  href="https://www.imdb.com/name/nm5718975/" 
+                  target="_blank" 
+                  rel="noopener" 
+                  class="inline-flex items-center space-x-1.5 text-[10px] font-bold text-accentLightBlue hover:text-[#4FA3E0] border border-accentBlue/30 hover:border-accentBlue px-3.5 py-1.5 rounded-full bg-[#1E5BAD]/5 transition-colors"
+                >
+                  <span>⭐ IMDb Credited — Iron Man 3 · Star Trek Into Darkness</span>
+                </a>
+              </div>
+            </div>
+
+            <!-- Bio -->
+            <p class="text-sm text-slate-300 font-light leading-[1.8] mb-6 text-justify">
+              Saurabh Shingare is the Founder of Tikvah Ark Productions, a storytelling-driven production company dedicated to creating films that inspire, inform, and create lasting impact. With over 25 years of experience across filmmaking, digital content, visual effects, post-production, and brand storytelling, he brings together creativity, strategy, and cinematic excellence to craft compelling narratives. His journey spans leading creative initiatives for global brands as Creative Director at Jio Platforms and Creative Producer at Mahindra Group, managing large-scale content productions, and producing documentaries and films that celebrate innovation, culture, sustainability, and human achievement.
+            </p>
+          </div>
+
+          <!-- Quote -->
+          <div class="border-l-3 border-[#2EAD4A] pl-4 py-2 mt-4 bg-[#2EAD4A]/5 italic text-[#2EAD4A] text-sm font-medium leading-relaxed rounded-r">
+            "Every story has the power to create change. Our role is to tell it with honesty, purpose, and cinematic excellence."
+          </div>
+        </div>
+
+        <!-- CARD 2 — Bhagwati Sagathia Shingare -->
+        <div class="founder-card p-6 sm:p-8 flex flex-col justify-between border border-slate-800/80 hover:border-accentBlue/30 hover:translate-y-[-4px] hover:shadow-[#1E5BAD]/10 transition-all duration-300 rounded-2xl bg-cinematicNavy" data-aos="fade-up" data-aos-delay="200">
+          <div>
+            <!-- Photo -->
+            <div class="flex justify-center mb-6">
+              <div class="w-[140px] h-[140px] rounded-full overflow-hidden border-3 border-accentBlue shadow-lg bg-slate-900">
+                <img src="assets/bhagwati_photo.jpg" alt="Bhagwati Sagathia Shingare" class="w-full h-full object-cover">
+              </div>
+            </div>
+
+            <div class="text-center mb-6">
+              <h3 class="font-cinzel text-2xl font-bold text-white uppercase tracking-wide">Bhagwati Sagathia Shingare</h3>
+              <span class="inline-block mt-2 text-[11px] font-semibold uppercase tracking-wider text-white bg-accentBlue px-3.5 py-1 rounded-full">Co-Founder & Creative Strategist</span>
+            </div>
+
+            <!-- Bio -->
+            <p class="text-sm text-slate-300 font-light leading-[1.8] mb-6 text-justify">
+              Bhagwati Sagathia Shingare is the Co-Founder of Tikvah Ark Productions, a creative production company dedicated to telling stories that inspire, connect, and create meaningful impact. With a strong belief in the power of visual storytelling, she has been instrumental in shaping films and documentaries that highlight innovation, culture, sustainability, heritage, and human resilience. Her vision is to build a storytelling platform that bridges communities, organizations, and audiences through authentic narratives. By combining creativity with purpose, Bhagwati strives to create content that not only informs and entertains but also sparks conversations and drives positive change.
+            </p>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Divider -->
+  <div class="max-w-7xl mx-auto px-4">
+    <div class="section-divider">
+      <div class="section-divider-diamond"></div>
+    </div>
+  </div>
+
+  <!-- PART D — Values / What Drives Us -->
+  <section class="py-16 bg-cinematicNavy">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <!-- Section Title -->
+      <div class="text-center mb-16" data-aos="fade-up">
+        <h2 class="font-cinzel text-2xl sm:text-3xl font-bold tracking-wide text-white uppercase section-title-underline">
+          What Drives Us
+        </h2>
+      </div>
+
+      <!-- Values Grid -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto" data-aos="fade-up">
+        
+        <!-- Value 1 -->
+        <div class="glass-panel p-6 sm:p-8 rounded-xl border border-slate-800 flex flex-col items-center text-center group hover:border-[#1E5BAD] transition-all duration-300">
+          <span class="text-[#1E5BAD] text-3xl sm:text-4xl mb-4 group-hover:scale-110 transition-transform duration-300">
+            <i class="fa-solid fa-clapperboard"></i>
+          </span>
+          <h3 class="text-sm sm:text-base font-bold text-white mb-2 uppercase tracking-wide">Cinematic Excellence</h3>
+          <p class="text-[11px] sm:text-xs text-slate-400 font-light leading-relaxed">
+            Hollywood-grade expertise meets documentary storytelling
+          </p>
+        </div>
+
+        <!-- Value 2 -->
+        <div class="glass-panel p-6 sm:p-8 rounded-xl border border-slate-800 flex flex-col items-center text-center group hover:border-[#1E5BAD] transition-all duration-300">
+          <span class="text-[#1E5BAD] text-3xl sm:text-4xl mb-4 group-hover:scale-110 transition-transform duration-300">
+            <i class="fa-solid fa-rotate"></i>
+          </span>
+          <h3 class="text-sm sm:text-base font-bold text-white mb-2 uppercase tracking-wide">Full-Service Studio</h3>
+          <p class="text-[11px] sm:text-xs text-slate-400 font-light leading-relaxed">
+            Concept to delivery, everything under one roof
+          </p>
+        </div>
+
+        <!-- Value 3 -->
+        <div class="glass-panel p-6 sm:p-8 rounded-xl border border-slate-800 flex flex-col items-center text-center group hover:border-[#1E5BAD] transition-all duration-300">
+          <span class="text-[#1E5BAD] text-3xl sm:text-4xl mb-4 group-hover:scale-110 transition-transform duration-300">
+            <i class="fa-solid fa-bullseye"></i>
+          </span>
+          <h3 class="text-sm sm:text-base font-bold text-white mb-2 uppercase tracking-wide">Story-First Approach</h3>
+          <p class="text-[11px] sm:text-xs text-slate-400 font-light leading-relaxed">
+            Every frame has a purpose, every film has impact
+          </p>
+        </div>
+
+        <!-- Value 4 -->
+        <div class="glass-panel p-6 sm:p-8 rounded-xl border border-slate-800 flex flex-col items-center text-center group hover:border-[#1E5BAD] transition-all duration-300">
+          <span class="text-[#1E5BAD] text-3xl sm:text-4xl mb-4 group-hover:scale-110 transition-transform duration-300">
+            <i class="fa-solid fa-handshake"></i>
+          </span>
+          <h3 class="text-sm sm:text-base font-bold text-white mb-2 uppercase tracking-wide">Long-Term Partnerships</h3>
+          <p class="text-[11px] sm:text-xs text-slate-400 font-light leading-relaxed">
+            We don't just make films. We build your visual legacy.
+          </p>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- PART E — CTA at bottom of about.html -->
+  <section class="py-16 bg-[#111827] border-t border-slate-900 text-center">
+    <div class="max-w-4xl mx-auto px-4" data-aos="fade-up">
+      <h2 class="font-cinzel text-3xl sm:text-4xl font-extrabold text-white uppercase mb-6">
+        Ready to tell your story?
+      </h2>
+      <p class="text-sm sm:text-base text-slate-400 mb-8 max-w-xl mx-auto font-light leading-relaxed">
+        Get in touch with us on WhatsApp to discuss your next documentary, corporate film, ad campaign, or brand project.
+      </p>
+      <a 
+        href="https://wa.me/918657561060?text=Hi%2C%20I%20visited%20your%20About%20page%20and%20would%20like%20to%20discuss%20a%20project." 
+        target="_blank" 
+        rel="noopener" 
+        class="inline-flex items-center px-8 py-4 bg-[#1E5BAD] hover:bg-[#1E5BAD]/80 text-white font-bold rounded-xl transition-all duration-300 text-xs uppercase tracking-wider shadow-lg shadow-[#1E5BAD]/30 space-x-2"
+      >
+        <i class="fa-brands fa-whatsapp text-lg"></i>
+        <span>Talk to Us on WhatsApp</span>
+      </a>
+
+      <!-- Connect with us row -->
+      <div class="mt-8 flex flex-col items-center">
+        <span class="text-xs uppercase tracking-[0.2em] text-slate-500 font-bold block mb-4">Connect with us:</span>
+        <div class="flex space-x-4">
+          <!-- Instagram -->
+          <a href="https://www.instagram.com/tikvaharkproductions?igsh=b2l3bHFyNGF4OHQw&utm_source=qr" target="_blank" rel="noopener" aria-label="Instagram" class="w-11 h-11 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-slate-400 hover:text-white hover:bg-[#E1306C] hover:border-[#E1306C] transition-all duration-300">
+            <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24">
+              <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.051.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/>
+            </svg>
+          </a>
+          <!-- YouTube -->
+          <a href="https://youtube.com/@tikvahark123?si=F02KAGmnGIhGlMXs" target="_blank" rel="noopener" aria-label="YouTube" class="w-11 h-11 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-slate-400 hover:text-white hover:bg-[#FF0000] hover:border-[#FF0000] transition-all duration-300">
+            <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24">
+              <path d="M23.498 6.163a3.003 3.003 0 00-2.11-2.107C19.525 3.545 12 3.545 12 3.545s-7.525 0-9.388.511a3.002 3.002 0 00-2.11 2.107C0 8.028 0 12 0 12s0 3.972.502 5.837a3.002 3.002 0 002.11 2.107C4.475 20.455 12 20.455 12 20.455s7.525 0 9.388-.511a3.002 3.002 0 002.11-2.107C24 15.972 24 12 24 12s0-3.972-.502-5.837zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+            </svg>
+          </a>
+          <!-- LinkedIn -->
+          <a href="https://www.linkedin.com/company/tikvaharkproductions/" target="_blank" rel="noopener" aria-label="LinkedIn" class="w-11 h-11 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-slate-400 hover:text-white hover:bg-[#0A66C2] hover:border-[#0A66C2] transition-all duration-300">
+            <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24">
+              <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.779-1.75-1.75s.784-1.75 1.75-1.75 1.75.779 1.75 1.75-.784 1.75-1.75 1.75zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-cinematicNavyDark border-t border-slate-900 py-16">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 md:grid-cols-12 gap-8 mb-12">
+        
+        <!-- Left Side Info -->
+        <div class="md:col-span-5 space-y-4">
+          <div class="flex items-center space-x-3">
+            <img src="assets/logo_icon.png" alt="Tikvah Ark Productions Logo" class="h-[36px] md:h-[48px] w-auto object-contain">
+            <div>
+              <span class="font-cinzel text-base font-bold tracking-wider text-white block leading-tight">TIKVAH ARK</span>
+              <span class="text-[8px] uppercase tracking-widest text-slate-400 block leading-none">PRODUCTIONS</span>
+            </div>
+          </div>
+          <p class="text-xs text-slate-400 font-light leading-relaxed max-w-sm">
+            Cinematic storytelling for brands, businesses, institutions & organizations. End-to-end video and film execution in Mumbai, India.
+          </p>
+          <div class="pt-2 flex flex-col gap-2">
+            <a href="https://www.youtube.com/playlist?list=PLqtkrDw29uSicFw6a4o88sN03L9E5TZjl" target="_blank" rel="noopener" class="inline-flex items-center text-xs text-accentBlue hover:text-[#4FA3E0] transition-colors duration-300 font-semibold tracking-wider">
+              Watch Our Work ▶
+            </a>
+            <a href="https://www.imdb.com/name/nm5718975/" target="_blank" rel="noopener" class="inline-flex items-center text-xs text-accentBlue hover:text-[#4FA3E0] transition-colors duration-300 font-semibold tracking-wider">
+              IMDb Credits ↗
+            </a>
+          </div>
+          <div class="pt-2 text-xs text-slate-400 font-light">
+            <a href="mailto:tikvaharkproduction@gmail.com" class="inline-flex items-center hover:text-[#2EAD4A] transition-colors duration-300">
+              <span class="mr-2">✉️</span> tikvaharkproduction@gmail.com
+            </a>
+          </div>
+        </div>
+
+        <!-- Middle Quick Links -->
+        <div class="md:col-span-4 space-y-3">
+          <h4 class="text-xs font-bold uppercase tracking-widest text-[#2EAD4A] mb-4">Quick Links</h4>
+          <div class="grid grid-cols-2 gap-2 text-xs text-slate-400">
+            <a href="index.html#home" class="hover:text-white transition-colors duration-300">Home</a>
+            <a href="about.html" class="hover:text-white transition-colors duration-300">About Studio</a>
+            <a href="index.html#services" class="hover:text-white transition-colors duration-300">Services</a>
+            <a href="index.html#portfolio" class="hover:text-white transition-colors duration-300">Portfolio</a>
+            <a href="index.html#contact" class="hover:text-white transition-colors duration-300">Contact Us</a>
+            <a href="https://wa.me/918657561060" target="_blank" rel="noopener" class="text-accentBlue/80 hover:text-accentBlue transition-colors duration-300">Get Quote</a>
+          </div>
+        </div>
+
+        <!-- Right Social Icons -->
+        <div class="md:col-span-3 space-y-4">
+          <h4 class="text-xs font-bold uppercase tracking-widest text-[#2EAD4A] mb-4">Follow Our Cameras</h4>
+          <div class="flex space-x-4">
+            <a href="#" aria-label="Instagram Profile" class="w-9 h-9 rounded-full bg-slate-900 border border-slate-800 flex items-center justify-center text-slate-400 hover:text-white hover:border-accentBlue hover:bg-[#1E5BAD]/5 transition-all duration-300">
+              <i class="fa-brands fa-instagram text-base"></i>
+            </a>
+            <a href="https://www.youtube.com/playlist?list=PLqtkrDw29uSicFw6a4o88sN03L9E5TZjl" target="_blank" rel="noopener" aria-label="YouTube Playlist" class="w-9 h-9 rounded-full bg-slate-900 border border-slate-800 flex items-center justify-center text-slate-400 hover:text-white hover:border-accentBlue hover:bg-[#1E5BAD]/5 transition-all duration-300">
+              <i class="fa-brands fa-youtube text-base"></i>
+            </a>
+            <a href="#" aria-label="LinkedIn Profile" class="w-9 h-9 rounded-full bg-slate-900 border border-slate-800 flex items-center justify-center text-slate-400 hover:text-white hover:border-accentBlue hover:bg-[#1E5BAD]/5 transition-all duration-300">
+              <i class="fa-brands fa-linkedin-in text-base"></i>
+            </a>
+          </div>
+          
+          <p class="text-[10px] text-slate-500 font-medium">
+            Designed for premium screens.
+          </p>
+        </div>
+
+      </div>
+
+      <!-- Dedicated Social Media Row -->
+      <div class="border-t border-slate-900/80 pt-8 pb-4 text-center">
+        <span class="text-[10px] uppercase tracking-[0.2em] text-slate-500 font-bold block mb-4">Follow Us</span>
+        <div class="flex justify-center space-x-4">
+          <!-- Instagram -->
+          <a href="https://www.instagram.com/tikvaharkproductions?igsh=b2l3bHFyNGF4OHQw&utm_source=qr" target="_blank" rel="noopener" aria-label="Follow us on Instagram" class="w-11 h-11 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-slate-400 hover:text-white hover:bg-[#E1306C] hover:border-[#E1306C] transition-all duration-300">
+            <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24">
+              <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.051.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/>
+            </svg>
+          </a>
+          <!-- YouTube -->
+          <a href="https://youtube.com/@tikvahark123?si=F02KAGmnGIhGlMXs" target="_blank" rel="noopener" aria-label="Follow us on YouTube" class="w-11 h-11 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-slate-400 hover:text-white hover:bg-[#FF0000] hover:border-[#FF0000] transition-all duration-300">
+            <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24">
+              <path d="M23.498 6.163a3.003 3.003 0 00-2.11-2.107C19.525 3.545 12 3.545 12 3.545s-7.525 0-9.388.511a3.002 3.002 0 00-2.11 2.107C0 8.028 0 12 0 12s0 3.972.502 5.837a3.002 3.002 0 002.11 2.107C4.475 20.455 12 20.455 12 20.455s7.525 0 9.388-.511a3.002 3.002 0 002.11-2.107C24 15.972 24 12 24 12s0-3.972-.502-5.837zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+            </svg>
+          </a>
+          <!-- LinkedIn -->
+          <a href="https://www.linkedin.com/company/tikvaharkproductions/" target="_blank" rel="noopener" aria-label="Follow us on LinkedIn" class="w-11 h-11 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-slate-400 hover:text-white hover:bg-[#0A66C2] hover:border-[#0A66C2] transition-all duration-300">
+            <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24">
+              <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.779-1.75-1.75s.784-1.75 1.75-1.75 1.75.779 1.75 1.75-.784 1.75-1.75 1.75zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+            </svg>
+          </a>
+          <!-- WhatsApp -->
+          <a href="https://wa.me/918657561060" target="_blank" rel="noopener" aria-label="Contact us on WhatsApp" class="w-11 h-11 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-slate-400 hover:text-white hover:bg-[#25D366] hover:border-[#25D366] transition-all duration-300">
+            <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24">
+              <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946C.06 5.348 5.397.01 12.008.01c3.202.001 6.212 1.246 8.477 3.514 2.266 2.268 3.507 5.28 3.505 8.484-.004 6.657-5.34 11.997-11.953 11.997-2.005-.001-3.973-.502-5.731-1.456L0 24zm6.59-4.846c1.6.95 2.568 1.488 4.415 1.489 5.568 0 10.099-4.547 10.102-10.136.002-2.707-1.047-5.253-2.955-7.163C16.29 1.433 13.738.384 11.026.384c-5.578 0-10.108 4.548-10.111 10.138 0 1.912.493 3.393 1.436 5.03l-.943 3.445 3.649-.933zM16.518 13.56c-.244-.122-1.45-.717-1.671-.801-.224-.084-.388-.122-.55.122-.163.244-.632.801-.774.962-.143.162-.285.183-.53.061-.244-.122-1.03-.38-1.962-1.213-.726-.647-1.216-1.448-1.358-1.691-.143-.244-.015-.376.107-.497.111-.11.244-.285.367-.428.122-.142.163-.244.244-.407.081-.162.041-.305-.02-.426-.062-.122-.55-1.32-.754-1.81-.198-.479-.399-.414-.55-.422-.143-.007-.306-.008-.469-.008-.163 0-.428.061-.652.305-.224.244-.855.834-.855 2.031 0 1.198.871 2.35 1.01 2.533.143.183 1.72 2.624 4.167 3.678.583.25 1.037.4 1.392.513.585.186 1.117.16 1.538.097.469-.071 1.45-.591 1.653-1.162.204-.57.204-1.059.143-1.161-.061-.102-.224-.162-.469-.284z"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+
+      <!-- Bottom Line -->
+      <div class="border-t border-slate-900/80 pt-8 flex flex-col sm:flex-row items-center justify-between text-[11px] text-slate-500">
+        <p>© 2026 Tikvah Ark Productions. All rights reserved.</p>
+        <p class="mt-2 sm:mt-0 font-medium">Mumbai, India</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- WhatsApp Chatbot UI Panel -->
+  <div 
+    id="whatsapp-chat-window" 
+    class="fixed bottom-20 right-4 sm:bottom-24 sm:right-6 w-[320px] sm:w-[360px] rounded-2xl glass-panel border border-slate-800/90 shadow-2xl overflow-hidden transition-all duration-300 transform opacity-0 scale-95 pointer-events-none z-50 flex flex-col"
+  >
+    <!-- Header -->
+    <div class="bg-[#1A2744] p-4 border-b border-[#1E5BAD] flex items-center justify-between">
+      <div class="flex items-center space-x-3">
+        <div class="w-10 h-10 rounded-full bg-slate-900 border border-[#1E5BAD]/30 p-1 flex items-center justify-center relative">
+          <img src="assets/logo_icon.png" alt="Tikvah Ark Logo" class="w-full h-full object-contain">
+          <span class="absolute bottom-0 right-0 w-3 h-3 bg-emerald-500 border-2 border-slate-950 rounded-full"></span>
+        </div>
+        <div>
+          <h4 class="font-cinzel text-xs font-bold text-white uppercase tracking-wider">Bhagwati — Tikvah Ark</h4>
+          <span class="text-[10px] text-emerald-500 font-medium flex items-center gap-1.5">
+            <span class="w-1.5 h-1.5 bg-emerald-500 rounded-full animate-ping"></span>
+            Online Now
+          </span>
+        </div>
+      </div>
+      <button 
+        id="close-chat-window" 
+        aria-label="Close Chat Window" 
+        class="text-slate-400 hover:text-white transition-colors duration-300 text-lg"
+      >
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+    </div>
+    
+    <!-- Body / Conversation -->
+    <div class="p-4 space-y-4 max-h-[280px] overflow-y-auto bg-slate-950/40">
+      <!-- Welcome Message -->
+      <div class="flex items-start space-x-2.5">
+        <div class="w-6 h-6 rounded-full bg-slate-900 border border-gold/20 flex items-center justify-center text-[10px] text-gold font-cinzel">
+          TA
+        </div>
+        <div class="bg-slate-900/90 border border-slate-800/50 p-3 rounded-2xl rounded-tl-none max-w-[80%]">
+          <p class="text-xs text-slate-300 leading-relaxed font-light">
+            Namaste! Welcome to Tikvah Ark Productions. How can we help you today?
+          </p>
+          <span class="text-[9px] text-slate-500 block text-right mt-1">Just now</span>
+        </div>
+      </div>
+      
+      <!-- Quick Replies Section -->
+      <div class="space-y-2 pt-2">
+        <p class="text-[10px] text-slate-500 font-semibold uppercase tracking-wider">Select an option:</p>
+        <div class="flex flex-col space-y-2">
+          <button 
+            class="chat-quick-reply-btn text-left px-3.5 py-2.5 rounded-xl text-xs font-medium tracking-wide transition-all duration-300 focus:outline-none"
+            data-wa-url="https://wa.me/918657561060?text=Hi%20Tikvah%20Ark%2C%20I'm%20interested%20in%20viewing%20your%20latest%20work.%20Can%20you%20please%20share%20your%20showreel%3F"
+          >
+            🎥 Request a Showreel
+          </button>
+          <button 
+            class="chat-quick-reply-btn text-left px-3.5 py-2.5 rounded-xl text-xs font-medium tracking-wide transition-all duration-300 focus:outline-none"
+            data-wa-url="https://wa.me/918657561060?text=Hi%20Tikvah%20Ark%2C%20I%20would%20like%20to%20get%20a%20quote%20for%20a%20video%20production%20project."
+          >
+            💰 Inquire about Pricing
+          </button>
+          <button 
+            class="chat-quick-reply-btn text-left px-3.5 py-2.5 rounded-xl text-xs font-medium tracking-wide transition-all duration-300 focus:outline-none"
+            data-wa-url="https://wa.me/918657561060?text=Hi%20Tikvah%20Ark%2C%20I'd%20like%20to%20book%20a%20consultation%20session%20with%20your%20creative%20directors%20to%20discuss%20a%20project."
+          >
+            📅 Book a Consultation
+          </button>
+          <button 
+            class="chat-quick-reply-btn text-left px-3.5 py-2.5 rounded-xl text-xs font-medium tracking-wide transition-all duration-300 focus:outline-none"
+            data-wa-url="https://wa.me/918657561060?text=Hi%2C%20I%20am%20interested%20in%20an%20Industrial%20or%20CSR%20Film."
+          >
+            🏭 Industrial / CSR Film
+          </button>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Footer / Input -->
+    <div class="p-3 border-t border-slate-900 bg-slate-950 flex items-center space-x-2">
+      <input 
+        type="text" 
+        id="chat-custom-message" 
+        placeholder="Type a custom message..." 
+        class="flex-1 bg-slate-900 border border-slate-800 text-xs px-3 py-2.5 rounded-xl focus:outline-none focus:border-gold text-white font-light placeholder:text-slate-500"
+      >
+      <button 
+        id="chat-send-btn" 
+        aria-label="Send Message on WhatsApp" 
+        class="w-9 h-9 rounded-xl bg-[#1E5BAD] hover:bg-[#1E5BAD]/80 text-white flex items-center justify-center transition-all duration-300 hover:scale-105 active:scale-95 text-sm"
+      >
+        <i class="fa-regular fa-paper-plane"></i>
+      </button>
+    </div>
+  </div>
+
+  <!-- WhatsApp Chat Bubble Trigger -->
+  <button 
+    id="whatsapp-chat-bubble" 
+    aria-label="Toggle WhatsApp Chatbot Panel" 
+    class="fixed bottom-4 right-4 sm:bottom-6 sm:right-6 w-12 h-12 sm:w-14 sm:h-14 rounded-full bg-[#25D366] hover:bg-[#20ba5a] text-white flex items-center justify-center text-xl sm:text-2xl z-50 transition-transform duration-300 hover:scale-110 active:scale-95 shadow-2xl whatsapp-pulse focus:outline-none"
+  >
+    <i class="fa-brands fa-whatsapp text-2xl sm:text-3xl"></i>
+  </button>
+
+  <!-- Back to Top Button -->
+  <button 
+    id="back-to-top" 
+    aria-label="Scroll to top" 
+    class="fixed bottom-20 right-4 sm:bottom-24 sm:right-6 w-10 h-10 rounded-full bg-gold hover:bg-gold-dark text-white flex items-center justify-center z-40 transition-all duration-300 opacity-0 translate-y-20 pointer-events-none hover:scale-105 active:scale-95 shadow-2xl focus:outline-none"
+  >
+    <i class="fa-solid fa-arrow-up text-sm font-bold"></i>
+  </button>
+
+  <!-- AOS Script -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <!-- Custom Javascript -->
+  <script>
+document.addEventListener('DOMContentLoaded', () => {
+  // Preloader Logic (1.8-second animation progress and fade-out)
+  const preloader = document.getElementById('preloader');
+  const preloaderBar = document.getElementById('preloader-bar');
+  if (preloaderBar) {
+    setTimeout(() => {
+      preloaderBar.style.transform = 'scale-x(1)';
+    }, 50);
+  }
+  
+  setTimeout(() => {
+    if (preloader) {
+      preloader.classList.add('opacity-0', 'pointer-events-none');
+      setTimeout(() => preloader.classList.add('hidden'), 500);
+    }
+  }, 1800);
+
+  // Sticky Header Navigation & Glassmorphism Toggle
+  const header = document.querySelector('header');
+  const checkScroll = () => {
+    if (window.scrollY > 50) {
+      header.classList.add('nav-scrolled');
+    } else {
+      header.classList.remove('nav-scrolled');
+    }
+  };
+  window.addEventListener('scroll', checkScroll);
+  checkScroll(); // Check on init in case of refresh in-page
+
+  // Mobile Menu Navigation Drawer Toggle
+  const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+  const mobileNav = document.getElementById('mobile-nav');
+  const mobileNavLinks = document.querySelectorAll('.mobile-nav-link');
+
+  const toggleMobileMenu = () => {
+    const isExpanded = mobileMenuBtn.getAttribute('aria-expanded') === 'true';
+    mobileMenuBtn.setAttribute('aria-expanded', !isExpanded);
+    
+    // Toggle classes
+    mobileNav.classList.toggle('translate-x-0');
+    mobileNav.classList.toggle('translate-x-full');
+    
+    // Animate hamburger icon
+    const burgerLines = mobileMenuBtn.querySelectorAll('span');
+    if (!isExpanded) {
+      burgerLines[0].classList.add('rotate-45', 'translate-y-2');
+      burgerLines[1].classList.add('opacity-0');
+      burgerLines[2].classList.add('-rotate-45', '-translate-y-2');
+      document.body.style.overflow = 'hidden'; // Stop scrolling behind menu
+    } else {
+      burgerLines[0].classList.remove('rotate-45', 'translate-y-2');
+      burgerLines[1].classList.remove('opacity-0');
+      burgerLines[2].classList.remove('-rotate-45', '-translate-y-2');
+      document.body.style.overflow = ''; // Resume scrolling
+    }
+  };
+
+  if (mobileMenuBtn) {
+    mobileMenuBtn.addEventListener('click', toggleMobileMenu);
+  }
+
+  // Close mobile menu when a link is clicked
+  mobileNavLinks.forEach(link => {
+    link.addEventListener('click', () => {
+      if (!mobileNav.classList.contains('translate-x-full')) {
+        toggleMobileMenu();
+      }
+    });
+  });
+
+  // Spotlight Mouse-Move Grid Glow Effect for Service Cards
+  const cards = document.querySelectorAll('.service-info-card');
+  cards.forEach(card => {
+    card.addEventListener('mousemove', (e) => {
+      const rect = card.getBoundingClientRect();
+      const x = e.clientX - rect.left;
+      const y = e.clientY - rect.top;
+      card.style.setProperty('--mouse-x', `${x}px`);
+      card.style.setProperty('--mouse-y', `${y}px`);
+    });
+  });
+
+  // Active Link Highlighting using IntersectionObserver
+  const sections = document.querySelectorAll('section[id]');
+  const navLinks = document.querySelectorAll('.nav-link');
+
+  const navObserverOptions = {
+    root: null,
+    rootMargin: '-30% 0px -60% 0px', // Trigger when section occupies the middle of screen
+    threshold: 0
+  };
+
+  const navObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        const id = entry.target.getAttribute('id');
+        navLinks.forEach(link => {
+          if (link.getAttribute('href') === `#${id}`) {
+            link.classList.add('active');
+          } else {
+            link.classList.remove('active');
+          }
+        });
+      }
+    });
+  }, navObserverOptions);
+
+  sections.forEach(section => navObserver.observe(section));
+
+  // Dynamic Portfolio Category Filter Logic
+  const filterButtons = document.querySelectorAll('.portfolio-filter-btn');
+  const portfolioItems = document.querySelectorAll('.portfolio-item');
+
+  filterButtons.forEach(btn => {
+    btn.addEventListener('click', () => {
+      filterButtons.forEach(b => {
+        b.classList.remove('bg-gold', 'text-slate-950', 'font-bold', 'border-gold', 'active-filter');
+        b.classList.add('border-gold/40', 'text-gold');
+      });
+      
+      btn.classList.add('bg-gold', 'text-slate-950', 'font-bold', 'border-gold', 'active-filter');
+      btn.classList.remove('border-gold/40', 'text-gold');
+
+      const filterValue = btn.getAttribute('data-filter');
+
+      portfolioItems.forEach(item => {
+        if (filterValue === 'all' || item.getAttribute('data-category') === filterValue) {
+          item.classList.remove('hidden');
+          setTimeout(() => {
+            item.style.opacity = '1';
+            item.style.transform = 'scale(1)';
+          }, 50);
+        } else {
+          item.style.opacity = '0';
+          item.style.transform = 'scale(0.95)';
+          setTimeout(() => {
+            item.classList.add('hidden');
+          }, 300);
+        }
+      });
+    });
+  });
+
+  // Mobile Services Toggle to prevent scroll-fatigue
+  const toggleServicesBtn = document.getElementById('toggle-services-btn');
+  const serviceCards = document.querySelectorAll('.service-row-container');
+  
+  if (toggleServicesBtn && serviceCards.length > 6) {
+    let isExpanded = false;
+    
+    const updateServicesVisibility = () => {
+      if (window.innerWidth < 768) {
+        serviceCards.forEach((card, index) => {
+          if (index >= 6) {
+            if (isExpanded) {
+              card.classList.remove('hidden');
+            } else {
+              card.classList.add('hidden');
+            }
+          }
+        });
+        toggleServicesBtn.textContent = isExpanded ? 'Show Less Services' : 'Show All Services';
+        toggleServicesBtn.parentElement.classList.remove('hidden');
+      } else {
+        // Desktop always shows all cards
+        serviceCards.forEach(card => card.classList.remove('hidden'));
+        toggleServicesBtn.parentElement.classList.add('hidden');
+      }
+    };
+
+    toggleServicesBtn.addEventListener('click', () => {
+      isExpanded = !isExpanded;
+      updateServicesVisibility();
+      
+      // If closing, scroll smoothly back to the top of the services section
+      if (!isExpanded) {
+        document.getElementById('services').scrollIntoView({ behavior: 'smooth' });
+      }
+    });
+
+    window.addEventListener('resize', updateServicesVisibility);
+    updateServicesVisibility();
+  }
+
+  // YouTube Service Video Carousel & Switcher Logic
+  const serviceContainers = document.querySelectorAll('.service-video-container');
+  serviceContainers.forEach(container => {
+    const videoIdsAttr = container.getAttribute('data-video-ids') || container.getAttribute('data-video-id');
+    if (!videoIdsAttr) return;
+
+    const videoIds = videoIdsAttr.split(',').map(id => id.trim());
+    const iframe = container.querySelector('iframe');
+    const overlay = container.querySelector('.service-video-overlay');
+    const watchBtn = container.querySelector('.watch-sample-btn');
+
+    let currentIndex = 0;
+    let isPlaying = false;
+    let intervalId = null;
+
+    const goToSlide = (idx) => {
+      if (idx === currentIndex) return;
+      currentIndex = idx;
+      const videoId = videoIds[currentIndex];
+
+      if (iframe) {
+        iframe.classList.add('iframe-fade-out');
+
+        setTimeout(() => {
+          if (isPlaying) {
+            iframe.src = `https://www.youtube.com/embed/${videoId}?autoplay=1&controls=1&mute=0&rel=0`;
+          } else {
+            iframe.src = `https://www.youtube.com/embed/${videoId}?autoplay=1&mute=1&loop=1&playlist=${videoId}&controls=0&showinfo=0&rel=0&enablejsapi=1`;
+            if (overlay) {
+              overlay.classList.remove('hidden', 'pointer-events-none');
+            }
+          }
+
+          const dots = container.querySelectorAll('.service-carousel-dot');
+          dots.forEach((dot, dotIdx) => {
+            if (dotIdx === currentIndex) {
+              dot.classList.remove('bg-white/40');
+              dot.classList.add('bg-gold', 'w-4');
+            } else {
+              dot.classList.add('bg-white/40');
+              dot.classList.remove('bg-gold', 'w-4');
+            }
+          });
+
+          iframe.classList.remove('iframe-fade-out');
+        }, 400);
+      }
+    };
+
+    if (videoIds.length > 1) {
+      const dotsContainer = document.createElement('div');
+      dotsContainer.className = 'service-carousel-dots absolute bottom-4 left-1/2 transform -translate-x-1/2 z-20 flex space-x-1.5';
+      
+      videoIds.forEach((_, idx) => {
+        const dot = document.createElement('button');
+        dot.className = `service-carousel-dot w-2 h-2 rounded-full transition-all duration-300 focus:outline-none ${idx === 0 ? 'bg-gold w-4' : 'bg-white/40'}`;
+        dot.setAttribute('aria-label', `Go to slide ${idx + 1}`);
+        dot.addEventListener('click', (e) => {
+          e.stopPropagation();
+          goToSlide(idx);
+        });
+        dotsContainer.appendChild(dot);
+      });
+      container.appendChild(dotsContainer);
+
+      const startAutoplay = () => {
+        intervalId = setInterval(() => {
+          if (!isPlaying) {
+            const nextIdx = (currentIndex + 1) % videoIds.length;
+            goToSlide(nextIdx);
+          }
+        }, 7000);
+      };
+      
+      startAutoplay();
+    }
+
+    if (watchBtn) {
+      watchBtn.addEventListener('click', (e) => {
+        e.stopPropagation();
+        isPlaying = true;
+        if (intervalId) {
+          clearInterval(intervalId);
+        }
+        const videoId = videoIds[currentIndex];
+        if (iframe) {
+          iframe.src = `https://www.youtube.com/embed/${videoId}?autoplay=1&controls=1&mute=0&rel=0`;
+          if (overlay) {
+            overlay.classList.add('hidden', 'pointer-events-none');
+          }
+        }
+      });
+    }
+  });
+
+  // Simulated WhatsApp Chatbot Window Actions
+  const chatBubble = document.getElementById('whatsapp-chat-bubble');
+  const chatWindow = document.getElementById('whatsapp-chat-window');
+  const closeChat = document.getElementById('close-chat-window');
+  const quickReplies = document.querySelectorAll('.chat-quick-reply-btn');
+  const customMsgInput = document.getElementById('chat-custom-message');
+  const sendChatBtn = document.getElementById('chat-send-btn');
+
+  // Toggle chatbot panel open/close
+  const toggleChatbot = () => {
+    if (chatWindow) {
+      chatWindow.classList.toggle('opacity-0');
+      chatWindow.classList.toggle('scale-95');
+      chatWindow.classList.toggle('pointer-events-none');
+    }
+  };
+
+  if (chatBubble) {
+    chatBubble.addEventListener('click', toggleChatbot);
+  }
+  if (closeChat) {
+    closeChat.addEventListener('click', toggleChatbot);
+  }
+
+  // Handle quick replies selection
+  quickReplies.forEach(btn => {
+    btn.addEventListener('click', () => {
+      const waUrl = btn.getAttribute('data-wa-url');
+      if (waUrl) {
+        window.open(waUrl, '_blank', 'noopener');
+        toggleChatbot(); // Close window after click
+      }
+    });
+  });
+
+  // Handle sending typed custom messages
+  const sendCustomMessage = () => {
+    const text = customMsgInput.value.trim();
+    if (!text) return;
+
+    const encodedText = encodeURIComponent(text);
+    const waUrl = `https://wa.me/918657561060?text=${encodedText}`;
+    window.open(waUrl, '_blank', 'noopener');
+
+    // Reset fields
+    customMsgInput.value = '';
+    toggleChatbot();
+  };
+
+  if (sendChatBtn) {
+    sendChatBtn.addEventListener('click', sendCustomMessage);
+  }
+  if (customMsgInput) {
+    customMsgInput.addEventListener('keydown', (e) => {
+      if (e.key === 'Enter') {
+        e.preventDefault();
+        sendCustomMessage();
+      }
+    });
+  }
+
+  // Back to Top scroll listener
+  const backToTop = document.getElementById('back-to-top');
+  if (backToTop) {
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 500) {
+        backToTop.classList.remove('opacity-0', 'translate-y-20', 'pointer-events-none');
+        backToTop.classList.add('opacity-100', 'translate-y-0', 'pointer-events-auto');
+      } else {
+        backToTop.classList.add('opacity-0', 'translate-y-20', 'pointer-events-none');
+        backToTop.classList.remove('opacity-100', 'translate-y-0', 'pointer-events-auto');
+      }
+    });
+
+    backToTop.addEventListener('click', () => {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+  }
+
+  // Native CSS Intersection Observer Reveal-on-Scroll animations
+  const revealElements = document.querySelectorAll('.reveal-on-scroll');
+  const revealObserverOptions = {
+    root: null,
+    rootMargin: '0px 0px -10% 0px',
+    threshold: 0.15
+  };
+
+  const revealObserver = new IntersectionObserver((entries, observer) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('revealed');
+        // Smoothly stagger child elements marked with .stagger-item
+        const staggerItems = entry.target.querySelectorAll('.stagger-item');
+        staggerItems.forEach((item, index) => {
+          item.style.transitionDelay = `${index * 0.15}s`;
+          item.classList.add('revealed');
+        });
+        observer.unobserve(entry.target); // Animate only once
+      }
+    });
+  }, revealObserverOptions);
+
+  revealElements.forEach(el => revealObserver.observe(el));
+
+  // Lightbox Modal Actions for Portfolio
+  const portfolioCards = document.querySelectorAll('.portfolio-card-trigger');
+  const lightbox = document.getElementById('portfolio-lightbox');
+  const lightboxIframe = document.getElementById('lightbox-iframe');
+  const lightboxClose = document.getElementById('lightbox-close');
+
+  if (portfolioCards && lightbox && lightboxIframe) {
+    portfolioCards.forEach(card => {
+      card.addEventListener('click', (e) => {
+        e.preventDefault();
+        const videoId = card.getAttribute('data-video-id');
+        if (videoId) {
+          lightboxIframe.src = `https://www.youtube.com/embed/${videoId}?autoplay=1&controls=1&mute=0&rel=0`;
+          lightbox.classList.remove('opacity-0', 'pointer-events-none');
+          lightbox.classList.add('active');
+        }
+      });
+    });
+
+    const closeLightboxModal = () => {
+      lightbox.classList.remove('active');
+      lightbox.classList.add('opacity-0', 'pointer-events-none');
+      lightboxIframe.src = '';
+    };
+
+    if (lightboxClose) {
+      lightboxClose.addEventListener('click', closeLightboxModal);
+    }
+
+    lightbox.addEventListener('click', (e) => {
+      if (e.target === lightbox) {
+        closeLightboxModal();
+      }
+    });
+
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && lightbox.classList.contains('active')) {
+        closeLightboxModal();
+      }
+    });
+  }
+
+  // Initialize Animate on Scroll (AOS)
+  if (typeof AOS !== 'undefined') {
+    AOS.init({
+      duration: 800,
+      easing: 'ease-out-quad',
+      once: true,
+      offset: 100
+    });
+  }
+
+  // Custom Showreel Play Button Overlay
+  const mainShowreelVideo = document.getElementById('main-showreel-video');
+  const showreelOverlay = document.getElementById('showreel-video-overlay');
+  if (mainShowreelVideo && showreelOverlay) {
+    showreelOverlay.addEventListener('click', (e) => {
+      e.stopPropagation();
+      mainShowreelVideo.setAttribute('controls', 'true');
+      mainShowreelVideo.play();
+      showreelOverlay.style.opacity = '0';
+      setTimeout(() => {
+        showreelOverlay.classList.add('hidden');
+      }, 500);
+    });
+  }
+});
+
+</script>
+</body>
+</html>
