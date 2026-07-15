@@ -783,6 +783,207 @@ h1, h2, h3, h4, h5, h6, .font-cinzel {
   scrollbar-width: none;  /* Firefox */
 }
 
+/* ==========================================================================
+   NAVBAR FIX - ONE CLEAN LINE
+   ========================================================================== */
+.glass-nav {
+  min-height: 70px !important;
+  overflow: hidden !important;
+}
+
+.glass-nav .nav-container {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+  flex-wrap: nowrap !important;
+  width: 100% !important;
+  padding: 0 24px !important;
+  max-width: 100% !important;
+}
+
+.glass-nav .logo-link {
+  flex-shrink: 0 !important;
+  height: 52px !important;
+  display: flex !important;
+  align-items: center !important;
+}
+
+.glass-nav .logo-link img {
+  height: 52px !important;
+  width: auto !important;
+  flex-shrink: 0 !important;
+}
+
+.glass-nav .desktop-nav {
+  display: flex !important;
+  align-items: center !important;
+  gap: 28px !important;
+  list-style: none !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  flex-wrap: nowrap !important;
+  white-space: nowrap !important;
+}
+
+.glass-nav .desktop-nav a {
+  font-size: 14px !important;
+  white-space: nowrap !important;
+  font-weight: 500 !important;
+}
+
+.glass-nav .cta-container {
+  display: flex !important;
+  align-items: center !important;
+  gap: 16px !important;
+  flex-shrink: 0 !important;
+  flex-wrap: nowrap !important;
+}
+
+.glass-nav .whatsapp-btn {
+  flex-shrink: 0 !important;
+  white-space: nowrap !important;
+}
+
+.glass-nav .social-icons-row {
+  display: flex !important;
+  gap: 10px !important;
+  align-items: center !important;
+  flex-shrink: 0 !important;
+}
+
+/* Navbar responsive display rules */
+@media (min-width: 1024px) {
+  .glass-nav .desktop-nav {
+    display: flex !important;
+  }
+  .glass-nav .whatsapp-btn {
+    display: inline-flex !important;
+  }
+  .glass-nav .social-icons-row {
+    display: flex !important;
+  }
+  .glass-nav #mobile-menu-btn {
+    display: none !important;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .glass-nav .desktop-nav {
+    display: flex !important;
+    gap: 16px !important;
+  }
+  .glass-nav .whatsapp-btn {
+    display: inline-flex !important;
+  }
+  .glass-nav .social-icons-row {
+    display: none !important;
+  }
+  .glass-nav #mobile-menu-btn {
+    display: none !important;
+  }
+}
+
+@media (max-width: 767px) {
+  .glass-nav .desktop-nav {
+    display: none !important;
+  }
+  .glass-nav .whatsapp-btn {
+    display: none !important;
+  }
+  .glass-nav .social-icons-row {
+    display: none !important;
+  }
+  .glass-nav #mobile-menu-btn {
+    display: flex !important;
+  }
+}
+
+/* ==========================================================================
+   CLIENT CARDS STYLING
+   ========================================================================== */
+.client-logo-card {
+  background: #111E30 !important;
+  border-radius: 12px !important;
+  padding: 28px 20px !important;
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  justify-content: center !important;
+  gap: 12px !important;
+  min-height: 140px !important;
+  border: 1px solid rgba(255, 255, 255, 0.06) !important;
+  transition: all 0.3s ease !important;
+}
+
+.client-logo-card:hover {
+  border-color: #C4922A !important;
+  transform: translateY(-4px) !important;
+  box-shadow: 0 8px 24px rgba(196, 146, 42, 0.15) !important;
+}
+
+.client-logo-img {
+  max-height: 60px !important;
+  max-width: 140px !important;
+  object-fit: contain !important;
+  filter: brightness(0) invert(1) !important;
+  transition: filter 0.3s ease !important;
+}
+
+.client-logo-card:hover .client-logo-img {
+  filter: none !important;
+}
+
+/* ==========================================================================
+   HOMEPAGE LOGO MARQUEE
+   ========================================================================== */
+.marquee-container {
+  overflow: hidden !important;
+  white-space: nowrap !important;
+  width: 100% !important;
+  background: #0C1220 !important;
+  padding: 24px 0 !important;
+  position: relative !important;
+}
+
+.marquee-content {
+  display: inline-flex !important;
+  gap: 60px !important;
+  animation: marquee-scroll 25s linear infinite !important;
+}
+
+@keyframes marquee-scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.marquee-logo-img {
+  height: 40px !important;
+  max-width: 130px !important;
+  object-fit: contain !important;
+  filter: brightness(0) invert(0.7) !important;
+  transition: all 0.3s ease !important;
+}
+
+.marquee-logo-img:hover {
+  filter: none !important;
+}
+
+.marquee-text-logo {
+  font-size: 14px !important;
+  font-weight: 700 !important;
+  color: rgba(255, 255, 255, 0.7) !important;
+  line-height: 40px !important;
+  transition: all 0.3s ease !important;
+}
+
+.marquee-text-logo:hover {
+  color: #ffffff !important;
+}
+
 </style>
 </head>
 <body class="bg-cinematicNavy text-white font-montserrat">
@@ -800,63 +1001,60 @@ h1, h2, h3, h4, h5, h6, .font-cinzel {
 
   <!-- 1. NAVBAR -->
   <header class="fixed top-0 left-0 w-full z-50 glass-nav transition-all duration-300">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="flex items-center justify-between h-20">
-        <!-- Logo -->
-        <a href="index.html#home" class="flex items-center space-x-3 group" aria-label="Tikvah Ark Productions Home">
-          <img src="assets/logo_icon.png" alt="Tikvah Ark Productions Logo" class="h-[44px] md:h-[56px] w-auto object-contain transition-all duration-300">
-          <div class="hidden sm:block">
-            <span class="font-cinzel text-lg font-bold tracking-wider text-white group-hover:text-[#2EAD4A] transition-colors duration-300 block leading-tight">TIKVAH ARK</span>
-            <span class="text-[9px] uppercase tracking-widest text-slate-400 block leading-none">PRODUCTIONS</span>
-          </div>
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 nav-container">
+      <!-- Logo -->
+      <a href="index.html#home" class="logo-link flex items-center space-x-3 group" aria-label="Tikvah Ark Productions Home">
+        <img src="assets/logo_icon.png" alt="Tikvah Ark Productions Logo" class="transition-all duration-300">
+        <div class="hidden sm:block">
+          <span class="font-cinzel text-lg font-bold tracking-wider text-white group-hover:text-[#2EAD4A] transition-colors duration-300 block leading-tight">TIKVAH ARK</span>
+          <span class="text-[9px] uppercase tracking-widest text-slate-400 block leading-none">PRODUCTIONS</span>
+        </div>
+      </a>
+
+      <!-- Desktop Navigation -->
+      <nav class="desktop-nav">
+        <a href="index.html#home" class="nav-link py-2">Home</a>
+        <a href="about.html" class="nav-link py-2 active">About</a>
+        <a href="index.html#services" class="nav-link py-2">Services</a>
+        <a href="index.html#portfolio" class="nav-link py-2">Portfolio</a>
+        <a href="index.html#showreel" class="nav-link py-2">Showreel</a>
+        <a href="index.html#process" class="nav-link py-2">Our Process</a>
+        <a href="clients.html" class="nav-link py-2">Our Clients</a>
+        <a href="index.html#contact" class="nav-link py-2">Contact</a>
+      </nav>
+
+      <!-- CTA & Mobile Toggle -->
+      <div class="cta-container">
+        <a href="https://wa.me/918657561060" target="_blank" rel="noopener" class="whatsapp-btn inline-flex items-center px-5 py-2 text-xs uppercase tracking-wider btn-gold transition-all duration-300 space-x-2">
+          <i class="fa-brands fa-whatsapp text-sm"></i>
+          <span>WhatsApp Us</span>
         </a>
 
-        <!-- Desktop Navigation -->
-        <nav class="hidden md:flex space-x-6 text-sm font-medium">
-          <a href="index.html#home" class="nav-link py-2">Home</a>
-          <a href="about.html" class="nav-link py-2 active">About</a>
-          <a href="index.html#services" class="nav-link py-2">Services</a>
-          <a href="index.html#process" class="nav-link py-2">Our Process</a>
-          <a href="index.html#showreel" class="nav-link py-2">Showreel</a>
-          <a href="index.html#portfolio" class="nav-link py-2">Portfolio</a>
-          <a href="index.html#testimonials" class="nav-link py-2">Testimonials</a>
-          <a href="clients.html" class="nav-link py-2">Our Clients</a>
-          <a href="index.html#contact" class="nav-link py-2">Contact</a>
-        </nav>
-
-        <!-- CTA & Mobile Toggle -->
-        <div class="flex items-center space-x-4">
-          <a href="https://wa.me/918657561060" target="_blank" rel="noopener" class="hidden sm:inline-flex items-center px-5 py-2 text-xs uppercase tracking-wider btn-gold transition-all duration-300 space-x-2">
-            <i class="fa-brands fa-whatsapp text-sm"></i>
-            <span>WhatsApp Us</span>
+        <!-- Social Icons in Navbar (Desktop only) -->
+        <div class="social-icons-row border-l border-slate-800/80 pl-4">
+          <a href="https://www.instagram.com/tikvaharkproductions?igsh=b2l3bHFyNGF4OHQw&utm_source=qr" target="_blank" rel="noopener" aria-label="Instagram" class="text-[#8AAAC8] hover:text-[#E1306C] transition-colors duration-300">
+            <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24">
+              <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.051.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/>
+            </svg>
           </a>
-
-          <!-- Social Icons in Navbar (Desktop only) -->
-          <div class="hidden md:flex items-center space-x-3.5 border-l border-slate-800/80 pl-4">
-            <a href="https://www.instagram.com/tikvaharkproductions?igsh=b2l3bHFyNGF4OHQw&utm_source=qr" target="_blank" rel="noopener" aria-label="Instagram" class="text-[#8AAAC8] hover:text-[#E1306C] transition-colors duration-300">
-              <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24">
-                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.051.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/>
-              </svg>
-            </a>
-            <a href="https://youtube.com/@tikvahark123?si=F02KAGmnGIhGlMXs" target="_blank" rel="noopener" aria-label="YouTube" class="text-[#8AAAC8] hover:text-[#FF0000] transition-colors duration-300">
-              <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24">
-                <path d="M23.498 6.163a3.003 3.003 0 00-2.11-2.107C19.525 3.545 12 3.545 12 3.545s-7.525 0-9.388.511a3.002 3.002 0 00-2.11 2.107C0 8.028 0 12 0 12s0 3.972.502 5.837a3.002 3.002 0 002.11 2.107C4.475 20.455 12 20.455 12 20.455s7.525 0 9.388-.511a3.002 3.002 0 002.11-2.107C24 15.972 24 12 24 12s0-3.972-.502-5.837zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
-              </svg>
-            </a>
-            <a href="https://www.linkedin.com/company/tikvaharkproductions/" target="_blank" rel="noopener" aria-label="LinkedIn" class="text-[#8AAAC8] hover:text-[#0A66C2] transition-colors duration-300">
-              <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24">
-                <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.779-1.75-1.75s.784-1.75 1.75-1.75 1.75.779 1.75 1.75-.784 1.75-1.75 1.75zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
-              </svg>
-            </a>
-          </div>
-
-          <!-- Hamburger Button -->
-          <button id="mobile-menu-btn" class="md:hidden flex flex-col justify-center items-center w-10 h-10 border border-slate-700/50 rounded-lg bg-cinematicNavyLight text-white hover:text-[#2EAD4A] focus:outline-none" aria-expanded="false" aria-label="Toggle mobile menu">
-            <span class="w-5 h-0.5 bg-current transition-all duration-300 ease-in-out mb-1.5 rounded-full"></span>
-            <span class="w-5 h-0.5 bg-current transition-all duration-300 ease-in-out mb-1.5 rounded-full"></span>
-            <span class="w-5 h-0.5 bg-current transition-all duration-300 ease-in-out rounded-full"></span>
-          </button>
+          <a href="https://youtube.com/@tikvahark123?si=F02KAGmnGIhGlMXs" target="_blank" rel="noopener" aria-label="YouTube" class="text-[#8AAAC8] hover:text-[#FF0000] transition-colors duration-300">
+            <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24">
+              <path d="M23.498 6.163a3.003 3.003 0 00-2.11-2.107C19.525 3.545 12 3.545 12 3.545s-7.525 0-9.388.511a3.002 3.002 0 00-2.11 2.107C0 8.028 0 12 0 12s0 3.972.502 5.837a3.002 3.002 0 002.11 2.107C4.475 20.455 12 20.455 12 20.455s7.525 0 9.388-.511a3.002 3.002 0 002.11-2.107C24 15.972 24 12 24 12s0-3.972-.502-5.837zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+            </svg>
+          </a>
+          <a href="https://www.linkedin.com/company/tikvaharkproductions/" target="_blank" rel="noopener" aria-label="LinkedIn" class="text-[#8AAAC8] hover:text-[#0A66C2] transition-colors duration-300">
+            <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24">
+              <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.779-1.75-1.75s.784-1.75 1.75-1.75 1.75.779 1.75 1.75-.784 1.75-1.75 1.75zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+            </svg>
+          </a>
         </div>
+
+        <!-- Hamburger Button -->
+        <button id="mobile-menu-btn" class="flex flex-col justify-center items-center w-10 h-10 border border-slate-700/50 rounded-lg bg-cinematicNavyLight text-white hover:text-[#2EAD4A] focus:outline-none" aria-expanded="false" aria-label="Toggle mobile menu">
+          <span class="w-5 h-0.5 bg-current transition-all duration-300 ease-in-out mb-1.5 rounded-full"></span>
+          <span class="w-5 h-0.5 bg-current transition-all duration-300 ease-in-out mb-1.5 rounded-full"></span>
+          <span class="w-5 h-0.5 bg-current transition-all duration-300 ease-in-out rounded-full"></span>
+        </button>
       </div>
     </div>
 
@@ -866,10 +1064,9 @@ h1, h2, h3, h4, h5, h6, .font-cinzel {
         <a href="index.html#home" class="mobile-nav-link text-slate-300 hover:text-[#2EAD4A] transition-colors duration-300 border-b border-slate-800/50 pb-2">Home</a>
         <a href="about.html" class="mobile-nav-link text-[#2EAD4A] transition-colors duration-300 border-b border-slate-800/50 pb-2">About</a>
         <a href="index.html#services" class="mobile-nav-link text-slate-300 hover:text-[#2EAD4A] transition-colors duration-300 border-b border-slate-800/50 pb-2">Services</a>
-        <a href="index.html#process" class="mobile-nav-link text-slate-300 hover:text-[#2EAD4A] transition-colors duration-300 border-b border-slate-800/50 pb-2">Our Process</a>
-        <a href="index.html#showreel" class="mobile-nav-link text-slate-300 hover:text-[#2EAD4A] transition-colors duration-300 border-b border-slate-800/50 pb-2">Showreel</a>
         <a href="index.html#portfolio" class="mobile-nav-link text-slate-300 hover:text-[#2EAD4A] transition-colors duration-300 border-b border-slate-800/50 pb-2">Portfolio</a>
-        <a href="index.html#testimonials" class="mobile-nav-link text-slate-300 hover:text-[#2EAD4A] transition-colors duration-300 border-b border-slate-800/50 pb-2">Testimonials</a>
+        <a href="index.html#showreel" class="mobile-nav-link text-slate-300 hover:text-[#2EAD4A] transition-colors duration-300 border-b border-slate-800/50 pb-2">Showreel</a>
+        <a href="index.html#process" class="mobile-nav-link text-slate-300 hover:text-[#2EAD4A] transition-colors duration-300 border-b border-slate-800/50 pb-2">Our Process</a>
         <a href="clients.html" class="mobile-nav-link text-slate-300 hover:text-[#2EAD4A] transition-colors duration-300 border-b border-slate-800/50 pb-2">Our Clients</a>
         <a href="index.html#contact" class="mobile-nav-link text-slate-300 hover:text-[#2EAD4A] transition-colors duration-300 border-b border-slate-800/50 pb-2">Contact</a>
       </nav>
