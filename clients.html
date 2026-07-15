@@ -984,6 +984,12 @@ h1, h2, h3, h4, h5, h6, .font-cinzel {
   color: #ffffff !important;
 }
 
+/* Hover Show Real Colors */
+.client-card:hover img {
+  filter: none !important;
+}
+
+
 </style>
 </head>
 <body class="bg-cinematicNavy text-white font-montserrat">
@@ -1116,11 +1122,9 @@ h1, h2, h3, h4, h5, h6, .font-cinzel {
       <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6 sm:gap-8">
         
         <!-- Client 1: Mahindra Rise -->
-        <div class="client-logo-card group" data-aos="fade-up" data-aos-delay="100">
+        <div class="client-logo-card client-card group" data-aos="fade-up" data-aos-delay="100">
           <div class="flex-1 flex items-center justify-center w-full">
-            <div style="display:flex; align-items:center; justify-content:center; width:140px; height:55px; border: 1.5px solid #C0392B; border-radius:6px; padding: 8px 12px;">
-              <span style="color:#ffffff; font-weight:700; font-size:14px; letter-spacing:0.05em; text-align:center;">Mahindra Rise</span>
-            </div>
+            <img class="client-logo-img" src="https://www.mahindra.com/sites/default/files/2025-01/mahindra-rise.png" alt="Mahindra Rise" style="max-height:55px;max-width:140px;object-fit:contain;filter:brightness(0) invert(1);transition:filter 0.3s ease;">
           </div>
           <div class="text-center mt-2">
             <div class="text-[13px] text-white font-bold uppercase tracking-wider">Mahindra Rise</div>
@@ -1129,11 +1133,10 @@ h1, h2, h3, h4, h5, h6, .font-cinzel {
         </div>
 
         <!-- Client 2: Mahindra Susten -->
-        <div class="client-logo-card group" data-aos="fade-up" data-aos-delay="150">
+        <div class="client-logo-card client-card group" data-aos="fade-up" data-aos-delay="150">
           <div class="flex-1 flex items-center justify-center w-full">
-            <div style="display:flex; align-items:center; justify-content:center; width:140px; height:55px; border: 1.5px solid #2EAD4A; border-radius:6px; padding: 8px 12px;">
-              <span style="color:#ffffff; font-weight:700; font-size:14px; letter-spacing:0.05em; text-align:center;">Mahindra Susten</span>
-            </div>
+            <img class="client-logo-img" src="https://mahindrasusten.com/wp-content/themes/mahindra-susten/images/logo.png" alt="Mahindra Susten" style="max-height:55px;max-width:140px;object-fit:contain;filter:brightness(0) invert(1);transition:filter 0.3s ease;" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
+            <div style="display:none;color:#fff;font-weight:700;font-size:14px;text-align:center;align-items:center;justify-content:center;">Mahindra Susten</div>
           </div>
           <div class="text-center mt-2">
             <div class="text-[13px] text-white font-bold uppercase tracking-wider">Mahindra Susten</div>
@@ -1142,9 +1145,11 @@ h1, h2, h3, h4, h5, h6, .font-cinzel {
         </div>
 
         <!-- Client 3: I Was A Saree -->
-        <div class="client-logo-card group" data-aos="fade-up" data-aos-delay="200">
+        <div class="client-logo-card client-card group" data-aos="fade-up" data-aos-delay="200">
           <div class="flex-1 flex items-center justify-center w-full">
-            <p style="font-family: Georgia, serif; font-style:italic; font-size:18px; color:#F5F0E8; letter-spacing:0.05em; margin:0;">I Was A Saree</p>
+            <div style="display:flex;align-items:center;justify-content:center;height:55px;">
+              <p style="font-family:Georgia,serif;font-style:italic;font-size:17px;color:#F5F0E8;text-align:center;margin:0;letter-spacing:0.03em;">I Was A Saree</p>
+            </div>
           </div>
           <div class="text-center mt-2">
             <div class="text-[13px] text-white font-bold uppercase tracking-wider">I Was A Saree</div>
@@ -1153,11 +1158,10 @@ h1, h2, h3, h4, h5, h6, .font-cinzel {
         </div>
 
         <!-- Client 4: Zee Marathi -->
-        <div class="client-logo-card group" data-aos="fade-up" data-aos-delay="250">
+        <div class="client-logo-card client-card group" data-aos="fade-up" data-aos-delay="250">
           <div class="flex-1 flex items-center justify-center w-full">
-            <div style="display:flex; align-items:center; justify-content:center; width:140px; height:55px; border: 1.5px solid #8E44AD; border-radius:6px; padding: 8px 12px;">
-              <span style="color:#ffffff; font-weight:700; font-size:14px; letter-spacing:0.05em; text-align:center;">Zee Marathi</span>
-            </div>
+            <img class="client-logo-img" src="https://upload.wikimedia.org/wikipedia/commons/6/6e/Zee_Marathi_2025.svg" alt="Zee Marathi" style="max-height:55px;max-width:140px;object-fit:contain;filter:brightness(0) invert(1);transition:filter 0.3s ease;" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
+            <div style="display:none;color:#fff;font-weight:700;font-size:14px;text-align:center;align-items:center;justify-content:center;">Zee Marathi</div>
           </div>
           <div class="text-center mt-2">
             <div class="text-[13px] text-white font-bold uppercase tracking-wider">ZEE Marathi</div>
@@ -1166,9 +1170,12 @@ h1, h2, h3, h4, h5, h6, .font-cinzel {
         </div>
 
         <!-- Client 5: SSPM Medical College -->
-        <div class="client-logo-card group" data-aos="fade-up" data-aos-delay="300">
+        <div class="client-logo-card client-card group" data-aos="fade-up" data-aos-delay="300">
           <div class="flex-1 flex items-center justify-center w-full">
-            <p style="font-weight:700; font-size:15px; color:#fff; text-align:center; margin:0;">SSPM<br><span style="font-weight:400; font-size:12px; color:#8AAAC8;">Medical College</span></p>
+            <div style="display:flex;flex-direction:column;align-items:center;justify-content:center;height:55px;">
+              <p style="font-weight:800;font-size:18px;color:#fff;text-align:center;margin:0;letter-spacing:0.1em;">SSPM</p>
+              <p style="font-weight:400;font-size:11px;color:#8AAAC8;text-align:center;margin:2px 0 0;">Medical College</p>
+            </div>
           </div>
           <div class="text-center mt-2">
             <div class="text-[13px] text-white font-bold uppercase tracking-wider">SSPM Medical College</div>
@@ -1177,11 +1184,10 @@ h1, h2, h3, h4, h5, h6, .font-cinzel {
         </div>
 
         <!-- Client 6: MTDC -->
-        <div class="client-logo-card group" data-aos="fade-up" data-aos-delay="350">
+        <div class="client-logo-card client-card group" data-aos="fade-up" data-aos-delay="350">
           <div class="flex-1 flex items-center justify-center w-full">
-            <div style="display:flex; align-items:center; justify-content:center; width:140px; height:55px; border: 1.5px solid #E67E22; border-radius:6px; padding: 8px 12px;">
-              <span style="color:#ffffff; font-weight:700; font-size:14px; letter-spacing:0.05em; text-align:center;">MTDC</span>
-            </div>
+            <img class="client-logo-img" src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/22/Official_Logo_of_Maharashtra_tourism_Development_Corporation_Orange_on_white_logo.png/320px-Official_Logo_of_Maharashtra_tourism_Development_Corporation_Orange_on_white_logo.png" alt="MTDC" style="max-height:55px;max-width:140px;object-fit:contain;filter:brightness(0) invert(1);transition:filter 0.3s ease;" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
+            <div style="display:none;color:#fff;font-weight:700;font-size:14px;text-align:center;align-items:center;justify-content:center;">MTDC</div>
           </div>
           <div class="text-center mt-2">
             <div class="text-[13px] text-white font-bold uppercase tracking-wider">MTDC</div>
@@ -1190,11 +1196,10 @@ h1, h2, h3, h4, h5, h6, .font-cinzel {
         </div>
 
         <!-- Client 7: Kissht -->
-        <div class="client-logo-card group" data-aos="fade-up" data-aos-delay="400">
+        <div class="client-logo-card client-card group" data-aos="fade-up" data-aos-delay="400">
           <div class="flex-1 flex items-center justify-center w-full">
-            <div style="display:flex; align-items:center; justify-content:center; width:140px; height:55px; border: 1.5px solid #1E5BAD; border-radius:6px; padding: 8px 12px;">
-              <span style="color:#ffffff; font-weight:700; font-size:14px; letter-spacing:0.05em; text-align:center;">kissht</span>
-            </div>
+            <img class="client-logo-img" src="https://kissht.com/wp-content/uploads/2021/07/kissht-logo.png" alt="Kissht" style="max-height:55px;max-width:140px;object-fit:contain;filter:brightness(0) invert(1);transition:filter 0.3s ease;" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
+            <div style="display:none;color:#fff;font-weight:700;font-size:14px;text-align:center;align-items:center;justify-content:center;">kissht</div>
           </div>
           <div class="text-center mt-2">
             <div class="text-[13px] text-white font-bold uppercase tracking-wider">Kissht</div>
@@ -1203,11 +1208,10 @@ h1, h2, h3, h4, h5, h6, .font-cinzel {
         </div>
 
         <!-- Client 8: Pay with Ring -->
-        <div class="client-logo-card group" data-aos="fade-up" data-aos-delay="450">
+        <div class="client-logo-card client-card group" data-aos="fade-up" data-aos-delay="450">
           <div class="flex-1 flex items-center justify-center w-full">
-            <div style="display:flex; align-items:center; justify-content:center; width:140px; height:55px; border: 1.5px solid #E1306C; border-radius:6px; padding: 8px 12px;">
-              <span style="color:#ffffff; font-weight:700; font-size:14px; letter-spacing:0.05em; text-align:center;">Pay with Ring</span>
-            </div>
+            <img class="client-logo-img" src="https://ringapp.in/assets/images/ring-logo.png" alt="Pay with Ring" style="max-height:55px;max-width:140px;object-fit:contain;filter:brightness(0) invert(1);transition:filter 0.3s ease;" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
+            <div style="display:none;color:#fff;font-weight:700;font-size:14px;text-align:center;align-items:center;justify-content:center;">Pay with Ring</div>
           </div>
           <div class="text-center mt-2">
             <div class="text-[13px] text-white font-bold uppercase tracking-wider">Pay with Ring</div>
@@ -1216,11 +1220,10 @@ h1, h2, h3, h4, h5, h6, .font-cinzel {
         </div>
 
         <!-- Client 9: Tide India -->
-        <div class="client-logo-card group" data-aos="fade-up" data-aos-delay="500">
+        <div class="client-logo-card client-card group" data-aos="fade-up" data-aos-delay="500">
           <div class="flex-1 flex items-center justify-center w-full">
-            <div style="display:flex; align-items:center; justify-content:center; width:140px; height:55px; border: 1.5px solid #1ABCAA; border-radius:6px; padding: 8px 12px;">
-              <span style="color:#ffffff; font-weight:700; font-size:14px; letter-spacing:0.05em; text-align:center;">Tide India</span>
-            </div>
+            <img class="client-logo-img" src="https://www.tide.co/assets/images/tide-logo.svg" alt="Tide India" style="max-height:55px;max-width:140px;object-fit:contain;filter:brightness(0) invert(1);transition:filter 0.3s ease;" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
+            <div style="display:none;color:#fff;font-weight:700;font-size:14px;text-align:center;align-items:center;justify-content:center;">Tide India</div>
           </div>
           <div class="text-center mt-2">
             <div class="text-[13px] text-white font-bold uppercase tracking-wider">Tide India</div>
@@ -1229,11 +1232,10 @@ h1, h2, h3, h4, h5, h6, .font-cinzel {
         </div>
 
         <!-- Client 10: Scitron -->
-        <div class="client-logo-card group" data-aos="fade-up" data-aos-delay="550">
+        <div class="client-logo-card client-card group" data-aos="fade-up" data-aos-delay="550">
           <div class="flex-1 flex items-center justify-center w-full">
-            <div style="display:flex; align-items:center; justify-content:center; width:140px; height:55px; border: 1.5px solid #E67E22; border-radius:6px; padding: 8px 12px;">
-              <span style="color:#ffffff; font-weight:700; font-size:14px; letter-spacing:0.05em; text-align:center;">Scitron</span>
-            </div>
+            <img class="client-logo-img" src="https://scitron.in/cdn/shop/files/Scitron_Logo.png" alt="Scitron" style="max-height:55px;max-width:140px;object-fit:contain;filter:brightness(0) invert(1);transition:filter 0.3s ease;" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
+            <div style="display:none;color:#fff;font-weight:700;font-size:14px;text-align:center;align-items:center;justify-content:center;">Scitron</div>
           </div>
           <div class="text-center mt-2">
             <div class="text-[13px] text-white font-bold uppercase tracking-wider">Scitron</div>
@@ -1242,121 +1244,9 @@ h1, h2, h3, h4, h5, h6, .font-cinzel {
         </div>
 
       </div>
-        </div>
-
-        <!-- Client 2: Mahindra Susten -->
-        <div class="client-logo-card group" data-aos="fade-up" data-aos-delay="150">
-          <div class="flex-1 flex items-center justify-center w-full">
-            <!-- Replace with actual client logo: <img src="assets/clients/mahindra-susten.png"> -->
-            <img class="client-logo-img" src="https://upload.wikimedia.org/wikipedia/en/thumb/8/8e/Mahindra_Susten_logo.png/320px-Mahindra_Susten_logo.png" alt="Mahindra Susten" onerror="this.onerror=null; this.src=''; this.alt=this.alt; this.style.display='none'; this.insertAdjacentHTML('afterend', '<p style=\'color:#fff;font-weight:700;font-size:14px;text-align:center;\'>Mahindra Susten</p>');">
-          </div>
-          <div class="text-center mt-2">
-            <div class="text-[13px] text-white font-bold uppercase tracking-wider">Mahindra Susten</div>
-            <div class="text-[11px] text-[#8AAAC8] mt-0.5">Sustainability Films</div>
-          </div>
-        </div>
-
-        <!-- Client 3: I Was A Saree -->
-        <div class="client-logo-card group" data-aos="fade-up" data-aos-delay="200">
-          <div class="flex-1 flex items-center justify-center w-full">
-            <!-- Replace with actual client logo: <img src="assets/clients/i-was-a-saree.png"> -->
-            <p style="font-family: Georgia, serif; font-style:italic; font-size:18px; color:#F5F0E8; letter-spacing:0.05em; margin:0;">I Was A Saree</p>
-          </div>
-          <div class="text-center mt-2">
-            <div class="text-[13px] text-white font-bold uppercase tracking-wider">I Was A Saree</div>
-            <div class="text-[11px] text-[#8AAAC8] mt-0.5">Brand Story Film</div>
-          </div>
-        </div>
-
-        <!-- Client 4: Zee Marathi -->
-        <div class="client-logo-card group" data-aos="fade-up" data-aos-delay="250">
-          <div class="flex-1 flex items-center justify-center w-full">
-            <!-- Replace with actual client logo: <img src="assets/clients/zee-marathi.png"> -->
-            <img class="client-logo-img" src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/Zee_Marathi_2025.svg/283px-Zee_Marathi_2025.svg.png" alt="Zee Marathi" onerror="this.onerror=null; this.src=''; this.alt=this.alt; this.style.display='none'; this.insertAdjacentHTML('afterend', '<p style=\'color:#fff;font-weight:700;font-size:14px;text-align:center;\'>' + this.alt + '</p>');">
-          </div>
-          <div class="text-center mt-2">
-            <div class="text-[13px] text-white font-bold uppercase tracking-wider">ZEE Marathi</div>
-            <div class="text-[11px] text-[#8AAAC8] mt-0.5">Content Production</div>
-          </div>
-        </div>
-
-        <!-- Client 5: SSPM Medical College -->
-        <div class="client-logo-card group" data-aos="fade-up" data-aos-delay="300">
-          <div class="flex-1 flex items-center justify-center w-full">
-            <!-- Replace with actual client logo: <img src="assets/clients/sspm-medical-college.png"> -->
-            <p style="font-weight:700; font-size:15px; color:#fff; text-align:center; margin:0;">SSPM<br><span style="font-weight:400; font-size:12px; color:#8AAAC8;">Medical College</span></p>
-          </div>
-          <div class="text-center mt-2">
-            <div class="text-[13px] text-white font-bold uppercase tracking-wider">SSPM Medical College</div>
-            <div class="text-[11px] text-[#8AAAC8] mt-0.5">Institutional Film</div>
-          </div>
-        </div>
-
-        <!-- Client 6: MTDC -->
-        <div class="client-logo-card group" data-aos="fade-up" data-aos-delay="350">
-          <div class="flex-1 flex flex-col items-center justify-center w-full">
-            <!-- Replace with actual client logo: <img src="assets/clients/mtdc.png"> -->
-            <img class="client-logo-img" src="https://upload.wikimedia.org/wikipedia/en/thumb/b/b3/Maharashtra_Tourism_logo.svg/320px-Maharashtra_Tourism_logo.svg.png" alt="MTDC" onerror="this.onerror=null; this.src=''; this.alt=this.alt; this.style.display='none'; this.insertAdjacentHTML('afterend', '<p style=\'color:#fff;font-weight:700;font-size:14px;text-align:center;\'>MTDC<br><span style=\'font-weight:400;font-size:11px;color:#8AAAC8;\'>Maharashtra Tourism</span></p>');">
-          </div>
-          <div class="text-center mt-2">
-            <div class="text-[13px] text-white font-bold uppercase tracking-wider">MTDC</div>
-            <div class="text-[11px] text-[#8AAAC8] mt-0.5">Tourism & Heritage Film</div>
-          </div>
-        </div>
-
-        <!-- Client 7: Kissht -->
-        <div class="client-logo-card group" data-aos="fade-up" data-aos-delay="400">
-          <div class="flex-1 flex items-center justify-center w-full">
-            <!-- Replace with actual client logo: <img src="assets/clients/kissht.png"> -->
-            <img class="client-logo-img" src="https://www.kissht.com/_next/static/media/logo-blue.a53a9345.svg" alt="Kissht" onerror="this.onerror=null; this.src='https://logo.clearbit.com/kissht.com'; this.onerror=null; this.alt=this.alt; this.style.display='none'; this.insertAdjacentHTML('afterend', '<p style=\'color:#fff;font-weight:700;font-size:14px;text-align:center;\'>' + this.alt + '</p>');">
-          </div>
-          <div class="text-center mt-2">
-            <div class="text-[13px] text-white font-bold uppercase tracking-wider">Kissht</div>
-            <div class="text-[11px] text-[#8AAAC8] mt-0.5">Ad Film / Commercial</div>
-          </div>
-        </div>
-
-        <!-- Client 8: Pay with Ring -->
-        <div class="client-logo-card group" data-aos="fade-up" data-aos-delay="450">
-          <div class="flex-1 flex items-center justify-center w-full">
-            <!-- Replace with actual client logo: <img src="assets/clients/pay-with-ring.png"> -->
-            <img class="client-logo-img" src="https://logo.clearbit.com/ringapp.in" alt="Pay with Ring" onerror="this.onerror=null; this.src=''; this.alt=this.alt; this.style.display='none'; this.insertAdjacentHTML('afterend', '<p style=\'color:#fff;font-weight:700;font-size:14px;text-align:center;\'>' + this.alt + '</p>');">
-          </div>
-          <div class="text-center mt-2">
-            <div class="text-[13px] text-white font-bold uppercase tracking-wider">Pay with Ring</div>
-            <div class="text-[11px] text-[#8AAAC8] mt-0.5">Ad Film / Commercial</div>
-          </div>
-        </div>
-
-        <!-- Client 9: Tide India -->
-        <div class="client-logo-card group" data-aos="fade-up" data-aos-delay="500">
-          <div class="flex-1 flex items-center justify-center w-full">
-            <!-- Replace with actual client logo: <img src="assets/clients/tide-india.png"> -->
-            <img class="client-logo-img" src="https://logo.clearbit.com/tide.co" alt="Tide India" onerror="this.onerror=null; this.src=''; this.alt=this.alt; this.style.display='none'; this.insertAdjacentHTML('afterend', '<p style=\'color:#fff;font-weight:700;font-size:14px;text-align:center;\'>' + this.alt + '</p>');">
-          </div>
-          <div class="text-center mt-2">
-            <div class="text-[13px] text-white font-bold uppercase tracking-wider">Tide India</div>
-            <div class="text-[11px] text-[#8AAAC8] mt-0.5">Brand Film</div>
-          </div>
-        </div>
-
-        <!-- Client 10: Scitron -->
-        <div class="client-logo-card group" data-aos="fade-up" data-aos-delay="550">
-          <div class="flex-1 flex items-center justify-center w-full">
-            <!-- Replace with actual client logo: <img src="assets/clients/scitron.png"> -->
-            <img class="client-logo-img" src="https://logo.clearbit.com/scitron.in" alt="Scitron" onerror="this.onerror=null; this.src=''; this.alt=this.alt; this.style.display='none'; this.insertAdjacentHTML('afterend', '<p style=\'color:#fff;font-weight:700;font-size:14px;text-align:center;\'>' + this.alt + '</p>');">
-          </div>
-          <div class="text-center mt-2">
-            <div class="text-[13px] text-white font-bold uppercase tracking-wider">Scitron</div>
-            <div class="text-[11px] text-[#8AAAC8] mt-0.5">Ad Film / Commercial</div>
-          </div>
-        </div>
-
-      </div>
-
     </div>
   </section>
-
+  
   <!-- PART C — Stats Bar -->
   <section class="py-12 bg-cinematicNavyLight border-y border-slate-900/60">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
